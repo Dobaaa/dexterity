@@ -6,6 +6,9 @@ const translations = {
         "about_us": "About Us",
         "our_team": "Our Team",
         "our_services": "Our Services",
+        "certificate": "Certificate",
+        "careers": "Careers",
+        "download_profile": "Download Profile",
         "asset_management_reliability": "Asset Management & Reliability Services",
         "consultation_services": "Consultation Services",
         "training_services": "Training Services",
@@ -96,7 +99,9 @@ const translations = {
         "error_occurred": "An error occurred",
         "success": "Success",
         "warning": "Warning",
-        "info": "Information"
+        "info": "Information",
+        // Footer extra
+        "footer_about_text": "Arabian Dexterity Company is newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization."
     },
     
     ar: {
@@ -105,6 +110,9 @@ const translations = {
         "about_us": "من نحن",
         "our_team": "فريق العمل",
         "our_services": "خدماتنا",
+        "certificate": "الشهادات",
+        "careers": "الوظائف",
+        "download_profile": "تحميل الملف التعريفي",
         "asset_management_reliability": "خدمات إدارة الأصول والموثوقية",
         "consultation_services": "الخدمات الاستشارية",
         "training_services": "خدمات التدريب",
@@ -195,7 +203,9 @@ const translations = {
         "error_occurred": "حدث خطأ",
         "success": "نجح",
         "warning": "تحذير",
-        "info": "معلومات"
+        "info": "معلومات",
+        // Footer extra
+        "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع."
     }
 };
 
@@ -203,6 +213,8 @@ const translations = {
 class LanguageSwitcher {
     constructor() {
         this.currentLang = localStorage.getItem('dexterity_lang') || 'en';
+        // Build reverse lookup maps for auto-translation
+        this.reverseMap = this.buildReverseMaps();
         this.init();
     }
     
@@ -210,6 +222,8 @@ class LanguageSwitcher {
         this.updateLanguageDisplay();
         this.bindEvents();
         this.translatePage();
+        // Ensure HTML lang reflects current language on initial load
+        document.documentElement.lang = this.currentLang;
     }
     
     bindEvents() {
@@ -254,6 +268,22 @@ class LanguageSwitcher {
                 btn.classList.remove('active');
             }
         });
+
+        // Also update the header dropdown label if present
+        const dropdownToggle = document.getElementById('dropdownMenuLink1');
+        if (dropdownToggle) {
+            const label = this.currentLang === 'en' ? 'English' : 'العربية';
+            // Preserve existing icon HTML if any by only replacing text nodes
+            dropdownToggle.childNodes.forEach(node => {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    node.textContent = label;
+                }
+            });
+            // If no text node found, append one
+            if (![...dropdownToggle.childNodes].some(n => n.nodeType === Node.TEXT_NODE)) {
+                dropdownToggle.appendChild(document.createTextNode(label));
+            }
+        }
     }
     
     translatePage() {
@@ -282,6 +312,65 @@ class LanguageSwitcher {
             if (translations[this.currentLang] && translations[this.currentLang][key]) {
                 element.title = translations[this.currentLang][key];
             }
+        });
+
+        // Auto-translate plain text nodes without data-translate (non-destructive)
+        this.autoTranslateUnmarkedText();
+    }
+
+    buildReverseMaps() {
+        const map = { en: {}, ar: {} };
+        // Build case-insensitive lookup: normalized text -> key
+        const normalize = (s) => (s || '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            // strip common trailing punctuation
+            .replace(/[\s]*[:،؛.!؟]+$/u, '')
+            .toLowerCase();
+        Object.entries(translations.en).forEach(([key, val]) => {
+            map.en[normalize(val)] = key;
+        });
+        Object.entries(translations.ar).forEach(([key, val]) => {
+            map.ar[normalize(val)] = key;
+        });
+        return map;
+    }
+
+    autoTranslateUnmarkedText() {
+        const targetLang = this.currentLang;
+        const sourceLang = targetLang === 'en' ? 'ar' : 'en';
+        const normalize = (s) => (s || '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .replace(/[\s]*[:،؛.!؟]+$/u, '')
+            .toLowerCase();
+
+        // Candidates: elements with no child elements (text-only) and without data-translate/placeholder/title
+        const candidates = document.querySelectorAll('body *:not([data-translate]):not([data-translate-placeholder]):not([data-translate-title])');
+        candidates.forEach(el => {
+            if (el.children.length > 0) return;
+            // Skip inputs/buttons handled elsewhere unless they have no attributes
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT') return;
+            const original = el.textContent;
+            const norm = normalize(original);
+            if (!norm) return;
+            const key = this.reverseMap.en[norm] || this.reverseMap.ar[norm];
+            if (!key) return;
+            const translated = translations[targetLang][key];
+            if (translated && normalize(original) !== normalize(translated)) {
+                el.textContent = translated;
+            }
+        });
+
+        // Also auto-translate placeholders without data-translate-placeholder if exact match
+        const inputs = document.querySelectorAll('input:not([data-translate-placeholder]), textarea:not([data-translate-placeholder])');
+        inputs.forEach(input => {
+            const ph = input.getAttribute('placeholder');
+            if (!ph) return;
+            const key = this.reverseMap.en[normalize(ph)] || this.reverseMap.ar[normalize(ph)];
+            if (!key) return;
+            const translated = translations[targetLang][key];
+            if (translated) input.setAttribute('placeholder', translated);
         });
     }
 }

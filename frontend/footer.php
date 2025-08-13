@@ -23,7 +23,7 @@
                     <div class="widget footer-widget">
                         <img class="mb-4" src="assets/img/dexterity-footer-logo.png" alt="">
                         <div class="footer-about footer-para">
-                            <p class="footer-address">Arabian Dexterity Company is newly established company, gaining
+                            <p class="footer-address" data-translate="footer_about_text">Arabian Dexterity Company is newly established company, gaining
                                 its strength from its Senior Experts in the fields of Asset Management and Plant
                                 maintenance optimization.</p>
                         </div>

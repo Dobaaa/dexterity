@@ -29,73 +29,73 @@
             </div>
             <div class="vs-mobile-menu">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li class="menu-item-has-children"><a href="about.php"><span class="has-new-lable">About
+                    <li><a href="index.php" data-translate="home">Home</a></li>
+                    <li class="menu-item-has-children"><a href="about.php"><span class="has-new-lable" data-translate="about_us">About
                                 Us</span></a>
                         <ul class="sub-menu">
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="ourTeam.php">Our Team</a></li>
+                            <li><a href="about.php" data-translate="about_us">About Us</a></li>
+                            <li><a href="ourTeam.php" data-translate="our_team">Our Team</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item-has-children"><a href="#"><span class="has-new-lable">Our
+                    <li class="menu-item-has-children"><a href="#"><span class="has-new-lable" data-translate="our_services">Our
                                 Services</span></a>
                         <ul class="sub-menu">
-                            <li><a href="AssetManagementReliability.php">Asset Management &
+                            <li><a href="AssetManagementReliability.php" data-translate="asset_management_reliability">Asset Management &
                                     Reliability Services</a></li>
                             <li class="menu-item-has-children"><a href="ConsultationServices.php"><span
-                                        class="has-new-lable">Consultation
+                                        class="has-new-lable" data-translate="consultation_services">Consultation
                                         Services</span></a>
                                 <ul class="sub-menu">
-                                    <li><a href="assetHierarchy.php">Asset Hierarchy
+                                    <li><a href="assetHierarchy.php" data-translate="asset_hierarchy">Asset Hierarchy
                                             (Assessment &amp;
                                             Creation)</a></li>
-                                    <li><a href="assetManagement.php">Asset
+                                    <li><a href="assetManagement.php" data-translate="asset_management_iso">Asset
                                             Management (ISO
                                             55001:2014)</a></li>
-                                    <li><a href="BuildingKeyPerformance.php">Building
+                                    <li><a href="BuildingKeyPerformance.php" data-translate="building_kpis">Building
                                             Key Performance
                                             Indicators (KPIs)</a></li>
-                                    <li><a href="CriticalityAssessmentRanking.php">Criticality
+                                    <li><a href="CriticalityAssessmentRanking.php" data-translate="criticality_assessment">Criticality
                                             Assessment &amp; Ranking
                                             (Assessment
                                             &amp;
                                             Creation)</a></li>
-                                    <li><a href="ShutdownTurnaround.php">Shutdown
+                                    <li><a href="ShutdownTurnaround.php" data-translate="shutdown_turnaround">Shutdown
                                             &amp;
                                             Turnaround
                                             planning and management</a>
                                     </li>
-                                    <li><a href="ReliabilityCenteredMaintenance.php">Reliability
+                                    <li><a href="ReliabilityCenteredMaintenance.php" data-translate="reliability_maintenance">Reliability
                                             Centered Maintenance &amp; PMO
                                             Projects</a></li>
-                                    <li><a href="MROInventorySpare.php">MRO
+                                    <li><a href="MROInventorySpare.php" data-translate="mro_inventory">MRO
                                             Inventory and Spare parts
                                             Optimization</a></li>
-                                    <li><a href="MaintenanceReliability.php">Maintenance
+                                    <li><a href="MaintenanceReliability.php" data-translate="maintenance_reliability">Maintenance
                                             &amp;
                                             Reliability Effectiveness
                                             Assessment</a></li>
-                                    <li><a href="DataPreparation.php">Data
+                                    <li><a href="DataPreparation.php" data-translate="data_preparation">Data
                                             Preparation for EAM
                                             implementation
                                             (SAP/Maximo)</a></li>
-                                    <li><a href="BuildingMaintenance.php">Building
+                                    <li><a href="BuildingMaintenance.php" data-translate="building_maintenance">Building
                                             Maintenance,
                                             Reliability and Asset
                                             Management</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="TrainingServices.php"><span
-                                        class="has-new-lable">Training
+                                        class="has-new-lable" data-translate="training_services">Training
                                         Services</span></a>
                                 <ul class="sub-menu">
-                                    <li><a href="CMRP.php">Certified Maintenance and
+                                    <li><a href="CMRP.php" data-translate="cmrp">Certified Maintenance and
                                             Reliability
                                             Professional
                                             (CMRP)</a></li>
-                                    <li><a href="CAMA.php">Certified Asset
+                                    <li><a href="CAMA.php" data-translate="cama">Certified Asset
                                             Management Accessor</a></li>
-                                    <li><a href="ShutdownTurnaroundTranning.php">Shutdowns
+                                    <li><a href="ShutdownTurnaroundTranning.php" data-translate="shutdown_training">Shutdowns
                                             &amp;
                                             Turnarounds
                                             Planning &amp;
@@ -103,49 +103,49 @@
                                             Tranning
                                             services</a>
                                     </li>
-                                    <li><a href="RCM.php">Reliability Centered
+                                    <li><a href="RCM.php" data-translate="rcm">Reliability Centered
                                             Maintenance, RCM.</a></li>
-                                    <li><a href="MaintenancePlanning.php">Maintenance
+                                    <li><a href="MaintenancePlanning.php" data-translate="maintenance_planning">Maintenance
                                             Planning &amp;
                                             Scheduling</a></li>
-                                    <li><a href="RCFA.php">Root Cause Failure
+                                    <li><a href="RCFA.php" data-translate="rcfa">Root Cause Failure
                                             Analysis, RCFA.</a></li>
-                                    <li><a href="ExcellenceMaintenanceReliability.php">Excellence
+                                    <li><a href="ExcellenceMaintenanceReliability.php" data-translate="excellence_maintenance">Excellence
                                             in
                                             Maintenance &amp;
                                             Reliability
                                             Management
                                             Maintenance</a></li>
-                                    <li><a href="AssetManagementPolicy.php">Creation
+                                    <li><a href="AssetManagementPolicy.php" data-translate="asset_policy">Creation
                                             of Asset Management
                                             Policy &amp;
                                             Plan
                                             According to ISO 55001.</a></li>
-                                    <li><a href="PMO.php">Preventive Maintenance
+                                    <li><a href="PMO.php" data-translate="pmo">Preventive Maintenance
                                             Optimization, PMO.</a>
                                     </li>
-                                    <li><a href="FinancialManagement.php">Financial
+                                    <li><a href="FinancialManagement.php" data-translate="financial_management">Financial
                                             Management of
                                             maintenance, reliability
                                             &amp; asset management.</a></li>
-                                    <li><a href="ManagingMaintenance.php">Managing
+                                    <li><a href="ManagingMaintenance.php" data-translate="managing_maintenance">Managing
                                             Maintenance
                                             resources</a></li>
-                                    <li><a href="MRO.php">MRO Inventory Management
+                                    <li><a href="MRO.php" data-translate="mro_management">MRO Inventory Management
                                             and Spare
                                             Parts
                                             Optimization</a></li>
                                 </ul>
                             </li>
-                            <li><a href="professionalManpower.php">professional manpower
+                            <li><a href="professionalManpower.php" data-translate="professional_manpower">professional manpower
                                     supply</a></li>
-                            <li><a href="ArbitrationServices.php">Arbitration Services</a>
+                            <li><a href="ArbitrationServices.php" data-translate="arbitration_services">Arbitration Services</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Certificate</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="careers.php">Careers</a></li>
+                    <li><a href="#" data-translate="certificate">Certificate</a></li>
+                    <li><a href="contact.php" data-translate="contact_us">Contact Us</a></li>
+                    <li><a href="careers.php" data-translate="careers">Careers</a></li>
                 </ul>
             </div>
         </div>
@@ -181,7 +181,7 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        <div class="header-social"><span class="social-label">Get In Touch:</span> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i
+                        <div class="header-social"><span class="social-label" data-translate="get_in_touch">Get In Touch:</span> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i
                                     class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google"></i></a></div>
                     </div>
                 </div>
@@ -199,21 +199,21 @@
                         <div class="col-auto col-xl text-xl-center">
                             <nav class="main-menu menu-style1 d-none d-lg-block">
                                 <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li class="menu-item-has-children"><a href="about.php"><span
+                                    <li><a href="index.php" data-translate="home">Home</a></li>
+                                    <li class="menu-item-has-children"><a href="about.php" data-translate="about_us"><span
                                                 class="has-new-lable">About
                                                 Us</span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.php">About
+                                <ul class="sub-menu">
+                                            <li><a href="about.php" data-translate="about_us">About
                                                     Us</a></li>
-                                            <li><a href="ourTeam.php">Our
+                                            <li><a href="ourTeam.php" data-translate="our_team">Our
                                                     Team</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children"><a href="#"><span class="has-new-lable">Our
+                                    <li class="menu-item-has-children"><a href="#"><span class="has-new-lable" data-translate="our_services">Our
                                                 Services</span></a>
                                         <ul class="sub-menu">
-                                            <li><a href="AssetManagementReliability.php">Asset
+                                            <li><a href="AssetManagementReliability.php" data-translate="asset_management_reliability">Asset
                                                     Management &
                                                     Reliability
                                                     Services</a>
@@ -223,24 +223,24 @@
                                                         class="has-new-lable">Consultation
                                                         Services</span></a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="assetHierarchy.php">Asset
+                                                    <li><a href="assetHierarchy.php" data-translate="asset_hierarchy">Asset
                                                             Hierarchy
                                                             (Assessment
                                                             &amp;
                                                             Creation)</a>
                                                     </li>
-                                                    <li><a href="assetManagement.php">Asset
+                                                    <li><a href="assetManagement.php" data-translate="asset_management_iso">Asset
                                                             Management
                                                             (ISO
                                                             55001:2014)</a>
                                                     </li>
-                                                    <li><a href="BuildingKeyPerformance.php">Building
+                                                    <li><a href="BuildingKeyPerformance.php" data-translate="building_kpis">Building
                                                             Key
                                                             Performance
                                                             Indicators
                                                             (KPIs)</a>
                                                     </li>
-                                                    <li><a href="CriticalityAssessmentRanking.php">Criticality
+                                                    <li><a href="CriticalityAssessmentRanking.php" data-translate="criticality_assessment">Criticality
                                                             Assessment
                                                             &amp;
                                                             Ranking
@@ -248,41 +248,41 @@
                                                             &amp;
                                                             Creation)</a>
                                                     </li>
-                                                    <li><a href="ShutdownTurnaround.php">Shutdown
+                                                    <li><a href="ShutdownTurnaround.php" data-translate="shutdown_turnaround">Shutdown
                                                             &amp;
                                                             Turnaround
                                                             planning
                                                             and
                                                             management</a>
                                                     </li>
-                                                    <li><a href="ReliabilityCenteredMaintenance.php">Reliability
+                                                    <li><a href="ReliabilityCenteredMaintenance.php" data-translate="reliability_maintenance">Reliability
                                                             Centered
                                                             Maintenance
                                                             &amp;
                                                             PMO
                                                             Projects</a>
                                                     </li>
-                                                    <li><a href="MROInventorySpare.php">MRO
+                                                    <li><a href="MROInventorySpare.php" data-translate="mro_inventory">MRO
                                                             Inventory
                                                             and
                                                             Spare
                                                             parts
                                                             Optimization</a>
                                                     </li>
-                                                    <li><a href="MaintenanceReliability.php">Maintenance
+                                                    <li><a href="MaintenanceReliability.php" data-translate="maintenance_reliability">Maintenance
                                                             &amp;
                                                             Reliability
                                                             Effectiveness
                                                             Assessment</a>
                                                     </li>
-                                                    <li><a href="DataPreparation.php">Data
+                                                    <li><a href="DataPreparation.php" data-translate="data_preparation">Data
                                                             Preparation
                                                             for
                                                             EAM
                                                             implementation
                                                             (SAP/Maximo)</a>
                                                     </li>
-                                                    <li><a href="BuildingMaintenance.php">Building
+                                                    <li><a href="BuildingMaintenance.php" data-translate="building_maintenance">Building
                                                             Maintenance,
                                                             Reliability
                                                             and
@@ -292,22 +292,22 @@
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                                <a href="TrainingServices.php"><span class="has-new-lable">Training
+                                                <a href="TrainingServices.php"><span class="has-new-lable" data-translate="training_services">Training
                                                         Services</span></a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="CMRP.php">Certified
+                                                    <li><a href="CMRP.php" data-translate="cmrp">Certified
                                                             Maintenance
                                                             and
                                                             Reliability
                                                             Professional
                                                             (CMRP)</a>
                                                     </li>
-                                                    <li><a href="CAMA.php">Certified
+                                                    <li><a href="CAMA.php" data-translate="cama">Certified
                                                             Asset
                                                             Management
                                                             Accessor</a>
                                                     </li>
-                                                    <li><a href="ShutdownTurnaroundTranning.php">Shutdowns
+                                                    <li><a href="ShutdownTurnaroundTranning.php" data-translate="shutdown_training">Shutdowns
                                                             &amp;
                                                             Turnarounds
                                                             Planning
@@ -316,23 +316,23 @@
                                                             Tranning
                                                             services</a>
                                                     </li>
-                                                    <li><a href="RCM.php">Reliability
+                                                    <li><a href="RCM.php" data-translate="rcm">Reliability
                                                             Centered
                                                             Maintenance,
                                                             RCM.</a>
                                                     </li>
-                                                    <li><a href="MaintenancePlanning.php">Maintenance
+                                                    <li><a href="MaintenancePlanning.php" data-translate="maintenance_planning">Maintenance
                                                             Planning
                                                             &amp;
                                                             Scheduling</a>
                                                     </li>
-                                                    <li><a href="RCFA.php">Root
+                                                    <li><a href="RCFA.php" data-translate="rcfa">Root
                                                             Cause
                                                             Failure
                                                             Analysis,
                                                             RCFA.</a>
                                                     </li>
-                                                    <li><a href="ExcellenceMaintenanceReliability.php">Excellence
+                                                    <li><a href="ExcellenceMaintenanceReliability.php" data-translate="excellence_maintenance">Excellence
                                                             in
                                                             Maintenance
                                                             &amp;
@@ -340,7 +340,7 @@
                                                             Management
                                                             Maintenance</a>
                                                     </li>
-                                                    <li><a href="AssetManagementPolicy.php">Creation
+                                                    <li><a href="AssetManagementPolicy.php" data-translate="asset_policy">Creation
                                                             of
                                                             Asset
                                                             Management
@@ -352,12 +352,12 @@
                                                             ISO
                                                             55001.</a>
                                                     </li>
-                                                    <li><a href="PMO.php">Preventive
+                                                    <li><a href="PMO.php" data-translate="pmo">Preventive
                                                             Maintenance
                                                             Optimization,
                                                             PMO.</a>
                                                     </li>
-                                                    <li><a href="FinancialManagement.php">Financial
+                                                    <li><a href="FinancialManagement.php" data-translate="financial_management">Financial
                                                             Management
                                                             of
                                                             maintenance,
@@ -366,11 +366,11 @@
                                                             asset
                                                             management.</a>
                                                     </li>
-                                                    <li><a href="ManagingMaintenance.php">Managing
+                                                    <li><a href="ManagingMaintenance.php" data-translate="managing_maintenance">Managing
                                                             Maintenance
                                                             resources</a>
                                                     </li>
-                                                    <li><a href="MRO.php">MRO
+                                                    <li><a href="MRO.php" data-translate="mro_management">MRO
                                                             Inventory
                                                             Management
                                                             and
@@ -380,24 +380,24 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="professionalManpower.php">professional
+                                    <li><a href="professionalManpower.php" data-translate="professional_manpower">professional
                                                     manpower
                                                     supply</a></li>
-                                            <li><a href="ArbitrationServices.php">Arbitration
+                                    <li><a href="ArbitrationServices.php" data-translate="arbitration_services">Arbitration
                                                     Services</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Certificate</a></li>
-                                    <li><a href="contact.php">Contact Us</a></li>
-                                    <li><a href="careers.php">Careers</a></li>
+                            <li><a href="#" data-translate="certificate">Certificate</a></li>
+                            <li><a href="contact.php" data-translate="contact_us">Contact Us</a></li>
+                            <li><a href="careers.php" data-translate="careers">Careers</a></li>
                                 </ul>
                             </nav><button class="vs-menu-toggle d-inline-block d-lg-none"><i
                                     class="fal fa-bars"></i></button>
                         </div>
                         <div class="col-auto d-none d-xl-block">
-                            <a href="https://dexterity.com.sa/demo/pdf/DexterityProfile.pdf" class="vs-btn"
-                                target="_blank">Download Profile</a>
+                    <a href="https://dexterity.com.sa/demo/pdf/DexterityProfile.pdf" class="vs-btn"
+                        target="_blank" data-translate="download_profile">Download Profile</a>
                         </div>
                     </div>
                 </div>
