@@ -172,7 +172,7 @@
                         <div class="header-dropdown">
                             <a class="dropdown-toggle" href="#" role="button"
                                 id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-globe"></i>English
+                                <i class="fas fa-globe"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                                 <li><a href="#" data-lang="en">English</a></li>
@@ -390,7 +390,7 @@
                                     </li>
                             <li><a href="#" data-translate="certificate">Certificate</a></li>
                             <li><a href="contact.php" data-translate="contact_us">Contact Us</a></li>
-                            <li><a href="careers.php" data-translate="careers">Careers</a></li>
+                            <li ><a href="careers.php" data-translate="careers">Careers</a></li>
                                 </ul>
                             </nav><button class="vs-menu-toggle d-inline-block d-lg-none"><i
                                     class="fal fa-bars"></i></button>

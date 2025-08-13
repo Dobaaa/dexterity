@@ -256,7 +256,6 @@ class LanguageSwitcher {
         document.body.classList.remove('rtl');
         document.documentElement.dir = 'ltr';
     }
-    
     updateLanguageDisplay() {
         const langButtons = document.querySelectorAll('.language-switcher, [data-lang]');
         langButtons.forEach(btn => {
@@ -268,21 +267,17 @@ class LanguageSwitcher {
                 btn.classList.remove('active');
             }
         });
-
-        // Also update the header dropdown label if present
+    
+        // تحديث اسم اللغة في زر الـ dropdown
         const dropdownToggle = document.getElementById('dropdownMenuLink1');
         if (dropdownToggle) {
             const label = this.currentLang === 'en' ? 'English' : 'العربية';
-            // Preserve existing icon HTML if any by only replacing text nodes
-            dropdownToggle.childNodes.forEach(node => {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    node.textContent = label;
-                }
-            });
-            // If no text node found, append one
-            if (![...dropdownToggle.childNodes].some(n => n.nodeType === Node.TEXT_NODE)) {
-                dropdownToggle.appendChild(document.createTextNode(label));
-            }
+            
+            // لو فيه أيقونة، نخليها زي ما هي
+            const iconHTML = dropdownToggle.querySelector('i') ? dropdownToggle.querySelector('i').outerHTML : '';
+    
+            // نعرض الأيقونة + النص مرة واحدة
+            dropdownToggle.innerHTML = `${iconHTML} ${label}`;
         }
     }
     
