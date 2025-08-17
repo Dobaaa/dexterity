@@ -2,6 +2,54 @@
 session_start();
 include_once 'includes/translation_helper.php';
 include("header.php");
+
+// Fetch news data from API
+function fetchNewsFromAPI() {
+    $apiUrl = 'http://localhost:8000/api/news';
+    
+    // Initialize cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $apiUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Accept: application/json',
+        'Content-Type: application/json'
+    ]);
+    
+    // Execute cURL request
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    
+    // Check if request was successful
+    if ($httpCode === 200 && $response) {
+        $data = json_decode($response, true);
+        return $data['data'] ?? []; // Assuming the API returns data in a 'data' field
+    }
+    
+    return [];
+}
+
+// Get news data
+$newsData = fetchNewsFromAPI();
+
+// Separate featured news (first item) from regular news
+$featuredNews = !empty($newsData) ? array_shift($newsData) : null;
+$regularNews = $newsData;
+
+// Function to format date
+function formatDate($dateString) {
+    $date = new DateTime($dateString);
+    return $date->format('F j, Y');
+}
+
+// Function to get category from news data (you can customize this based on your API structure)
+function getNewsCategory($news) {
+    // You can add logic here to determine category based on your data structure
+    // For now, returning a default category
+    return 'News';
+}
 ?>
 
 <!-- Breadcrumb Section -->
@@ -38,6 +86,26 @@ include("header.php");
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
+                <?php if ($featuredNews): ?>
+                <div class="featured-news wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="news-card-large">
+                        <div class="news-image">
+                            <img src="<?php echo htmlspecialchars($featuredNews['image_url'] ?? 'assets/img/blog/blog-1-1.jpg'); ?>" alt="<?php echo htmlspecialchars($featuredNews['title'] ?? 'Featured News'); ?>" class="w-100">
+                            <div class="news-category">Featured</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> <?php echo formatDate($featuredNews['created_at'] ?? date('Y-m-d')); ?></span>
+                                <span class="news-author"><i class="far fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="news-title"><?php echo htmlspecialchars($featuredNews['title'] ?? 'Featured News Title'); ?></h3>
+                            <p class="news-excerpt"><?php echo htmlspecialchars($featuredNews['content'] ?? 'Featured news description...'); ?></p>
+                            <a href="#" class="vs-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <?php else: ?>
+                <!-- Fallback featured news if no API data -->
                 <div class="featured-news wow fadeInUp" data-wow-delay="0.3s">
                     <div class="news-card-large">
                         <div class="news-image">
@@ -55,11 +123,32 @@ include("header.php");
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
             </div>
             <div class="col-lg-4">
                 <div class="sidebar-news wow fadeInUp" data-wow-delay="0.4s">
                     <h4 class="sidebar-title">Recent News</h4>
                     <div class="recent-news-list">
+                        <?php 
+                        // Show recent news from API data (first 3 items)
+                        $recentNews = array_slice($regularNews, 0, 3);
+                        if (!empty($recentNews)):
+                            foreach ($recentNews as $recent):
+                        ?>
+                        <div class="recent-news-item">
+                            <div class="recent-news-image">
+                                <img src="<?php echo htmlspecialchars($recent['image_url'] ?? 'assets/img/blog/blog-1-2.jpg'); ?>" alt="<?php echo htmlspecialchars($recent['title'] ?? 'Recent News'); ?>">
+                            </div>
+                            <div class="recent-news-content">
+                                <h6><a href="#"><?php echo htmlspecialchars($recent['title'] ?? 'Recent News Title'); ?></a></h6>
+                                <span class="news-date"><?php echo formatDate($recent['created_at'] ?? date('Y-m-d')); ?></span>
+                            </div>
+                        </div>
+                        <?php 
+                            endforeach;
+                        else:
+                            // Fallback recent news if no API data
+                        ?>
                         <div class="recent-news-item">
                             <div class="recent-news-image">
                                 <img src="assets/img/blog/blog-1-2.jpg" alt="Recent News 1">
@@ -87,6 +176,7 @@ include("header.php");
                                 <span class="news-date">Dec 5, 2024</span>
                             </div>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -103,113 +193,135 @@ include("header.php");
             </div>
         </div>
         <div class="row">
-            <!-- News Item 1 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-1.jpg" alt="News 1" class="w-100">
-                        <div class="news-category">Asset Management</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> December 12, 2024</span>
+            <?php if (!empty($regularNews)): ?>
+                <?php foreach ($regularNews as $index => $news): ?>
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="<?php echo 0.2 + ($index * 0.1); ?>s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="<?php echo htmlspecialchars($news['image_url'] ?? 'assets/img/blog/blog-2-1.jpg'); ?>" alt="<?php echo htmlspecialchars($news['title'] ?? 'News'); ?>" class="w-100">
+                            <div class="news-category"><?php echo getNewsCategory($news); ?></div>
                         </div>
-                        <h4 class="news-title">Implementing ISO 55001:2014 Standards</h4>
-                        <p class="news-excerpt">Learn about the key steps and best practices for implementing ISO 55001:2014 Asset Management standards in your organization...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> <?php echo formatDate($news['created_at'] ?? date('Y-m-d')); ?></span>
+                            </div>
+                            <h4 class="news-title"><?php echo htmlspecialchars($news['title'] ?? 'News Title'); ?></h4>
+                            <p class="news-excerpt"><?php echo htmlspecialchars($news['content'] ?? 'News description...'); ?></p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <!-- Fallback news items if no API data -->
+                <!-- News Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-1.jpg" alt="News 1" class="w-100">
+                            <div class="news-category">Asset Management</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> December 12, 2024</span>
+                            </div>
+                            <h4 class="news-title">Implementing ISO 55001:2014 Standards</h4>
+                            <p class="news-excerpt">Learn about the key steps and best practices for implementing ISO 55001:2014 Asset Management standards in your organization...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- News Item 2 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-2.jpg" alt="News 2" class="w-100">
-                        <div class="news-category">Training</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> December 10, 2024</span>
+                <!-- News Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-2.jpg" alt="News 2" class="w-100">
+                            <div class="news-category">Training</div>
                         </div>
-                        <h4 class="news-title">CMRP Certification Program Launch</h4>
-                        <p class="news-excerpt">We are proud to announce the launch of our Certified Maintenance and Reliability Professional (CMRP) certification program...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> December 10, 2024</span>
+                            </div>
+                            <h4 class="news-title">CMRP Certification Program Launch</h4>
+                            <p class="news-excerpt">We are proud to announce the launch of our Certified Maintenance and Reliability Professional (CMRP) certification program...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- News Item 3 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-3.jpg" alt="News 3" class="w-100">
-                        <div class="news-category">Reliability</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> December 8, 2024</span>
+                <!-- News Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-3.jpg" alt="News 3" class="w-100">
+                            <div class="news-category">Reliability</div>
                         </div>
-                        <h4 class="news-title">Reliability Centered Maintenance Success Story</h4>
-                        <p class="news-excerpt">Discover how our RCM implementation helped a major industrial facility improve their maintenance efficiency by 40%...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> December 8, 2024</span>
+                            </div>
+                            <h4 class="news-title">Reliability Centered Maintenance Success Story</h4>
+                            <p class="news-excerpt">Discover how our RCM implementation helped a major industrial facility improve their maintenance efficiency by 40%...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- News Item 4 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-4.jpg" alt="News 4" class="w-100">
-                        <div class="news-category">Consultation</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> December 5, 2024</span>
+                <!-- News Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-4.jpg" alt="News 4" class="w-100">
+                            <div class="news-category">Consultation</div>
                         </div>
-                        <h4 class="news-title">Criticality Assessment Methodology</h4>
-                        <p class="news-excerpt">Our comprehensive approach to criticality assessment and ranking helps organizations prioritize their asset management efforts...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> December 5, 2024</span>
+                            </div>
+                            <h4 class="news-title">Criticality Assessment Methodology</h4>
+                            <p class="news-excerpt">Our comprehensive approach to criticality assessment and ranking helps organizations prioritize their asset management efforts...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- News Item 5 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-5.jpg" alt="News 5" class="w-100">
-                        <div class="news-category">Industry Insights</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> December 3, 2024</span>
+                <!-- News Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-5.jpg" alt="News 5" class="w-100">
+                            <div class="news-category">Industry Insights</div>
                         </div>
-                        <h4 class="news-title">Future Trends in Asset Management</h4>
-                        <p class="news-excerpt">Explore the emerging trends and technologies that are shaping the future of asset management and reliability engineering...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> December 3, 2024</span>
+                            </div>
+                            <h4 class="news-title">Future Trends in Asset Management</h4>
+                            <p class="news-excerpt">Explore the emerging trends and technologies that are shaping the future of asset management and reliability engineering...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- News Item 6 -->
-            <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="news-card">
-                    <div class="news-image">
-                        <img src="assets/img/blog/blog-2-6.jpg" alt="News 6" class="w-100">
-                        <div class="news-category">Case Study</div>
-                    </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-date"><i class="far fa-calendar-alt"></i> November 30, 2024</span>
+                <!-- News Item 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/img/blog/blog-2-6.jpg" alt="News 6" class="w-100">
+                            <div class="news-category">Case Study</div>
                         </div>
-                        <h4 class="news-title">MRO Inventory Optimization Project</h4>
-                        <p class="news-excerpt">Case study: How we helped a manufacturing facility reduce their MRO inventory costs by 25% while improving availability...</p>
-                        <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-date"><i class="far fa-calendar-alt"></i> November 30, 2024</span>
+                            </div>
+                            <h4 class="news-title">MRO Inventory Optimization Project</h4>
+                            <p class="news-excerpt">Case study: How we helped a manufacturing facility reduce their MRO inventory costs by 25% while improving availability...</p>
+                            <a href="#" class="read-more">Read More <i class="far fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
 
         <!-- Pagination -->
