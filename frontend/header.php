@@ -33,6 +33,7 @@
                     <li class="menu-item-has-children"><a href="about.php"><span class="has-new-lable" data-translate="about_us">About
                                 Us</span></a>
                         <ul class="sub-menu">
+                            <li><a href="news.php" data-translate="news">Latest News</a></li>
                             <li><a href="about.php" data-translate="about_us">About Us</a></li>
                             <li><a href="ourTeam.php" data-translate="our_team">Our Team</a></li>
                         </ul>
@@ -204,6 +205,8 @@
                                                 class="has-new-lable">About
                                                 Us</span></a>
                                 <ul class="sub-menu">
+                                          <li><a href="news.php" data-translate="news">Latest News
+                                            </a></li>
                                             <li><a href="about.php" data-translate="about_us">About
                                                     Us</a></li>
                                             <li><a href="ourTeam.php" data-translate="our_team">Our

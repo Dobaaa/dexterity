@@ -4,6 +4,7 @@ const translations = {
         // Header & Navigation
         "home": "Home",
         "about_us": "About Us",
+        "news": "Latest News",
         "our_team": "Our Team",
         "our_services": "Our Services",
         "certificate": "Certificate",
@@ -108,6 +109,7 @@ const translations = {
         // Header & Navigation
         "home": "الرئيسية",
         "about_us": "من نحن",
+        "news": "آخر الأخبار",
         "our_team": "فريق العمل",
         "our_services": "خدماتنا",
         "certificate": "الشهادات",
