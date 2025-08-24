@@ -45,3 +45,57 @@ export const getHeaders = () => ({
 export const getFormDataHeaders = () => ({
   'Accept': 'application/json',
 });
+
+// Default export for API configuration
+const api = {
+  baseURL: API_BASE_URL,
+  endpoints: API_ENDPOINTS,
+  headers: getHeaders,
+  formDataHeaders: getFormDataHeaders,
+  
+  // Helper methods for making HTTP requests
+  async get(endpoint) {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'GET',
+      headers: getHeaders(),
+    });
+    return response.json();
+  },
+  
+  async post(endpoint, data) {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+  
+  async put(endpoint, data) {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'PUT',
+      headers: getHeaders(),
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+  
+  async patch(endpoint, data) {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'PATCH',
+      headers: getHeaders(),
+      body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+  
+  async delete(endpoint) {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: 'DELETE',
+      headers: getHeaders(),
+    });
+    return response.json();
+  }
+};
+
+export default api;

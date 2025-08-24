@@ -111,6 +111,29 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                         <p class="form-subtitle">Please fill out the form below to schedule your consultation</p>
                     </div>
 
+                    <!-- Success/Error Messages -->
+                    <?php if (isset($_SESSION['success_message'])): ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="far fa-check-circle"></i> <?php echo htmlspecialchars($_SESSION['success_message']); ?>
+                        <?php if (isset($_SESSION['booking_reference'])): ?>
+                        <br><strong>Booking Reference:</strong> #<?php echo htmlspecialchars($_SESSION['booking_reference']); ?>
+                        <?php endif; ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    <?php 
+                        unset($_SESSION['success_message']);
+                        unset($_SESSION['booking_reference']);
+                    endif; ?>
+
+                    <?php if (isset($_SESSION['form_error'])): ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <i class="far fa-exclamation-triangle"></i> <?php echo htmlspecialchars($_SESSION['form_error']); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    <?php 
+                        unset($_SESSION['form_error']);
+                    endif; ?>
+
                     <form id="consultationForm" class="consultation-form" method="POST" action="process_consultation.php">
                         <!-- Company Information -->
                         <div class="form-section">

@@ -147,6 +147,10 @@ class ServiceRequest extends Model
             ->whereIn('status', ['confirmed', 'in_progress'])
             ->pluck('booking_time')
             ->map(function($time) {
+                // Handle both string and Carbon time objects
+                if (is_string($time)) {
+                    return $time;
+                }
                 return $time->format('H:i');
             })
             ->toArray();

@@ -16,5 +16,11 @@ class DatabaseSeeder extends Seeder
         \App\Models\Service::factory(8)->create();
         \App\Models\Job::factory(3)->create();
         \App\Models\Contact::factory(10)->create();
+        
+        // Create sample service requests
+        \App\Models\ServiceRequest::factory(15)->create();
+        \App\Models\ServiceRequest::factory(5)->pending()->create();
+        \App\Models\ServiceRequest::factory(3)->confirmed()->create();
+        \App\Models\ServiceRequest::factory(2)->urgent()->create();
     }
 }

@@ -8,7 +8,8 @@ import {
   Users, 
   MessageSquare,
   BarChart3,
-  FileText
+  FileText,
+  Calendar
 } from 'lucide-react';
 
 const Sidebar = ({ isOpen, onClose }) => {
@@ -50,6 +51,12 @@ const Sidebar = ({ isOpen, onClose }) => {
       icon: MessageSquare,
       path: '/contacts',
       color: 'text-red-600'
+    },
+    {
+      name: 'حجوزات الاستشارات',
+      icon: Calendar,
+      path: '/service-requests',
+      color: 'text-teal-600'
     },
     {
       name: 'التقارير',

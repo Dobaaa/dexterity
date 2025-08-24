@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\NewsController;
 use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\JobController;
 use App\Http\Controllers\Api\ContactController;
+use App\Http\Controllers\Api\ServiceRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,24 @@ Route::apiResource('jobs', JobController::class);
 // Contacts API Routes
 Route::get('contacts', [ContactController::class, 'index']);
 Route::post('contacts', [ContactController::class, 'store']);
+
+// Service Requests API Routes
+Route::prefix('service-requests')->group(function () {
+    Route::get('/', [ServiceRequestController::class, 'index']);
+    Route::post('/', [ServiceRequestController::class, 'store']);
+    
+    // لازم تيجي هنا قبل /{id}
+    Route::get('/statistics', [ServiceRequestController::class, 'getStatistics']); 
+    
+    Route::get('/{id}', [ServiceRequestController::class, 'show']);
+    Route::put('/{id}', [ServiceRequestController::class, 'update']);
+    Route::delete('/{id}', [ServiceRequestController::class, 'destroy']);
+
+    // Availability and options
+    Route::post('/check-availability', [ServiceRequestController::class, 'checkAvailability']);
+    Route::get('/available-time-slots', [ServiceRequestController::class, 'getAvailableTimeSlots']);
+    Route::get('/options', [ServiceRequestController::class, 'getOptions']);
+    
+    // Status management
+    Route::patch('/{id}/status', [ServiceRequestController::class, 'updateStatus']);
+});
