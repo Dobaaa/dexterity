@@ -7,6 +7,9 @@ use App\Http\Controllers\Api\ServiceController;
 use App\Http\Controllers\Api\JobController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\ServiceRequestController;
+use App\Http\Controllers\Api\PaymentController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +38,11 @@ Route::apiResource('jobs', JobController::class);
 // Contacts API Routes
 Route::get('contacts', [ContactController::class, 'index']);
 Route::post('contacts', [ContactController::class, 'store']);
+
+// Payment API Routes
+Route::post('/pay/checkout', [PaymentController::class, 'createCheckout']);
+Route::get('/pay/return', [PaymentController::class, 'handleReturn']); // GET return
+Route::post('/pay/webhook', [PaymentController::class, 'webhook']);    // اختياري
 
 // Service Requests API Routes
 Route::prefix('service-requests')->group(function () {
