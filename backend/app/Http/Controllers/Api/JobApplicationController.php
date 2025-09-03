@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller; 
 use App\Models\JobApplication;
 use Illuminate\Http\Request;
+use App\Http\Resources\JobApplicationResource;
 
 class JobApplicationController extends Controller
 {
@@ -31,6 +32,8 @@ class JobApplicationController extends Controller
 
     public function index()
     {
-        return JobApplication::with('job')->latest()->get();
+        return JobApplicationResource::collection(
+            JobApplication::with('job')->latest()->get()
+        );
     }
 }
