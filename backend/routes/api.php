@@ -8,7 +8,7 @@ use App\Http\Controllers\Api\JobController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\ServiceRequestController;
 use App\Http\Controllers\Api\PaymentController;
-
+use App\Http\Controllers\Api\JobApplicationController;
 
 
 /*
@@ -35,6 +35,9 @@ Route::apiResource('services', ServiceController::class);
 // Jobs API Routes
 Route::apiResource('jobs', JobController::class);
 
+// Job Applications API Routes
+Route::post('/application', [JobApplicationController::class, 'store']);
+Route::get('/application', [JobApplicationController::class, 'index']);
 // Contacts API Routes
 Route::get('contacts', [ContactController::class, 'index']);
 Route::post('contacts', [ContactController::class, 'store']);

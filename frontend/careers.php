@@ -68,6 +68,10 @@ $jobs = json_decode($response, true);
             <label>Full Name</label>
             <input type="text" name="full_name" class="form-control" required>
           </div>
+          <div class="mb-3">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" required>
+          </div>
 
           <div class="mb-3">
             <label>Email</label>
@@ -92,7 +96,16 @@ $jobs = json_decode($response, true);
               <option>8+</option>
             </select>
           </div>
-
+          <div class="mb-3">
+            <label>What is your expected monthly net salary?</label>
+            <input type="text" name="expected" class="form-control" required>
+          </div>
+          
+          <div class="mb-3">
+            <label>What is your current notice period? (Number of weeks)</label>
+            <input type="text" name="period" class="form-control" required>
+          </div>
+          
           <div class="mb-3">
             <label>Why do you want to join?</label>
             <textarea name="motivation" class="form-control"></textarea>
@@ -118,7 +131,7 @@ document.getElementById('applicationForm').addEventListener('submit', function(e
   e.preventDefault();
   let formData = new FormData(this);
 
-  fetch('http://localhost:8000/api/applications', {
+  fetch('http://localhost:8000/api/application', {
     method: 'POST',
     body: formData
   })
