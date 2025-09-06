@@ -216,8 +216,7 @@
                                     <li class="menu-item-has-children"><a href="#"><span class="has-new-lable" data-translate="our_services">Our
                                                 Services</span></a>
                                         <ul class="sub-menu">
-                                                <li><a href="reservation.php" data-translate="reservation">Reservation
-                                                </li>
+                                            <li><a href="reservation.php" data-translate="reservation">Reservation</a></li>
                                             <li><a href="AssetManagementReliability.php" data-translate="asset_management_reliability">Asset
                                                     Management &
                                                     Reliability
@@ -300,8 +299,6 @@
                                                 <a href="TrainingServices.php"><span class="has-new-lable" data-translate="training_services">Training
                                                         Services</span></a>
                                                 <ul class="sub-menu">
-                                                <li><a href="reservation.php" data-translate="reservation">Reservation
-                                                </li>
                                                     <li><a href="CMRP.php" data-translate="cmrp">Certified
                                                             Maintenance
                                                             and
