@@ -73,7 +73,51 @@ const translations = {
         "office_address": "Office Address",
         "call_us_for_help": "Call Us For Help",
         "mail_info": "Mail info",
+        // Reservation
+        "reservation": "Reservation",
+        "reservationtitle":"Book Consultation",
+        "reservation_description": "Professional Consultation",
+        "book_consultation":"Book Your Consultation Session",
+        "reservation_form_title": "Reservation Form",
+        "reservation_form_description": "",  
+        "reservation_form_name": "Name",
+        "reservation_form_email": "Email",
+        "reservation_form_phone": "Phone",
+        "reservation_form_service": "Service",
+        "reservation_form_urgency": "Urgency",
+        "reservation_form_budget": "Budget",
+        "reservation_form_date": "Date",
+        "reservation_form_time": "Time",
+        "reservation_form_message": "Message", 
+        "reservation_form_submit": "Submit",
         
+        // Dynamic Options - English
+        "low": "Low Priority",
+        "medium": "Medium Priority", 
+        "high": "High Priority",
+        "urgent": "Urgent",
+        "critical": "Critical",
+        "single_service": "Single Service Consultation",
+        "multiple_services": "Multiple Services Consultation",
+        "comprehensive": "Comprehensive Consultation",
+        "specialized": "Specialized Consultation",
+        "ongoing_support": "Ongoing Support & Advisory",
+        "under_10k": "Under 10,000 SAR",
+        "10k_25k": "10,000 - 25,000 SAR",
+        "25k_50k": "25,000 - 50,000 SAR", 
+        "50k_100k": "50,000 - 100,000 SAR",
+        "over_100k": "Over 100,000 SAR",
+        "negotiable": "Negotiable",
+        "09:00": "9:00 AM",
+        "10:00": "10:00 AM",
+        "11:00": "11:00 AM",
+        "12:00": "12:00 PM",
+        "13:00": "1:00 PM",
+        "14:00": "2:00 PM",
+        "15:00": "3:00 PM",
+        "16:00": "4:00 PM",
+        "17:00": "5:00 PM",
+    
         // Footer
         "subscribe_newsletter": "Subscribe Newsletter",
         "subscribe_text": "Subscribe and get latest news and updates.",
@@ -180,6 +224,140 @@ const translations = {
         "call_us_for_help": "اتصل بنا للمساعدة",
         "mail_info": "معلومات البريد",
         
+        //reservation 
+        "reservation": "حجز استشاره",
+        "reservationtitle": "حجز استشاره",
+        "reservation_description": " استشاره احترافية",
+        "book_consultation":"أحجز استشاره الآن",
+        "schedule_consultation_desc": "احجز استشارة مع فريق الخبراء لدينا لمناقشة احتياجاتك في إدارة الأصول وهندسة الموثوقية والتميز التشغيلي. اختر من مجموعتنا الشاملة من الخدمات.",
+        
+        // Reservation Form
+        "consultation_booking_form": "نموذج حجز الاستشارة",
+        "form_fill_description": "يرجى ملء النموذج أدناه لجدولة استشارتك",
+        "company_information": "معلومات الشركة",
+        "company_name": "اسم الشركة",
+        "contact_person": "الشخص المسؤول",
+        "phone_number": "رقم الهاتف",
+        "email_address": "عنوان البريد الإلكتروني",
+        "nature_of_business": "طبيعة العمل",
+        "select_business_nature": "اختر طبيعة العمل",
+        "manufacturing": "التصنيع",
+        "oil_gas": "النفط والغاز",
+        "petrochemical": "البتروكيماويات",
+        "mining": "التعدين",
+        "utilities": "المرافق",
+        "construction": "البناء والتشييد",
+        "healthcare": "الرعاية الصحية",
+        "education": "التعليم",
+        "government": "الحكومة",
+        "other": "أخرى",
+        "urgency_level": "مستوى الأولوية",
+        "select_urgency_level": "اختر مستوى الأولوية",
+        "low_priority": "أولوية منخفضة",
+        "medium_priority": "أولوية متوسطة",
+        "high_priority": "أولوية عالية",
+        "urgent": "عاجل",
+        "critical": "حرج",
+        "company_address": "عنوان الشركة",
+        
+        // Consultation Details
+        "consultation_details": "تفاصيل الاستشارة",
+        "consultation_type": "نوع الاستشارة",
+        "select_consultation_type": "اختر نوع الاستشارة",
+        "single_service_consultation": "استشارة خدمة واحدة",
+        "multiple_services_consultation": "استشارة خدمات متعددة",
+        "comprehensive_consultation": "استشارة شاملة",
+        "specialized_consultation": "استشارة متخصصة",
+        "ongoing_support_advisory": "الدعم والاستشارة المستمرة",
+        "budget_range": "النطاق المالي",
+        "select_budget_range": "اختر النطاق المالي",
+        "under_10k": "أقل من 10,000 ريال",
+        "10k_25k": "10,000 - 25,000 ريال",
+        "25k_50k": "25,000 - 50,000 ريال",
+        "50k_100k": "50,000 - 100,000 ريال",
+        "over_100k": "أكثر من 100,000 ريال",
+        "negotiable": "قابل للتفاوض",
+        
+        // Services Required
+        "services_required": "الخدمات المطلوبة",
+        "select_all_services": "اختيار جميع الخدمات",
+        "clear_all": "مسح الكل",
+        
+        // Schedule & Timing
+        "schedule_timing": "الجدولة والتوقيت",
+        "preferred_date": "التاريخ المفضل",
+        "preferred_time": "الوقت المفضل",
+        "select_time_slot": "اختر الفترة الزمنية",
+        "9_00_am": "9:00 صباحاً",
+        "10_00_am": "10:00 صباحاً",
+        "11_00_am": "11:00 صباحاً",
+        "12_00_pm": "12:00 ظهراً",
+        "1_00_pm": "1:00 بعد الظهر",
+        "2_00_pm": "2:00 بعد الظهر",
+        "3_00_pm": "3:00 بعد الظهر",
+        "4_00_pm": "4:00 بعد الظهر",
+        "5_00_pm": "5:00 مساءً",
+        
+        // Additional Information
+        "additional_information": "معلومات إضافية",
+        "previous_experience": "الخبرة السابقة مع خدمات مماثلة",
+        "select_experience_level": "اختر مستوى الخبرة",
+        "yes_extensive_experience": "نعم، خبرة واسعة",
+        "yes_some_experience": "نعم، بعض الخبرة",
+        "no_first_time": "لا، المرة الأولى",
+        "preferred_consultant": "المستشار المفضل (اختياري)",
+        "consultant_placeholder": "اسم المستشار أو التخصص",
+        "special_requirements": "المتطلبات الخاصة أو الملاحظات",
+        "requirements_placeholder": "يرجى وصف أي متطلبات محددة أو تحديات أو معلومات إضافية تساعدنا على فهم احتياجاتك بشكل أفضل...",
+        
+        // Form Actions
+        "submit_consultation_request": "إرسال طلب الاستشارة",
+        "reset_form": "إعادة تعيين النموذج",
+        "required_fields_note": "* الحقول المطلوبة يجب إكمالها",
+        "contact_within_24h": "سنتواصل معك خلال 24 ساعة لتأكيد موعد الاستشارة",
+        
+        // Why Choose Us
+        "why_choose_dexterity": "لماذا تختار دكستريتي للاستشارة؟",
+        "expert_team": "فريق خبراء",
+        "expert_team_desc": "أكثر من 30 عاماً من الخبرة المجمعة في إدارة الأصول وهندسة الموثوقية",
+        "certified_professionals": "محترفون معتمدون",
+        "certified_professionals_desc": "مستشارون معتمدون CMRP و CAMA و ISO بسجل حافل مثبت",
+        "tailored_solutions": "حلول مخصصة",
+        "tailored_solutions_desc": "خطط استشارية مخصصة مصممة خصيصاً لصناعتك واحتياجاتك",
+        
+        // Availability Messages
+        "time_slot_available": "هذا الموعد متاح!",
+        "time_slot_not_available": "هذا الموعد غير متاح. يرجى اختيار وقت آخر.",
+        "please_select_service": "يرجى اختيار خدمة واحدة على الأقل.",
+        "please_fill_required": "يرجى ملء جميع الحقول المطلوبة.",
+        
+        // Dynamic Options - Arabic
+        "low": "أولوية منخفضة",
+        "medium": "أولوية متوسطة", 
+        "high": "أولوية عالية",
+        "urgent": "عاجل",
+        "critical": "حرج",
+        "single_service": "استشارة خدمة واحدة",
+        "multiple_services": "استشارة خدمات متعددة",
+        "comprehensive": "استشارة شاملة",
+        "specialized": "استشارة متخصصة",
+        "ongoing_support": "الدعم والاستشارة المستمرة",
+        "under_10k": "أقل من 10,000 ريال",
+        "10k_25k": "10,000 - 25,000 ريال",
+        "25k_50k": "25,000 - 50,000 ريال", 
+        "50k_100k": "50,000 - 100,000 ريال",
+        "over_100k": "أكثر من 100,000 ريال",
+        "negotiable": "قابل للتفاوض",
+        "09:00": "9:00 صباحاً",
+        "10:00": "10:00 صباحاً",
+        "11:00": "11:00 صباحاً",
+        "12:00": "12:00 ظهراً",
+        "13:00": "1:00 بعد الظهر",
+        "14:00": "2:00 بعد الظهر",
+        "15:00": "3:00 بعد الظهر",
+        "16:00": "4:00 بعد الظهر",
+        "17:00": "5:00 مساءً",
+        
         // Footer
         "subscribe_newsletter": "اشترك في النشرة الإخبارية",
         "subscribe_text": "اشترك واحصل على آخر الأخبار والتحديثات.",
@@ -249,16 +427,9 @@ class LanguageSwitcher {
         
         this.currentLang = lang;
         localStorage.setItem('dexterity_lang', lang);
-        this.updateLanguageDisplay();
-        this.translatePage();
         
-        // Update HTML lang attribute only - NO RTL changes
-        document.documentElement.lang = lang;
-        
-        // NO RTL support - preserve exact original design
-        // Remove any RTL classes if they exist
-        document.body.classList.remove('rtl');
-        document.documentElement.dir = 'ltr';
+        // Force page reload to ensure complete translation
+        window.location.reload();
     }
     updateLanguageDisplay() {
         const langButtons = document.querySelectorAll('.language-switcher, [data-lang]');
@@ -286,12 +457,21 @@ class LanguageSwitcher {
     }
     
     translatePage() {
-        // Translate all elements with data-translate attribute
+        // Force translate all elements with data-translate attribute
         const elements = document.querySelectorAll('[data-translate]');
         elements.forEach(element => {
             const key = element.dataset.translate;
             if (translations[this.currentLang] && translations[this.currentLang][key]) {
-                element.textContent = translations[this.currentLang][key];
+                // Check if element contains icons and preserve them
+                const icons = element.querySelectorAll('i');
+                if (icons.length > 0) {
+                    // Preserve icons and update only text content
+                    const iconHTML = Array.from(icons).map(icon => icon.outerHTML).join(' ');
+                    element.innerHTML = iconHTML + ' ' + translations[this.currentLang][key];
+                } else {
+                    // Force update regardless of current content
+                    element.textContent = translations[this.currentLang][key];
+                }
             }
         });
         
@@ -310,6 +490,15 @@ class LanguageSwitcher {
             const key = element.dataset.translateTitle;
             if (translations[this.currentLang] && translations[this.currentLang][key]) {
                 element.title = translations[this.currentLang][key];
+            }
+        });
+
+        // Force translate select options
+        const selectOptions = document.querySelectorAll('option[data-translate]');
+        selectOptions.forEach(option => {
+            const key = option.dataset.translate;
+            if (translations[this.currentLang] && translations[this.currentLang][key]) {
+                option.textContent = translations[this.currentLang][key];
             }
         });
 

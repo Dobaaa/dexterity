@@ -75,11 +75,11 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/header-bg-1-1.jpg">
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Book Consultation</h1>
+            <h1 class="breadcumb-title" data-translate="reservation">Book Consultation</h1>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
                     <li><a href="index.php">Home</a></li>
-                    <li>Book Consultation</li>
+                    <li class="ll" data-translate="reservationtitle">Book Consultation</li>
                 </ul>
             </div>
         </div>
@@ -92,9 +92,9 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <div class="sec-line mx-auto"></div>
-                <span class="sec-subtitle">Professional Consultation</span>
-                <h2 class="sec-title">Book Your Consultation Session</h2>
-                <p class="mb-xl-4 pb-xl-3">Schedule a consultation with our expert team to discuss your asset management, reliability engineering, and operational excellence needs. Choose from our comprehensive range of services.</p>
+                <span class="sec-subtitle" data-translate="reservation_description">Professional Consultation</span>
+                <h2 class="sec-title" data-translate="book_consultation">Book Your Consultation Session</h2>
+                <p class="mb-xl-4 pb-xl-3" data-translate="schedule_consultation_desc">Schedule a consultation with our expert team to discuss your asset management, reliability engineering, and operational excellence needs. Choose from our comprehensive range of services.</p>
             </div>
         </div>
     </div>
@@ -107,8 +107,8 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
             <div class="col-lg-10">
                 <div class="booking-form-wrapper wow fadeInUp" data-wow-delay="0.3s">
                     <div class="form-header text-center mb-5">
-                        <h3 class="form-title">Consultation Booking Form</h3>
-                        <p class="form-subtitle">Please fill out the form below to schedule your consultation</p>
+                        <h3 class="form-title" data-translate="consultation_booking_form">Consultation Booking Form</h3>
+                        <p class="form-subtitle" data-translate="form_fill_description">Please fill out the form below to schedule your consultation</p>
                     </div>
 
                     <!-- Success/Error Messages -->
@@ -137,17 +137,17 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                     <form id="consultationForm" class="consultation-form" method="POST" action="process_consultation.php">
                         <!-- Company Information -->
                         <div class="form-section">
-                            <h4 class="section-title"><i class="far fa-building"></i> Company Information</h4>
+                            <h4 class="section-title"><i class="far fa-building"></i> <span data-translate="company_information">Company Information</span></h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="company_name">Company Name *</label>
+                                        <label for="company_name" data-translate="company_name">Company Name *</label>
                                         <input type="text" id="company_name" name="company_name" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="contact_person">Contact Person *</label>
+                                        <label for="contact_person" data-translate="contact_person">Contact Person *</label>
                                         <input type="text" id="contact_person" name="contact_person" class="form-control" required>
                                     </div>
                                 </div>
@@ -155,13 +155,13 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="phone">Phone Number *</label>
+                                        <label for="phone" data-translate="phone_number">Phone Number *</label>
                                         <input type="tel" id="phone" name="phone" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="email">Email Address *</label>
+                                        <label for="email" data-translate="email_address">Email Address *</label>
                                         <input type="email" id="email" name="email" class="form-control" required>
                                     </div>
                                 </div>
@@ -169,62 +169,62 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="business_nature">Nature of Business *</label>
+                                        <label for="business_nature" data-translate="nature_of_business">Nature of Business *</label>
                                         <select id="business_nature" name="business_nature" class="form-control" required>
-                                            <option value="">Select Business Nature</option>
-                                            <option value="manufacturing">Manufacturing</option>
-                                            <option value="oil_gas">Oil & Gas</option>
-                                            <option value="petrochemical">Petrochemical</option>
-                                            <option value="mining">Mining</option>
-                                            <option value="utilities">Utilities</option>
-                                            <option value="construction">Construction</option>
-                                            <option value="healthcare">Healthcare</option>
-                                            <option value="education">Education</option>
-                                            <option value="government">Government</option>
-                                            <option value="other">Other</option>
+                                            <option value="" data-translate="select_business_nature">Select Business Nature</option>
+                                            <option value="manufacturing" data-translate="manufacturing">Manufacturing</option>
+                                            <option value="oil_gas" data-translate="oil_gas">Oil & Gas</option>
+                                            <option value="petrochemical" data-translate="petrochemical">Petrochemical</option>
+                                            <option value="mining" data-translate="mining">Mining</option>
+                                            <option value="utilities" data-translate="utilities">Utilities</option>
+                                            <option value="construction" data-translate="construction">Construction</option>
+                                            <option value="healthcare" data-translate="healthcare">Healthcare</option>
+                                            <option value="education" data-translate="education">Education</option>
+                                            <option value="government" data-translate="government">Government</option>
+                                            <option value="other" data-translate="other">Other</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="urgency_level">Urgency Level</label>
+                                        <label for="urgency_level" data-translate="urgency_level">Urgency Level</label>
                                         <select id="urgency_level" name="urgency_level" class="form-control">
-                                            <option value="">Select Urgency Level</option>
+                                            <option value="" data-translate="select_urgency_level">Select Urgency Level</option>
                                             <?php foreach ($urgencyLevels as $key => $value): ?>
-                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                            <option value="<?php echo $key; ?>" data-translate="<?php echo $key; ?>"><?php echo $value; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="address">Company Address *</label>
+                                <label for="address" data-translate="company_address">Company Address *</label>
                                 <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
                             </div>
                         </div>
 
                         <!-- Consultation Details -->
                         <div class="form-section">
-                            <h4 class="section-title"><i class="far fa-calendar-alt"></i> Consultation Details</h4>
+                            <h4 class="section-title"><i class="far fa-calendar-alt"></i> <span data-translate="consultation_details">Consultation Details</span></h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="consultation_type">Consultation Type *</label>
+                                        <label for="consultation_type" data-translate="consultation_type">Consultation Type *</label>
                                         <select id="consultation_type" name="consultation_type" class="form-control" required>
-                                            <option value="">Select Consultation Type</option>
+                                            <option value="" data-translate="select_consultation_type">Select Consultation Type</option>
                                             <?php foreach ($consultationTypes as $key => $value): ?>
-                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                            <option value="<?php echo $key; ?>" data-translate="<?php echo $key; ?>"><?php echo $value; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="budget_range">Budget Range</label>
+                                        <label for="budget_range" data-translate="budget_range">Budget Range</label>
                                         <select id="budget_range" name="budget_range" class="form-control">
-                                            <option value="">Select Budget Range</option>
+                                            <option value="" data-translate="select_budget_range">Select Budget Range</option>
                                             <?php foreach ($budgetRanges as $key => $value): ?>
-                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                            <option value="<?php echo $key; ?>" data-translate="<?php echo $key; ?>"><?php echo $value; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
@@ -234,7 +234,7 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
 
                         <!-- Services Selection -->
                         <div class="form-section">
-                            <h4 class="section-title"><i class="far fa-list-alt"></i> Services Required</h4>
+                            <h4 class="section-title"><i class="far fa-list-alt"></i> <span data-translate="services_required">Services Required</span></h4>
                             <div class="services-grid">
                                 <div class="row">
                                     <?php foreach ($availableServices as $key => $value): ?>
@@ -250,29 +250,29 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                                     <?php endforeach; ?>
                                 </div>
                                 <div class="select-all-wrapper mt-3">
-                                    <button type="button" id="selectAllServices" class="btn btn-outline-primary btn-sm">Select All Services</button>
-                                    <button type="button" id="clearAllServices" class="btn btn-outline-secondary btn-sm ms-2">Clear All</button>
+                                    <button type="button" id="selectAllServices" class="btn btn-outline-primary btn-sm" data-translate="select_all_services">Select All Services</button>
+                                    <button type="button" id="clearAllServices" class="btn btn-outline-secondary btn-sm ms-2" data-translate="clear_all">Clear All</button>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Booking Schedule -->
                         <div class="form-section">
-                            <h4 class="section-title"><i class="far fa-clock"></i> Schedule & Timing</h4>
+                            <h4 class="section-title"><i class="far fa-clock"></i> <span data-translate="schedule_timing">Schedule & Timing</span></h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="booking_date">Preferred Date *</label>
+                                        <label for="booking_date" data-translate="preferred_date">Preferred Date *</label>
                                         <input type="date" id="booking_date" name="booking_date" class="form-control" min="<?php echo $minDate; ?>" max="<?php echo $maxDate; ?>" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="booking_time">Preferred Time *</label>
+                                        <label for="booking_time" data-translate="preferred_time">Preferred Time *</label>
                                         <select id="booking_time" name="booking_time" class="form-control" required>
-                                            <option value="">Select Time Slot</option>
+                                            <option value="" data-translate="select_time_slot">Select Time Slot</option>
                                             <?php foreach ($timeSlots as $key => $value): ?>
-                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                            <option value="<?php echo $key; ?>" data-translate="<?php echo $key; ?>"><?php echo $value; ?></option>
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
@@ -285,29 +285,29 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
 
                         <!-- Additional Information -->
                         <div class="form-section">
-                            <h4 class="section-title"><i class="far fa-edit"></i> Additional Information</h4>
+                            <h4 class="section-title"><i class="far fa-edit"></i> <span data-translate="additional_information">Additional Information</span></h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="previous_experience">Previous Experience with Similar Services</label>
+                                        <label for="previous_experience" data-translate="previous_experience">Previous Experience with Similar Services</label>
                                         <select id="previous_experience" name="previous_experience" class="form-control">
-                                            <option value="">Select Experience Level</option>
-                            <option value="1">Yes, Extensive Experience</option>
-                            <option value="0">Yes, Some Experience</option>
-                            <option value="0">No, First Time</option>
+                                            <option value="" data-translate="select_experience_level">Select Experience Level</option>
+                            <option value="1" data-translate="yes_extensive_experience">Yes, Extensive Experience</option>
+                            <option value="0" data-translate="yes_some_experience">Yes, Some Experience</option>
+                            <option value="0" data-translate="no_first_time">No, First Time</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="preferred_consultant">Preferred Consultant (Optional)</label>
-                                        <input type="text" id="preferred_consultant" name="preferred_consultant" class="form-control" placeholder="Consultant name or specialization">
+                                        <label for="preferred_consultant" data-translate="preferred_consultant">Preferred Consultant (Optional)</label>
+                                        <input type="text" id="preferred_consultant" name="preferred_consultant" class="form-control" data-translate-placeholder="consultant_placeholder" placeholder="Consultant name or specialization">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="special_requirements">Special Requirements or Notes</label>
-                                <textarea id="special_requirements" name="special_requirements" class="form-control" rows="4" placeholder="Please describe any specific requirements, challenges, or additional information that would help us better understand your needs..."></textarea>
+                                <label for="special_requirements" data-translate="special_requirements">Special Requirements or Notes</label>
+                                <textarea id="special_requirements" name="special_requirements" class="form-control" rows="4" data-translate-placeholder="requirements_placeholder" placeholder="Please describe any specific requirements, challenges, or additional information that would help us better understand your needs..."></textarea>
                             </div>
                         </div>
 
@@ -315,15 +315,15 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                         <div class="form-section text-center">
                             <div class="form-actions">
                                 <button type="submit" class="vs-btn" id="submitBtn">
-                                    <i class="far fa-paper-plane"></i> Submit Consultation Request
+                                    <i class="far fa-paper-plane"></i> <span data-translate="submit_consultation_request">Submit Consultation Request</span>
                                 </button>
                                 <button type="reset" class="vs-btn vs-btn-outline ms-3">
-                                    <i class="far fa-undo"></i> Reset Form
+                                    <i class="far fa-undo"></i> <span data-translate="reset_form">Reset Form</span>
                                 </button>
                             </div>
                             <div class="form-note mt-3">
-                                <p class="text-muted"><small>* Required fields must be completed</small></p>
-                                <p class="text-muted"><small>We will contact you within 24 hours to confirm your consultation appointment</small></p>
+                                <p class="text-muted"><small data-translate="required_fields_note">* Required fields must be completed</small></p>
+                                <p class="text-muted"><small data-translate="contact_within_24h">We will contact you within 24 hours to confirm your consultation appointment</small></p>
                             </div>
                         </div>
                     </form>
@@ -339,15 +339,15 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
                 <div class="cta-content text-white">
-                    <h3 class="cta-title">Why Choose Dexterity for Consultation?</h3>
+                    <h3 class="cta-title" data-translate="why_choose_dexterity">Why Choose Dexterity for Consultation?</h3>
                     <div class="row mt-5">
                         <div class="col-md-4">
                             <div class="feature-item">
                                 <div class="feature-icon">
                                     <i class="far fa-users"></i>
                                 </div>
-                                <h5>Expert Team</h5>
-                                <p>30+ years of combined experience in asset management and reliability engineering</p>
+                                <h5 data-translate="expert_team">Expert Team</h5>
+                                <p data-translate="expert_team_desc">30+ years of combined experience in asset management and reliability engineering</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -355,8 +355,8 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                                 <div class="feature-icon">
                                     <i class="far fa-certificate"></i>
                                 </div>
-                                <h5>Certified Professionals</h5>
-                                <p>CMRP, CAMA, and ISO certified consultants with proven track records</p>
+                                <h5 data-translate="certified_professionals">Certified Professionals</h5>
+                                <p data-translate="certified_professionals_desc">CMRP, CAMA, and ISO certified consultants with proven track records</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -364,8 +364,8 @@ $maxDate = date('Y-m-d', strtotime('+3 months'));
                                 <div class="feature-icon">
                                     <i class="far fa-handshake"></i>
                                 </div>
-                                <h5>Tailored Solutions</h5>
-                                <p>Customized consultation plans designed specifically for your industry and needs</p>
+                                <h5 data-translate="tailored_solutions">Tailored Solutions</h5>
+                                <p data-translate="tailored_solutions_desc">Customized consultation plans designed specifically for your industry and needs</p>
                             </div>
                         </div>
                     </div>
@@ -654,11 +654,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (isAvailable) {
                     availabilityStatus.className = 'alert alert-success';
-                    availabilityStatus.innerHTML = '<i class="far fa-check-circle"></i> This time slot is available!';
+                    const message = window.languageSwitcher ? 
+                        (translations[window.languageSwitcher.currentLang] && translations[window.languageSwitcher.currentLang]['time_slot_available'] || 'This time slot is available!') :
+                        'This time slot is available!';
+                    availabilityStatus.innerHTML = '<i class="far fa-check-circle"></i> ' + message;
                     availabilityStatus.style.display = 'block';
                 } else {
                     availabilityStatus.className = 'alert alert-warning';
-                    availabilityStatus.innerHTML = '<i class="far fa-exclamation-triangle"></i> This time slot is not available. Please select another time.';
+                    const message = window.languageSwitcher ? 
+                        (translations[window.languageSwitcher.currentLang] && translations[window.languageSwitcher.currentLang]['time_slot_not_available'] || 'This time slot is not available. Please select another time.') :
+                        'This time slot is not available. Please select another time.';
+                    availabilityStatus.innerHTML = '<i class="far fa-exclamation-triangle"></i> ' + message;
                     availabilityStatus.style.display = 'block';
                 }
             }, 500);
@@ -700,12 +706,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedServices = form.querySelectorAll('input[name="services_requested[]"]:checked');
         if (selectedServices.length === 0) {
             isValid = false;
-            alert('Please select at least one service.');
+            const message = window.languageSwitcher ? 
+                (translations[window.languageSwitcher.currentLang] && translations[window.languageSwitcher.currentLang]['please_select_service'] || 'Please select at least one service.') :
+                'Please select at least one service.';
+            alert(message);
         }
 
         if (!isValid) {
             e.preventDefault();
-            alert('Please fill in all required fields.');
+            const message = window.languageSwitcher ? 
+                (translations[window.languageSwitcher.currentLang] && translations[window.languageSwitcher.currentLang]['please_fill_required'] || 'Please fill in all required fields.') :
+                'Please fill in all required fields.';
+            alert(message);
         }
     });
 
