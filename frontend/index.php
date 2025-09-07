@@ -25,23 +25,23 @@ include 'header.php';
                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer" data-ls="static:forever;"><a href="#"
                     class="ls-custom-dot"></a><a href="#" class="ls-custom-dot"></a><a href="#"
                     class="ls-custom-dot"></a><a href="#" class="ls-custom-dot"></a><a href="#" class="ls-custom-dot"></a></div>
-            <h1 style="font-size:80px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:700; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; color:#ffffff; font-family:'Poppins', sans-serif; left:310px; top:410px;"
+            <h1 style="font-size:80px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:700; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; color:#ffffff; font-family:'Poppins', sans-serif; left:310px; top:350px;  "
                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                 data-translate="hero_title_1">
                 Asset Management &</h1>
-            <h1 style="font-size:80px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; color:#ffffff; font-family:'Poppins', sans-serif; left:310px; top:500px;"
+            <h1 style="font-size:80px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; color:#ffffff; font-family:'Poppins', sans-serif; left:310px; top:430px;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="hero_title_2">
                 Reliability</h1>
-            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:570px;"
+            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:560px; line-height:36px; width:1150px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="hero_description">
                 Arabian Dexterity is a leading performance improvement company in the Kingdom of Saudi Arabia, delivery the full spectrum of Asset Management, Risk Management and Operational Excellence Solution, We provide consultations, Training and Troubleshooting solutions across multiple industries.
             </p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:760px;"
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:700px;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="AssetManagementReliability.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -55,13 +55,13 @@ include 'header.php';
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;">
                 <span data-translate="hero_title_1">Asset Management &</span><br> <span data-translate="hero_title_2">Reliability</span>
             </h2>
-            <p class="hero-text" style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:480px; line-height:60px;"
+            <p class="hero-text" style="font-size:28px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:44px; width:850px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="hero_description">
                 Arabian Dexterity is a leading performance improvement company in the Kingdom of Saudi Arabia, delivery the full spectrum of Asset Management, Risk Management and Operational Excellence Solution, We provide consultations, Training and Troubleshooting solutions across multiple industries.
             </p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:750px;"
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:710px;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="AssetManagementReliability.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -84,13 +84,13 @@ include 'header.php';
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                 data-translate="consultation_services_title">
                 Consultation Services</h1>
-            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:560px;"
+            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:560px; line-height:36px; width:900px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="consultation_services_description">
                 Arabian Dexterity Consultancy provides exceptional services to our clients. With years of industry experience, we have established ourselves as a trusted partner for organizations seeking expert guidance, advice, and implementation.
             </p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:700px;"
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:680px;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="ConsultationServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -104,14 +104,12 @@ include 'header.php';
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                 data-translate="consultation_services_title">
                 Consultation Services</h1>
-            <p style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:60px;"
+            <p style="font-size:28px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:44px; width:780px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="consultation_services_description">
-                Arabian Dexterity Consultancy provides exceptional services to our clients. <br>
-                                With years of industry experience, we have established ourselves as a trusted partner<br>
-                                for organizations seeking expert guidance, advice, and implementation.</p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:710px;"
+                Arabian Dexterity Consultancy provides exceptional services to our clients. With years of industry experience, we have established ourselves as a trusted partner for organizations seeking expert guidance, advice, and implementation.</p>
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:680px;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="ConsultationServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -134,18 +132,17 @@ include 'header.php';
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                 data-translate="training_services">
                 Training Services</h1>
-            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:570px;"
+            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:550px; line-height:36px; width:900px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="training_services_description">
-                Arabian Dexterity provides unrivalled training services that are unique in terms of their<br>
-                level of quality and practicality. It is our mission to empower your company with the<br>
-                knowledge and tools necessary to thrive in today's competitive market, regardless of<br>
-                whether you are a small startup or a large corporation.</p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:760px;"
+                Arabian Dexterity provides unrivalled training services that are unique in terms of their level of quality and practicality. It is our mission to empower your company with the knowledge and tools necessary to thrive in today's competitive market, regardless of whether you are a small startup or a large corporation.
+            </p>
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:700px;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="TrainingServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
+{{ ... }}
             </div>
             <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:545px; top:710px;"
                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
@@ -156,15 +153,12 @@ include 'header.php';
                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                 data-translate="training_services">
                 Training Services</h1>
-            <p style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:60px;"
+            <p style="font-size:28px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:44px; width:780px; word-wrap:break-word; white-space:normal;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer"
                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                 data-translate="training_services_description">
-                Arabian Dexterity provides unrivalled training services that are unique in terms of their<br>
-                                level of quality and practicality. It is our mission to empower your company with the<br>
-                                knowledge and tools necessary to thrive in today's competitive market, regardless of<br>
-                                whether you are a small startup or a large corporation.</p>
-            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:750px;"
+                Arabian Dexterity provides unrivalled training services that are unique in terms of their level of quality and practicality. It is our mission to empower your company with the knowledge and tools necessary to thrive in today's competitive market, regardless of whether you are a small startup or a large corporation.</p>
+            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:700px;"
                 class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer"
                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                 <a href="TrainingServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -187,15 +181,12 @@ include 'header.php';
                         data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                         data-translate="professional_manpower">
                         Manpower Supply</h1>
-                    <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:570px;"
+                    <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:550px; line-height:36px; width:900px; word-wrap:break-word; white-space:normal;"
                         class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                         data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                         data-translate="manpower_supply_description">
-                        We excel in deploying proficient engineers and skilled manpower, boasting extensive<br>
-                         experience in operations related to Oil and Gas, Petrochemical Production,<br>
-                          Minerals processing, Renewable Energy, Power Generation facilities,<br>
-                           Seawater desalination plants, and prominent engineering companies.</p>
-                    <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:760px;"
+                        We excel in deploying proficient engineers and skilled manpower, boasting extensive experience in operations related to Oil and Gas, Petrochemical Production, Minerals processing, Renewable Energy, Power Generation facilities, Seawater desalination plants, and prominent engineering companies.</p>
+                    <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:700px;"
                         class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
                         data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                         <a href="professionalManpower.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -209,15 +200,12 @@ include 'header.php';
                         data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                         data-translate="professional_manpower">
                         Manpower Supply</h1>
-                    <p style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:60px;"
+                    <p style="font-size:28px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:44px; width:780px; word-wrap:break-word; white-space:normal;"
                         class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer"
                         data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                         data-translate="manpower_supply_description">
-                        We excel in deploying proficient engineers and skilled manpower, boasting extensive<br>
-                                                 experience in operations related to Oil and Gas, Petrochemical Production,<br>
-                                                  Minerals processing, Renewable Energy, Power Generation facilities,<br>
-                                                   Seawater desalination plants, and prominent engineering companies.</p>
-                    <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:750px;"
+                        We excel in deploying proficient engineers and skilled manpower, boasting extensive experience in operations related to Oil and Gas, Petrochemical Production, Minerals processing, Renewable Energy, Power Generation facilities, Seawater desalination plants, and prominent engineering companies.</p>
+                    <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:700px;"
                         class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer"
                         data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                         <a href="professionalManpower.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -240,14 +228,12 @@ include 'header.php';
                                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                                 data-translate="arbitration_conciliation_title">
                                 ARBITRATION AND<br> CONCILIATION</h1>
-                            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:670px;"
+                            <p style="font-size:22px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:315px; top:560px; line-height:36px; width:750px; word-wrap:break-word; white-space:normal;"
                                 class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                                 data-translate="arbitration_description">
-                                One of the company's major fields of expertise is providing consultation<br>
-                                 for any company or governmental entity engaged in a technical dispute that<br>
-                                  can be resolved by arbitration or conciliation.</p>
-                            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:790px;"
+                                One of the company's major fields of expertise is providing consultation for any company or governmental entity engaged in a technical dispute that can be resolved by arbitration or conciliation.</p>
+                            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:315px; top:680px;"
                                 class="ls-l ls-hide-tablet ls-hide-phone ls-html-layer"
                                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                                 <a href="ArbitrationServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
@@ -261,14 +247,12 @@ include 'header.php';
                                 data-ls="offsetxin:-100; durationin:1500; easingin:easeOutQuint; offsetxout:-100; durationout:1500;"
                                 data-translate="arbitration_conciliation_title">
                                 ARBITRATION AND<br> CONCILIATION</h1>
-                            <p style="font-size:32px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:480px; line-height:60px;"
+                            <p style="font-size:28px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; font-family:'Poppins', sans-serif; color:#bbbbbb; left:150px; top:410px; line-height:44px; width:780px; word-wrap:break-word; white-space:normal;"
                                 class="ls-l ls-hide-desktop ls-hide-phone ls-text-layer"
                                 data-ls="offsetxin:-100; durationin:1500; delayin:600; easingin:easeOutQuint; bgcolorin:transparent; colorin:transparent; offsetxout:-100; durationout:1500; bgcolorout:transparent; colorout:transparent;"
                                 data-translate="arbitration_description">
-                                One of the company's major fields of expertise is providing consultation<br>
-                                                                 for any company or governmental entity engaged in a technical dispute that<br>
-                                                                  can be resolved by arbitration or conciliation.</p>
-                            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:790px;"
+                                One of the company's major fields of expertise is providing consultation for any company or governmental entity engaged in a technical dispute that can be resolved by arbitration or conciliation.</p>
+                            <div style="font-size:36px; color:#000; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; left:150px; top:650px;"
                                 class="ls-l ls-hide-desktop ls-hide-phone ls-html-layer"
                                 data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:100; durationout:1500; easingout:easeOutQuint;">
                                 <a href="ArbitrationServices.php" class="vs-btn ls-vs-btn" data-translate="read_more">Read More</a>
