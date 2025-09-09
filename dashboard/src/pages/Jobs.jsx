@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit, Trash2, Search, Filter, Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Plus, Edit, Trash2, Eye, Search, Filter, Briefcase, Calendar, MapPin } from 'lucide-react';
 import { API_ENDPOINTS, getHeaders } from '../config/api';
 import axios from 'axios';
 
@@ -8,6 +8,8 @@ const Jobs = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
   const [editingJob, setEditingJob] = useState(null);
   const [formData, setFormData] = useState({
     title: '',
@@ -75,6 +77,11 @@ const Jobs = () => {
     setShowModal(true);
   };
 
+  const handleViewDetails = (jobItem) => {
+    setSelectedJob(jobItem);
+    setShowDetailsModal(true);
+  };
+
   const filteredJobs = jobs.filter(item =>
     item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -137,7 +144,7 @@ const Jobs = () => {
           </div>
         ) : (
           filteredJobs.map((job) => (
-            <div key={job.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+            <div key={job.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onClick={() => handleViewDetails(job)}>
               {/* Job Header */}
               <div className="p-4 border-b border-gray-200">
                 <div className="flex items-start justify-between">
@@ -158,13 +165,28 @@ const Jobs = () => {
                   {/* Actions */}
                   <div className="flex space-x-2 space-x-reverse">
                     <button
-                      onClick={() => handleEdit(job)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleViewDetails(job);
+                      }}
+                      className="p-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors"
+                    >
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleEdit(job);
+                      }}
                       className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
                     >
                       <Edit className="w-4 h-4" />
                     </button>
                     <button
-                      onClick={() => handleDelete(job.id)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDelete(job.id);
+                      }}
                       className="p-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors"
                     >
                       <Trash2 className="w-4 h-4" />
@@ -257,6 +279,86 @@ const Jobs = () => {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Details Modal */}
+      {showDetailsModal && selectedJob && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl font-bold text-gray-900">تفاصيل الوظيفة</h2>
+                <button
+                  onClick={() => setShowDetailsModal(false)}
+                  className="text-gray-400 hover:text-gray-600 text-2xl font-bold"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-6">
+              {/* Job Information */}
+              <div className="bg-indigo-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-indigo-900 mb-4 flex items-center">
+                  <Briefcase className="w-5 h-5 ml-2" />
+                  معلومات الوظيفة
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">عنوان الوظيفة</label>
+                    <p className="text-gray-900 font-medium text-lg">{selectedJob.title}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">تاريخ النشر</label>
+                    <p className="text-gray-900">{new Date(selectedJob.created_at).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">آخر تحديث</label>
+                    <p className="text-gray-900">{new Date(selectedJob.updated_at).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Job Description */}
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-green-900 mb-4">وصف الوظيفة</h3>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-900 leading-relaxed whitespace-pre-wrap">{selectedJob.description}</p>
+                </div>
+              </div>
+
+              {/* Job Requirements */}
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-4">متطلبات الوظيفة</h3>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-900 leading-relaxed whitespace-pre-wrap">{selectedJob.requirements}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-4 border-t border-gray-200 bg-gray-50 flex justify-end space-x-3 space-x-reverse">
+              <button
+                onClick={() => setShowDetailsModal(false)}
+                className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                إغلاق
+              </button>
+              <button
+                onClick={() => {
+                  setShowDetailsModal(false);
+                  handleEdit(selectedJob);
+                }}
+                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+              >
+                تعديل الوظيفة
+              </button>
+            </div>
           </div>
         </div>
       )}

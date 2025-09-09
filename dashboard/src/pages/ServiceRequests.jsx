@@ -6,6 +6,7 @@ const ServiceRequests = () => {
   const [statistics, setStatistics] = useState({});
   const [loading, setLoading] = useState(true);
   const [updateModalVisible, setUpdateModalVisible] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [selectedRequest, setSelectedRequest] = useState(null);
   const [updateStatus, setUpdateStatus] = useState('');
 
@@ -51,6 +52,11 @@ const ServiceRequests = () => {
     setSelectedRequest(record);
     setUpdateModalVisible(true);
     setUpdateStatus(record.status);
+  };
+
+  const handleViewDetails = (record) => {
+    setSelectedRequest(record);
+    setShowDetailsModal(true);
   };
 
   const getStatusColor = (status) => {
@@ -165,8 +171,10 @@ const ServiceRequests = () => {
                   key={request.id} 
                   style={{ 
                     background: request.is_urgent ? '#fff2e8' : '#fff',
-                    borderBottom: '1px solid #f0f0f0'
+                    borderBottom: '1px solid #f0f0f0',
+                    cursor: 'pointer'
                   }}
+                  onClick={() => handleViewDetails(request)}
                 >
                   <td style={{ padding: '12px' }}>
                     <span style={{ 
@@ -244,9 +252,12 @@ const ServiceRequests = () => {
                   <td style={{ padding: '12px' }}>
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <button 
-                        onClick={() => alert(`View details for request #${request.id}`)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleViewDetails(request);
+                        }}
                         style={{ 
-                          background: '#1890ff', 
+                          background: '#52c41a', 
                           color: '#fff', 
                           border: 'none', 
                           padding: '4px 8px', 
@@ -258,10 +269,13 @@ const ServiceRequests = () => {
                         View
                       </button>
                       <button 
-                        onClick={() => showUpdateModal(request)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          showUpdateModal(request);
+                        }}
                         disabled={request.status === 'confirmed'}
                         style={{ 
-                          background: request.status === 'confirmed' ? '#ccc' : '#52c41a', 
+                          background: request.status === 'confirmed' ? '#ccc' : '#1890ff', 
                           color: '#fff', 
                           border: 'none', 
                           padding: '4px 8px', 
@@ -270,22 +284,7 @@ const ServiceRequests = () => {
                           cursor: request.status === 'confirmed' ? 'not-allowed' : 'pointer'
                         }}
                       >
-                        Confirm
-                      </button>
-                      <button 
-                        onClick={() => showUpdateModal(request)}
-                        disabled={request.status === 'in_progress'}
-                        style={{ 
-                          background: request.status === 'in_progress' ? '#ccc' : '#faad14', 
-                          color: '#fff', 
-                          border: 'none', 
-                          padding: '4px 8px', 
-                          borderRadius: '4px', 
-                          fontSize: '12px',
-                          cursor: request.status === 'in_progress' ? 'not-allowed' : 'pointer'
-                        }}
-                      >
-                        Start
+                        Update
                       </button>
                     </div>
                   </td>
@@ -371,6 +370,214 @@ const ServiceRequests = () => {
                 }}
               >
                 Update Status
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Enhanced Details Modal */}
+      {showDetailsModal && selectedRequest && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(0,0,0,0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+          padding: '16px'
+        }}>
+          <div style={{
+            background: '#fff',
+            borderRadius: '8px',
+            maxWidth: '1000px',
+            width: '100%',
+            maxHeight: '90vh',
+            overflow: 'auto'
+          }}>
+            {/* Modal Header */}
+            <div style={{
+              padding: '24px',
+              borderBottom: '1px solid #f0f0f0',
+              background: '#fafafa',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <h2 style={{ margin: 0, fontSize: '20px', fontWeight: 'bold' }}>
+                تفاصيل طلب الاستشارة #{selectedRequest.id}
+              </h2>
+              <button
+                onClick={() => setShowDetailsModal(false)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  fontSize: '24px',
+                  cursor: 'pointer',
+                  color: '#666'
+                }}
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {/* Company Information */}
+              <div style={{ background: '#e6f7ff', padding: '16px', borderRadius: '8px' }}>
+                <h3 style={{ margin: '0 0 16px 0', color: '#1890ff', fontSize: '18px', fontWeight: 'bold' }}>
+                  معلومات الشركة
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>اسم الشركة</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.company_name}</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>طبيعة العمل</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.business_nature}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Information */}
+              <div style={{ background: '#f6ffed', padding: '16px', borderRadius: '8px' }}>
+                <h3 style={{ margin: '0 0 16px 0', color: '#52c41a', fontSize: '18px', fontWeight: 'bold' }}>
+                  معلومات الاتصال
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>الشخص المسؤول</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.contact_person}</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>البريد الإلكتروني</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.email}</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>رقم الهاتف</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.phone}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Booking Details */}
+              <div style={{ background: '#fff2e8', padding: '16px', borderRadius: '8px' }}>
+                <h3 style={{ margin: '0 0 16px 0', color: '#faad14', fontSize: '18px', fontWeight: 'bold' }}>
+                  تفاصيل الحجز
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>تاريخ الحجز</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{new Date(selectedRequest.booking_date).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>وقت الحجز</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.booking_time}</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>عدد الخدمات</label>
+                    <p style={{ margin: 0, fontSize: '16px' }}>{selectedRequest.total_services} خدمة</p>
+                  </div>
+                  <div>
+                    <label style={{ display: 'block', fontWeight: 'bold', marginBottom: '4px', fontSize: '14px' }}>مستوى الأولوية</label>
+                    <span style={{
+                      background: getUrgencyColor(selectedRequest.urgency_level),
+                      color: '#fff',
+                      padding: '4px 8px',
+                      borderRadius: '4px',
+                      fontSize: '14px',
+                      fontWeight: 'bold'
+                    }}>
+                      {selectedRequest.urgency_level.charAt(0).toUpperCase() + selectedRequest.urgency_level.slice(1)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Services */}
+              {selectedRequest.formatted_services && (
+                <div style={{ background: '#f9f0ff', padding: '16px', borderRadius: '8px' }}>
+                  <h3 style={{ margin: '0 0 16px 0', color: '#722ed1', fontSize: '18px', fontWeight: 'bold' }}>
+                    الخدمات المطلوبة
+                  </h3>
+                  <p style={{ margin: 0, fontSize: '16px', lineHeight: '1.6' }}>{selectedRequest.formatted_services}</p>
+                </div>
+              )}
+
+              {/* Status */}
+              <div style={{ background: '#fff1f0', padding: '16px', borderRadius: '8px' }}>
+                <h3 style={{ margin: '0 0 16px 0', color: '#ff4d4f', fontSize: '18px', fontWeight: 'bold' }}>
+                  حالة الطلب
+                </h3>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span style={{
+                    background: getStatusColor(selectedRequest.status),
+                    color: '#fff',
+                    padding: '8px 16px',
+                    borderRadius: '6px',
+                    fontSize: '16px',
+                    fontWeight: 'bold'
+                  }}>
+                    {selectedRequest.formatted_status || selectedRequest.status}
+                  </span>
+                  {selectedRequest.is_today && (
+                    <span style={{
+                      background: '#faad14',
+                      color: '#fff',
+                      padding: '4px 8px',
+                      borderRadius: '4px',
+                      fontSize: '12px',
+                      fontWeight: 'bold'
+                    }}>
+                      اليوم
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div style={{
+              padding: '24px',
+              borderTop: '1px solid #f0f0f0',
+              background: '#fafafa',
+              display: 'flex',
+              justifyContent: 'flex-end',
+              gap: '12px'
+            }}>
+              <button
+                onClick={() => setShowDetailsModal(false)}
+                style={{
+                  background: '#f5f5f5',
+                  color: '#666',
+                  border: '1px solid #d9d9d9',
+                  padding: '8px 16px',
+                  borderRadius: '4px',
+                  cursor: 'pointer'
+                }}
+              >
+                إغلاق
+              </button>
+              <button
+                onClick={() => {
+                  setShowDetailsModal(false);
+                  showUpdateModal(selectedRequest);
+                }}
+                style={{
+                  background: '#1890ff',
+                  color: '#fff',
+                  border: 'none',
+                  padding: '8px 16px',
+                  borderRadius: '4px',
+                  cursor: 'pointer'
+                }}
+              >
+                تحديث الحالة
               </button>
             </div>
           </div>

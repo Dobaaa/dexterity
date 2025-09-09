@@ -9,6 +9,7 @@ const Contacts = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedContact, setSelectedContact] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
 
   // Fetch contacts data
   useEffect(() => {
@@ -42,6 +43,11 @@ const Contacts = () => {
   const handleView = (contact) => {
     setSelectedContact(contact);
     setShowModal(true);
+  };
+
+  const handleViewDetails = (contact) => {
+    setSelectedContact(contact);
+    setShowDetailsModal(true);
   };
 
   const filteredContacts = contacts.filter(item =>
@@ -127,7 +133,7 @@ const Contacts = () => {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredContacts.map((contact) => (
-                  <tr key={contact.id} className="hover:bg-gray-50">
+                  <tr key={contact.id} className="hover:bg-gray-50 cursor-pointer" onClick={() => handleViewDetails(contact)}>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
@@ -168,13 +174,19 @@ const Contacts = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                       <div className="flex items-center space-x-2 space-x-reverse">
                         <button
-                          onClick={() => handleView(contact)}
-                          className="text-blue-600 hover:text-blue-900 p-1"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleViewDetails(contact);
+                          }}
+                          className="text-green-600 hover:text-green-900 p-1"
                         >
                           <Eye className="w-4 h-4" />
                         </button>
                         <button
-                          onClick={() => handleDelete(contact.id)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleDelete(contact.id);
+                          }}
                           className="text-red-600 hover:text-red-900 p-1"
                         >
                           <Trash2 className="w-4 h-4" />
@@ -256,6 +268,92 @@ const Contacts = () => {
                 className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700"
               >
                 إغلاق
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Enhanced Details Modal */}
+      {showDetailsModal && selectedContact && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl font-bold text-gray-900">تفاصيل رسالة الاتصال</h2>
+                <button
+                  onClick={() => setShowDetailsModal(false)}
+                  className="text-gray-400 hover:text-gray-600 text-2xl font-bold"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-6">
+              {/* Contact Information */}
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-red-900 mb-4 flex items-center">
+                  <User className="w-5 h-5 ml-2" />
+                  معلومات المرسل
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+                    <p className="text-gray-900 font-medium">{selectedContact.name}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+                    <p className="text-gray-900">{selectedContact.email}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف</label>
+                    <p className="text-gray-900">{selectedContact.phone || 'غير محدد'}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">تاريخ الإرسال</label>
+                    <p className="text-gray-900">{new Date(selectedContact.created_at).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Subject */}
+              {selectedContact.subject && (
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h3 className="text-lg font-semibold text-blue-900 mb-4">موضوع الرسالة</h3>
+                  <p className="text-gray-900 font-medium">{selectedContact.subject}</p>
+                </div>
+              )}
+
+              {/* Message Content */}
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-green-900 mb-4 flex items-center">
+                  <Mail className="w-5 h-5 ml-2" />
+                  محتوى الرسالة
+                </h3>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-900 leading-relaxed whitespace-pre-wrap">{selectedContact.message}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-4 border-t border-gray-200 bg-gray-50 flex justify-end space-x-3 space-x-reverse">
+              <button
+                onClick={() => setShowDetailsModal(false)}
+                className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                إغلاق
+              </button>
+              <button
+                onClick={() => {
+                  window.location.href = `mailto:${selectedContact.email}?subject=رد على: ${selectedContact.subject || 'رسالتكم'}`;
+                }}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+              >
+                رد عبر البريد
               </button>
             </div>
           </div>

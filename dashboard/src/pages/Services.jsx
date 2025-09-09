@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit, Trash2, Search, Filter } from 'lucide-react';
+import { Plus, Edit, Trash2, Eye, Search, Filter } from 'lucide-react';
 import { API_ENDPOINTS, getHeaders } from '../config/api';
 import axios from 'axios';
 
@@ -8,6 +8,8 @@ const Services = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
   const [editingService, setEditingService] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -82,6 +84,11 @@ const Services = () => {
     setShowModal(true);
   };
 
+  const handleViewDetails = (serviceItem) => {
+    setSelectedService(serviceItem);
+    setShowDetailsModal(true);
+  };
+
   const filteredServices = services.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -143,7 +150,7 @@ const Services = () => {
           </div>
         ) : (
           filteredServices.map((service) => (
-            <div key={service.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+            <div key={service.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onClick={() => handleViewDetails(service)}>
               {/* Service Image */}
               <div className="h-48 bg-gray-200 relative">
                 {service.image ? (
@@ -161,13 +168,28 @@ const Services = () => {
                 {/* Actions Overlay */}
                 <div className="absolute top-2 right-2 flex space-x-2 space-x-reverse">
                   <button
-                    onClick={() => handleEdit(service)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleViewDetails(service);
+                    }}
+                    className="p-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors"
+                  >
+                    <Eye className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleEdit(service);
+                    }}
                     className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
                   >
                     <Edit className="w-4 h-4" />
                   </button>
                   <button
-                    onClick={() => handleDelete(service.id)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDelete(service.id);
+                    }}
                     className="p-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors"
                   >
                     <Trash2 className="w-4 h-4" />
@@ -251,6 +273,92 @@ const Services = () => {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+
+      {/* Details Modal */}
+      {showDetailsModal && selectedService && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+              <div className="flex justify-between items-center">
+                <h2 className="text-xl font-bold text-gray-900">تفاصيل الخدمة</h2>
+                <button
+                  onClick={() => setShowDetailsModal(false)}
+                  className="text-gray-400 hover:text-gray-600 text-2xl font-bold"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 space-y-6">
+              {/* Service Information */}
+              <div className="bg-orange-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-orange-900 mb-4 flex items-center">
+                  <Eye className="w-5 h-5 ml-2" />
+                  معلومات الخدمة
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">اسم الخدمة</label>
+                    <p className="text-gray-900 font-medium text-lg">{selectedService.name}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">تاريخ الإضافة</label>
+                    <p className="text-gray-900">{new Date(selectedService.created_at).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">آخر تحديث</label>
+                    <p className="text-gray-900">{new Date(selectedService.updated_at).toLocaleDateString('ar-SA')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Service Image */}
+              {selectedService.image && (
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h3 className="text-lg font-semibold text-green-900 mb-4">صورة الخدمة</h3>
+                  <div className="flex justify-center">
+                    <img
+                      src={`http://localhost:8000/storage/${selectedService.image}`}
+                      alt={selectedService.name}
+                      className="max-w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {/* Service Description */}
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-4">وصف الخدمة</h3>
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-900 leading-relaxed whitespace-pre-wrap">{selectedService.description}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div className="px-6 py-4 border-t border-gray-200 bg-gray-50 flex justify-end space-x-3 space-x-reverse">
+              <button
+                onClick={() => setShowDetailsModal(false)}
+                className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                إغلاق
+              </button>
+              <button
+                onClick={() => {
+                  setShowDetailsModal(false);
+                  handleEdit(selectedService);
+                }}
+                className="px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+              >
+                تعديل الخدمة
+              </button>
+            </div>
           </div>
         </div>
       )}
