@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import News from './pages/News';
 import Services from './pages/Services';
 import Jobs from './pages/Jobs';
+import JobsApps from './pages/JobsApps';
 import Contacts from './pages/Contacts';
 import ServiceRequests from './pages/ServiceRequests';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/services" element={<Services />} />
           <Route path="/jobs" element={<Jobs />} />
+          <Route path="/jobs-apps" element={<JobsApps />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/service-requests" element={<ServiceRequests />} />
         </Routes>

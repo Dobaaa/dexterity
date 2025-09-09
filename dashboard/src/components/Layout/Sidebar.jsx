@@ -9,7 +9,8 @@ import {
   MessageSquare,
   BarChart3,
   FileText,
-  Calendar
+  Calendar,
+  UserCheck
 } from 'lucide-react';
 
 const Sidebar = ({ isOpen, onClose }) => {
@@ -45,6 +46,12 @@ const Sidebar = ({ isOpen, onClose }) => {
       icon: Briefcase,
       path: '/jobs',
       color: 'text-indigo-600'
+    },
+    {
+      name: 'طلبات التوظيف',
+      icon: UserCheck,
+      path: '/jobs-apps',
+      color: 'text-cyan-600'
     },
     {
       name: 'رسائل الاتصال',
