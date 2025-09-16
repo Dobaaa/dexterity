@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\ServiceRequestController;
 use App\Http\Controllers\Api\PaymentController;
 use App\Http\Controllers\Api\JobApplicationController;
+use App\Http\Controllers\Api\EmailController;
 
 
 /*
@@ -67,3 +68,8 @@ Route::prefix('service-requests')->group(function () {
     // Status management
     Route::patch('/{id}/status', [ServiceRequestController::class, 'updateStatus']);
 });
+
+// Email API Routes
+Route::match(['GET', 'POST'], '/emails/fetch', [EmailController::class, 'fetch']);
+Route::get('/emails', [EmailController::class, 'index']);
+Route::get('/emails/test-connection', [EmailController::class, 'testConnection']);

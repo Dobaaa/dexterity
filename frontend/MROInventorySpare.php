@@ -1,19 +1,31 @@
 <?php
+session_start();
+include_once 'includes/translation_helper.php';
 include("header.php");
 ?>
-
-
-
 
 <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/header-bg-1-1.jpg">
     <div class="container z-index-common">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">MRO Inventory and Spare parts Optimization </h1>
+            <!-- العنوان الرئيسي -->
+            <h1 class="breadcumb-title" data-translate="mro_inventory_title">
+                MRO Inventory and Spare Parts Optimization
+            </h1>
+
+            <!-- شريط التصفح -->
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.php">Home</a></li>
-                                        <li><a href="ConsultationServices.php">Consultation Services</a></li>
-                    <li>MRO Inventory and Spare parts Optimization </li>
+                    <li>
+                        <a href="index.php" data-translate="mro_inventory_breadcrumb_home">Home</a>
+                    </li>
+                    <li>
+                        <a href="ConsultationServices.php" data-translate="mro_inventory_breadcrumb_consultation_services">
+                            Consultation Services
+                        </a>
+                    </li>
+                    <li data-translate="mro_inventory_breadcrumb_current">
+                        MRO Inventory and Spare Parts Optimization
+                    </li>
                 </ul>
             </div>
         </div>
@@ -24,37 +36,88 @@ include("header.php");
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-2"></div>
+
             <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.3s">
-                <h2 class="sec-title col-xl-9">MRO Inventory and Spare parts Optimization</h2>
-                <p class="pe-3 fs-md">Inventories and MRO (Maintenance, Repair and Operation) spare parts are essential parts of asset health requirements and managing them is one of core asset management processes. </p>
-                <p class="pe-3 fs-md">Statistics showed that materials and spare parts cost compromise more than 60% of total maintenance cost in addition to their availability effect on making plant units available, running and producing quality goods required to attain business success.</p>
-                <p class="pe-3 fs-md">Dexterity provides its services for MRO inventory and spare parts optimization to manage Inventories and MRO Spare Parts in a proactive and contemporary way needed to control both asset availability and reduced costs. It will use risk-based thinking in managing MRO inventories and spare parts as well as effective and efficient inventories practices and related supply chain management.  </p>
-                <p class="pe-3 fs-md">These services include:</p>
+                
+                <!-- عنوان القسم -->
+                <h2 class="sec-title col-xl-9" data-translate="mro_inventory_section_title">
+                    MRO Inventory and Spare Parts Optimization
+                </h2>
+
+                <!-- الفقرات التعريفية -->
+                <p class="pe-3 fs-md" data-translate="mro_inventory_intro_paragraph_1">
+                    Inventories and MRO (Maintenance, Repair and Operations) spare parts are essential parts of asset health requirements, and managing them is one of the core asset management processes.
+                </p>
+
+                <p class="pe-3 fs-md" data-translate="mro_inventory_intro_paragraph_2">
+                    Statistics show that materials and spare parts costs comprise more than 60% of the total maintenance cost, in addition to their impact on making plant units available, running, and producing quality goods required to achieve business success.
+                </p>
+
+                <p class="pe-3 fs-md" data-translate="mro_inventory_intro_paragraph_3">
+                    Dexterity provides its services for MRO inventory and spare parts optimization to manage inventories and MRO spare parts proactively and effectively. This ensures asset availability and cost reduction using risk-based thinking and efficient supply chain management practices.
+                </p>
+
+                <p class="pe-3 fs-md" data-translate="mro_inventory_intro_paragraph_4">
+                    These services include:
+                </p>
+
+                <!-- القائمة -->
                 <div class="service-box-list text-left">
                     <ul>
-                    <li><i class="far fa-check-circle"></i> Creation of MRO inventory management policy and philosophy</li>
-<li><i class="far fa-check-circle"></i> Inventory analysis and assessment.</li>
-<li><i class="far fa-check-circle"></i> Inventory classification and criticality analysis.</li>
-<li><i class="far fa-check-circle"></i> Developing and implementing demand forecasting model</li>
-<li><i class="far fa-check-circle"></i> Defining order points and quantities based on criticality, usage patterns, cost & supplier lead time.</li>
-<li><i class="far fa-check-circle"></i> Inventory database creation and implementation.</li>
-
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_1">
+                                Creation of MRO inventory management policy and philosophy.
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_2">
+                                Inventory analysis and assessment.
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_3">
+                                Inventory classification and criticality analysis.
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_4">
+                                Developing and implementing demand forecasting models.
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_5">
+                                Defining order points and quantities based on criticality, usage patterns, cost, and supplier lead time.
+                            </span>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <span data-translate="mro_inventory_list_item_6">
+                                Inventory database creation and implementation.
+                            </span>
+                        </li>
                     </ul>
                 </div>
-                <p class="pe-3 fs-md">Normally, millions of money are spent in MRO item inventory which are critical for the company business operation. Dexterity helps organizations to optimize these expenditures while fulfilling their purpose, providing asset availability.
-                    </p>
+
+                <!-- الفقرة النهائية -->
+                <p class="pe-3 fs-md" data-translate="mro_inventory_final_paragraph">
+                    Millions of dollars are typically spent on MRO item inventories that are critical for the company's business operations. Dexterity helps organizations optimize these expenditures while fulfilling their purpose and providing asset availability.
+                </p>
             </div>
+
             <div class="col-lg-2"></div>
         </div>
-        <div class="service-middle-img wow fadeInUp" data-wow-delay="0.3s"><img src="assets/img/service/3.jpg"
-                alt="group"></div>
-        
+
+        <!-- صورة توضيحية -->
+        <div class="service-middle-img wow fadeInUp" data-wow-delay="0.3s">
+            <img src="assets/img/service/3.jpg" alt="group">
+        </div>
     </div>
 </section>
-
-
-
-
 
 <?php
 include("footer.php");

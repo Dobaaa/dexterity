@@ -147,7 +147,56 @@ const translations = {
         "dedication_solutions": "Arabian Dexterity Industrial: Dedication, Specialized Solutions",
         "committed_quality": "Committed to Quality, Timeliness, Cost-effectiveness",
         "excellence_values": "Excellence Through Strong Values",
-        
+        // kpis
+        "kpis_breadcrumb_title": "Key Performance Indicators (KPIs)",
+    "kpis_breadcrumb_home": "Home",
+    "kpis_breadcrumb_consultation_services": "Consultation Services",
+    "kpis_breadcrumb_current": "KPIs",
+
+    "kpis_section_main_title": "Building Key Performance Indicators (KPIs)",
+    "kpis_intro_paragraph": "Measuring performance is crucial to attain success. As a primary requirement for assurance of fulfillment in maintenance, reliability and asset management, having a good system for measuring performance and assigning corrective actions is no longer an option.",
+    "kpis_intro_measure_need": "We need to measure to:",
+
+    "kpis_measure_point_1": "Understand our processes & reduce variation.",
+    "kpis_measure_point_2": "Know how well a process is doing and analyze patterns over time.",
+    "kpis_measure_point_3": "Measure progress to see if we are meeting objectives.",
+    "kpis_measure_point_4": "Solve problems, make adjustments, and identify opportunities.",
+
+    "kpis_second_paragraph": "According to this, Dexterity provides its services to create a representative set of leading and lagging key performance indicators to:",
+    "kpis_goal_point_1": "Determine the current state of the maintenance function.",
+    "kpis_goal_point_2": "Recognize the gaps against expectations or established benchmark information.",
+    "kpis_goal_point_3": "Develop a process to drive necessary changes.",
+
+    "kpis_third_paragraph": "Dexterity builds this set by analyzing organizations’ needs starting from a top-down approach to create cascaded KPIs driven from your strategy, policies, and plans down to shopfloor implementation.",
+    "kpis_model_intro": "Our model for KPIs ensures that:",
+
+    "kpis_model_point_1": "Each KPI is aligned with a specific business objective and used for business management, not just measurements.",
+    "kpis_model_point_2": "KPIs are translated into team-level metrics where each team contributes to specific KPIs.",
+    "kpis_model_point_3": "Alignment exists between KPIs, objectives, teams, and plans to clarify why they are needed.",
+    "kpis_model_point_4": "Each KPI is connected to an action plan aligned with the business objectives.",
+    "kpis_final_paragraph": "Dexterity provides services for building KPIs and performance measurement systems for Maintenance, Reliability, and Asset Management to ensure you are measuring what should be managed. Measuring the right things, the right way ensures successful implementation and achievement of business results." ,
+
+    // miro inventory
+    "mro_inventory_title" : "MRO Inventory and Spare Parts Optimization",
+    "mro_inventory_breadcrumb_home" : "Home",
+    "mro_inventory_breadcrumb_consultation_services" : "Consultation Services",
+    "mro_inventory_breadcrumb_current" : "MRO Inventory and Spare Parts Optimization",
+
+    "mro_inventory_section_title" : "MRO Inventory and Spare Parts Optimization",
+
+    "mro_inventory_intro_paragraph_1" : "Inventories and MRO (Maintenance, Repair, and Operations) spare parts are essential parts of asset health requirements, and managing them is one of the core asset management processes.",
+    "mro_inventory_intro_paragraph_2" : "Statistics show that materials and spare parts costs comprise more than 60% of the total maintenance cost, in addition to their impact on plant availability, production continuity, and delivering quality goods required to achieve business success.",
+    "mro_inventory_intro_paragraph_3" : "Dexterity provides services for MRO inventory and spare parts optimization to manage them proactively, ensuring asset availability and cost reduction. This includes using risk-based thinking in managing inventories and supply chain practices effectively and efficiently.",
+    "mro_inventory_intro_paragraph_4" : "These services include:",
+
+    "mro_inventory_list_item_1" : "Creation of MRO inventory management policy and philosophy.",
+    "mro_inventory_list_item_2" : "Inventory analysis and assessment.",
+    "mro_inventory_list_item_3" : "Inventory classification and criticality analysis.",
+    "mro_inventory_list_item_4" : "Developing and implementing demand forecasting models.",
+    "mro_inventory_list_item_5" : "Defining order points and quantities based on criticality, usage patterns, cost, and supplier lead time.",
+    "mro_inventory_list_item_6" : "Inventory database creation and implementation.",
+
+    "mro_inventory_final_paragraph" : "Millions of dollars are typically spent on MRO item inventories that are critical to business operations. Dexterity helps organizations optimize these expenditures while ensuring asset availability and operational continuity.",
         // Footer
         "subscribe_newsletter": "Subscribe Newsletter",
         "subscribe_text": "Subscribe and get latest news and updates.",
@@ -176,6 +225,35 @@ const translations = {
         "success": "Success",
         "warning": "Warning",
         "info": "Information",
+          //assets management
+            "asset_management_title": "Asset Management",
+            "breadcrumb_home": "Home",
+            "breadcrumb_consultation_services": "Consultation Services",
+            "breadcrumb_asset_management": "Asset Management",
+            "section_title": "Asset Management",
+            "intro_paragraph": "Asset Management and ISO 55001 asset management standard provide a holistic framework for managing all functions related to physical assets.",
+            "list_item_1": "It is very important because it can help organizations to.",
+            "list_item_2": "Reduce costs of investing in and operating their assets.",
+            "list_item_3": "Improve assets performance and reduce failure rates.",
+            "list_item_4": "Improve asset value and enhance business growth.",
+            "list_item_5": "Reduce the potential health, safety and environmental risks and related impacts.",
+            "list_item_6": "Maintain and improve the reputation of the organization.",
+            "list_item_7": "Improve the legal and regulatory compliance performance of the organization.",
+            "list_item_8": "And finally, grow stakeholders’ confidence and satisfaction.",
+            "detailed_paragraph": "Dexterity provides its consultancy services to assess the maturity of existin",
+          // assets hierarchy
+          "asset_hierarchy_title" : "Asset Hierarchy",
+          "asset_hierarchy_breadcrumb_home" : "Home",
+          "asset_hierarchy_breadcrumb_consultation_services" : "Consultation Services",
+          "asset_hierarchy_breadcrumb_asset_hierarchy" : "Asset Hierarchy",
+          "asset_hierarchy_section_title" : "Asset Hierarchy",
+          "asset_hierarchy_intro_paragraph" : "It may be easier than you think. Like other successful businesses, you’ll want to make sure you have a good idea first. From there, you can build a product or service that solves a need for consumers. But before you jump into anything, you’ll want to make sure you do your research. This is crucial, because only an estimated 79.4% of companies survive their first year in operation.",
+          "asset_hierarchy_list_item_1" : "Maintenance and Reliability Engineering.",
+          "asset_hierarchy_list_item_2" : "Planning & Scheduling.",
+          "asset_hierarchy_list_item_3" : "Execution of maintenance.",
+          "asset_hierarchy_list_item_4" : "Operations.",
+          "asset_hierarchy_list_item_5" : "And Finance.",
+          "asset_hierarchy_detailed_paragraph" : "A clear and adequate hierarchy structure of assets (Taxonomy), according to international standards, is the fundamental principle of a system for the asset information management. An adequate hierarchy facilitates the implementation of reliability tools & contributes to improve the control of data and information of the equipment. Also, The correct allocation of costs associated with the life cycle of assets is fundamental to establish strategies for asset replacement. It is necessary to establish an adequate hierarchy of assets from the early stages as part of reliability tools that allow managing the information of the assets to increase their useful life. Dexterity provides asset hierarchy related services starting from assessment of existing hierarchy to complete update and creation of needed hierarchy that facilitate correct management of assets and their intended values and brings the above benefits. Asset hierarchy creation could be either according to ISO 14224 latest edition, KKS , RDS-PP or RDS-RS coding methodologies.",
         // Footer extra
         "footer_about_text": "Arabian Dexterity Company is newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization."
     },
@@ -446,8 +524,87 @@ const translations = {
         "success": "نجح",
         "warning": "تحذير",
         "info": "معلومات",
-        // Footer extra
-        "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع."
+        //assets management
+    "asset_management_title": "إدارة الأصول",
+    "breadcrumb_home": "الرئيسية",
+    "breadcrumb_consultation_services": "خدمات الاستشارات",
+    "breadcrumb_asset_management": "إدارة الأصول",
+    "section_title": "إدارة الأصول",
+    "intro_paragraph": "إدارة الأصول ومعيار إدارة الأصول ISO 55001 يوفران إطارًا شاملاً لإدارة جميع الوظائف المتعلقة بالأصول المادية.",
+    "list_item_1": "يعد الأمر مهمًا للغاية لأنه يمكن أن يساعد المؤسسات على:",
+    "list_item_2": "تقليل تكاليف الاستثمار وتشغيل الأصول.",
+    "list_item_3": "تحسين أداء الأصول وتقليل معدلات الأعطال.",
+    "list_item_4": "زيادة قيمة الأصول وتعزيز نمو الأعمال.",
+    "list_item_5": "تقليل المخاطر الصحية والبيئية ومخاطر السلامة المحتملة وآثارها.",
+    "list_item_6": "الحفاظ على سمعة المؤسسة وتحسينها.",
+    "list_item_7": "تحسين أداء الامتثال القانوني والتنظيمي للمؤسسة.",
+    "list_item_8": "وأخيرًا، تعزيز ثقة ورضا أصحاب المصلحة.",
+    "detailed_paragraph": "توفر شركة ديكستيري خدماتها الاستشارية لتقييم نضج ممارسات إدارة الأصول الحالية في مؤسستك وتعمل بشكل استباقي مع مؤسستك لبناء هذا النظام بطريقة تضمن تحقيق الفوائد المذكورة أعلاه لإدارة الأصول.\nمن خلال هذه الخدمة، نقوم بإعداد مؤسستك لتكون جاهزة ومتوافقة مع متطلبات معيار ISO 55001، ونوجهك نحو الحصول على الشهادة ذات الصلة، بما في ذلك استكمال الوثائق والتنفيذ.\nيمكن أن تتجاوز إدارة الأصول مجرد تنفيذ معيار ISO 55001، حيث يحدد الامتثال للمعيار أن مستوى مناسبًا ومنظمًا من قدرات إدارة الأصول قد تم إنشاؤه. هذا المستوى كافٍ لإثبات أن المؤسسة مؤهلة وقد نفذت متطلبات إدارة الأصول ذات الصلة. لكن يمكن المضي قدمًا إلى ما بعد تنفيذ هذه المتطلبات الأساسية لتحسين هذا النظام والوصول إلى أفضل الممارسات في إدارة الأصول.\nيمكن لشركة ديكستيري أن تقدم لمؤسستك خدمة متكاملة لتقييم وتخطيط وتوثيق وتنفيذ جميع أنشطة التميز في إدارة الأصول، بالإضافة إلى إعدادك لاجتياز عملية الحصول على شهادة ISO 55001.",
+       // assets hierarchy
+       
+        "asset_hierarchy_title": "هيكل الأصول",
+        "asset_hierarchy_breadcrumb_home": "الرئيسية",
+        "asset_hierarchy_breadcrumb_consultation_services": "خدمات الاستشارات",
+        "asset_hierarchy_breadcrumb_asset_hierarchy": "هيكل الأصول",
+        "asset_hierarchy_section_title": "هيكل الأصول",
+        "asset_hierarchy_intro_paragraph": "قد يكون الأمر أسهل مما تعتقد. مثل باقي الأعمال الناجحة، ستحتاج أولاً إلى التأكد من أن لديك فكرة جيدة. ومن هناك، يمكنك بناء منتج أو خدمة تلبي احتياجات المستهلكين. ولكن قبل أن تبدأ، من المهم أن تقوم بالبحث الجيد. هذا أمر بالغ الأهمية، حيث تشير التقديرات إلى أن 79.4٪ فقط من الشركات تبقى قيد العمل بعد عامها الأول.",
+        "asset_hierarchy_list_item_1": "الهندسة والصيانة الموثوقة.",
+        "asset_hierarchy_list_item_2": "التخطيط والجدولة.",
+        "asset_hierarchy_list_item_3": "تنفيذ أعمال الصيانة.",
+        "asset_hierarchy_list_item_4": "العمليات التشغيلية.",
+        "asset_hierarchy_list_item_5": "والشؤون المالية.",
+        "asset_hierarchy_detailed_paragraph": "يُعد وجود هيكل واضح وكافٍ للأصول (التصنيف)، وفقًا للمعايير الدولية، المبدأ الأساسي لأي نظام لإدارة معلومات الأصول. حيث يُسهل الهيكل المناسب تطبيق أدوات الموثوقية ويساهم في تحسين التحكم في البيانات ومعلومات المعدات. كما أن التوزيع الصحيح للتكاليف المرتبطة بدورة حياة الأصول يعد أمرًا أساسيًا لوضع استراتيجيات لاستبدال الأصول. من الضروري إنشاء هيكل مناسب للأصول منذ المراحل الأولى كجزء من أدوات الموثوقية التي تتيح إدارة معلومات الأصول لزيادة عمرها الافتراضي. تقدم شركة ديكستيري خدمات متعلقة بهيكل الأصول، بدءًا من تقييم الهيكل الحالي إلى التحديث الكامل وإنشاء الهيكل المطلوب الذي يسهل الإدارة الصحيحة للأصول وتحقيق القيم المرجوة منها، مما يحقق الفوائد المذكورة أعلاه. يمكن إنشاء هيكل الأصول وفقًا لأحدث إصدار من معيار ISO 14224 أو باستخدام منهجيات ترميز KKS أو RDS-PP أو RDS-RS.",
+     //kpis
+     "kpis_breadcrumb_title": "مؤشرات الأداء الرئيسية (KPIs)",
+     "kpis_breadcrumb_home": "الرئيسية",
+     "kpis_breadcrumb_consultation_services": "خدمات الاستشارات",
+     "kpis_breadcrumb_current": "مؤشرات الأداء الرئيسية",
+ 
+     "kpis_section_main_title": "بناء مؤشرات الأداء الرئيسية (KPIs)",
+     "kpis_intro_paragraph": "يُعد قياس الأداء أمرًا أساسيًا لتحقيق النجاح. باعتباره مطلبًا رئيسيًا لضمان تحقيق الكفاءة في مجالات الصيانة، والموثوقية، وإدارة الأصول، فإن وجود نظام فعال لقياس الأداء وتحديد الإجراءات التصحيحية لم يعد خيارًا بل ضرورة.",
+     "kpis_intro_measure_need": "نحن بحاجة للقياس من أجل:",
+ 
+     "kpis_measure_point_1": "فهم عملياتنا وتقليل التباين.",
+     "kpis_measure_point_2": "معرفة مدى كفاءة العملية وتحليل الأنماط مع مرور الوقت.",
+     "kpis_measure_point_3": "قياس التقدم ومعرفة ما إذا كنا سنحقق الأهداف المحددة.",
+     "kpis_measure_point_4": "حل المشكلات، وإجراء التعديلات، وتحديد الفرص المستقبلية.",
+ 
+     "kpis_second_paragraph": "وفقًا لذلك، تقدم شركة ديكستيري خدماتها لإنشاء مجموعة متكاملة من مؤشرات الأداء الرئيسية الرائدة والمتأخرة بهدف:",
+     "kpis_goal_point_1": "تحديد الوضع الحالي لوظيفة الصيانة داخل المؤسسة.",
+     "kpis_goal_point_2": "التعرف على الفجوات مقارنةً بالتوقعات أو معايير الأداء المعتمدة.",
+     "kpis_goal_point_3": "تطوير عملية تساعد على تنفيذ التغييرات اللازمة لتحقيق الأهداف.",
+ 
+     "kpis_third_paragraph": "تبني ديكستيري هذه المجموعة من مؤشرات الأداء عبر تحليل احتياجات المؤسسات، مستخدمةً نهجًا يبدأ من الاستراتيجيات والسياسات والخطط العليا، ويتدرج وصولاً إلى التنفيذ على أرض الواقع داخل فرق العمل.",
+     "kpis_model_intro": "يضمن نموذجنا لمؤشرات الأداء الرئيسية ما يلي:",
+ 
+     "kpis_model_point_1": "أن يكون كل مؤشر أداء مرتبطًا بهدف تجاري محدد، ويُستخدم لإدارة الأعمال وليس فقط للقياس.",
+     "kpis_model_point_2": "ترجمة مؤشرات الأداء إلى مهام فرق العمل بحيث يساهم كل فريق في مؤشرات محددة وواضحة.",
+     "kpis_model_point_3": "تحقيق التوافق بين مؤشرات الأداء، الأهداف، الفرق، والخطط لضمان وضوح الغرض منها.",
+     "kpis_model_point_4": "ربط كل مؤشر أداء بخطة عمل تتماشى مع الأهداف الاستراتيجية للمؤسسة.",
+     "kpis_final_paragraph": "توفر ديكستيري خدمات متكاملة لبناء مؤشرات الأداء الرئيسية (KPIs) وأنظمة قياس الأداء الخاصة بالصيانة، الموثوقية، وإدارة الأصول. هدفنا هو ضمان أنك تقيس ما يجب إدارته، وبالطريقة الصحيحة، لتحقيق التنفيذ الناجح لعمليات الصيانة والموثوقية والوصول إلى نتائج أعمال ملموسة ومستدامة.",
+     //miro inventory
+     "mro_inventory_title" : "تحسين إدارة المخزون وقطع الغيار (MRO)",
+     "mro_inventory_breadcrumb_home" : "الرئيسية",
+     "mro_inventory_breadcrumb_consultation_services" : "خدمات الاستشارات",
+     "mro_inventory_breadcrumb_current" : "تحسين إدارة المخزون وقطع الغيار (MRO)",
+ 
+     "mro_inventory_section_title" : "تحسين إدارة المخزون وقطع الغيار (MRO)",
+ 
+     "mro_inventory_intro_paragraph_1" : "تُعد المخزونات وقطع الغيار الخاصة بالصيانة والإصلاح والتشغيل (MRO) جزءًا أساسيًا من متطلبات صحة الأصول، ويُعتبر إدارتها من العمليات الجوهرية في إدارة الأصول.",
+     "mro_inventory_intro_paragraph_2" : "تشير الإحصائيات إلى أن تكلفة المواد وقطع الغيار تشكل أكثر من 60% من إجمالي تكلفة الصيانة، إضافةً إلى تأثيرها الكبير على جاهزية الوحدات الإنتاجية واستمرارية التشغيل وجودة المنتجات المطلوبة لتحقيق النجاح التجاري.",
+     "mro_inventory_intro_paragraph_3" : "توفر شركة Dexterity خدماتها لتحسين إدارة المخزون وقطع الغيار بشكل استباقي وحديث، بما يضمن التحكم في توافر الأصول وتقليل التكاليف. ويشمل ذلك تطبيق التفكير القائم على المخاطر وممارسات إدارة سلسلة التوريد بكفاءة وفعالية.",
+     "mro_inventory_intro_paragraph_4" : "تشمل هذه الخدمات ما يلي:",
+ 
+     "mro_inventory_list_item_1" : "إنشاء سياسة وفلسفة لإدارة مخزون MRO.",
+     "mro_inventory_list_item_2" : "تحليل وتقييم المخزون.",
+     "mro_inventory_list_item_3" : "تصنيف المخزون وتحليل الأهمية الحرجة.",
+     "mro_inventory_list_item_4" : "تطوير وتنفيذ نماذج توقع الطلب.",
+     "mro_inventory_list_item_5" : "تحديد نقاط وكمية الطلب بناءً على الأهمية والاستهلاك والتكلفة ووقت توريد المورد.",
+     "mro_inventory_list_item_6" : "إنشاء وتنفيذ قاعدة بيانات للمخزون.",
+ 
+     "mro_inventory_final_paragraph" : "عادةً ما يتم إنفاق ملايين الأموال على مخزونات MRO التي تُعد حيوية لعمليات الشركة. تساعد Dexterity المؤسسات على تحسين هذه النفقات مع ضمان توافر الأصول واستمرارية التشغيل.",
+     // Footer extra
+        "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع.",
     }
 };
 

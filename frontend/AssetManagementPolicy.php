@@ -1,5 +1,7 @@
 
 <?php
+session_start();
+include_once 'includes/translation_helper.php';
 include("header.php");
 ?>
 
