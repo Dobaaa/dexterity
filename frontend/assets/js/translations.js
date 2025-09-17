@@ -367,9 +367,279 @@ const translations = {
    "maintenance_reliability_point_15": "Condition based maintenance implementation.",
    "maintenance_reliability_point_16": "Capital work management and reliability creation.",
    "maintenance_reliability_point_17": "Support services and workshops.",
-   "maintenance_reliability_point_18": "Training and development.",   
-   // Footer extra
-        "footer_about_text": "Arabian Dexterity Company is newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization."
+   
+   //building maintenance
+   "building_maintenance_breadcrumb_title": "Building Maintenance",
+   "building_maintenance_breadcrumb_home": "Home",
+
+   "building_maintenance_section_title": "Building Maintenance",
+   "building_maintenance_paragraph_1": "Asset Management is explicitly focused on helping organizations to achieve their defined objectives and to determine the optimal blend of activities based on these objectives.",
+   "building_maintenance_paragraph_2": "An important part of this system is asset management planning including deciding related policy, strategic asset management plan, asset management objectives, and short-term asset management plans. In addition to these aspects, asset management decision making, and risk management are two essential functions needed to successfully manage physical assets functions.",
+   "building_maintenance_paragraph_3": "The above areas constitute a framework for maintenance, reliability, and asset management.",
+   "building_maintenance_paragraph_4": "Dexterity provides its consultancy services for building such systems and framework. This Framework has been designed to assist people who manage organization’s assets to adopt best practices for asset management. These processes may vary to accommodate individual circumstances, but in each instance the objective is to achieve the best use of our organization’s assets.",   // Footer extra
+   //data preparation
+   "data_preparation_breadcrumb_title": "Data Preparation",
+   "data_preparation_breadcrumb_home": "Home",
+   "data_preparation_breadcrumb_consultation": "Consultation Services",
+
+   "data_preparation_section_title": "Data Preparation for EAM implementation (SAP/Maximo)",
+
+   "data_preparation_paragraph_1": "An Enterprise Asset Management (EAM) system allows organizations to address the complete life cycle management of their assets: from capital planning to procurement, installation, operations, compliance reporting, maintenance, repair, and ultimately decommissioning. But just like any large-scale technology transformation, EAM system implementations must be carefully planned, managed, executed, and measured for organizations to fully achieve their intended results.",
+   "data_preparation_paragraph_2": "As a very important step required for Enterprise Asset Management Systems (EAMs) and Computerized Maintenance Management Systems (CMMS), data preparation and implementation is crucial for the success of such implementations.",
+   "data_preparation_paragraph_3": "Having complete, correct, relevant, quality and well organized data needs big effort and experienced personnel.",
+   "data_preparation_paragraph_4": "At Dexterity, we help clients at data collection and migration activities of their EAM system implementation journey. With our practical functional expertise and technological global background, we have learned how best to transform organizations in different industries and countries.",
+   "data_preparation_paragraph_5": "These services include:",
+   
+   "data_preparation_point_1": "Data transformation plan",
+   "data_preparation_point_2": "Data collection and preparation",
+   "data_preparation_point_3": "Data validation and analysis",
+   "data_preparation_point_4": "Data migration and upload to systems",
+   "data_preparation_paragraph_6": "EAM system implementation is a multi-year journey and just like all time-intensive initiatives, is at higher risk for failure. But by understanding the transformation steps, expectations and quality implementation, organizations can be better prepared to handle the challenges along the way and achieve their intended results.", 
+   //consultation services
+   "consultation_breadcrumb_title": "Consultation Services",
+   "consultation_breadcrumb_home": "Home",
+   "consultation_breadcrumb_current": "Consultation Services",
+
+   "consultation_section_title": "Consultation Services",
+   "consultation_paragraph_1": `Arabian Dexterity Consultancy provides exceptional services to our clients. With
+   years of industry experience, we have established ourselves as a trusted partner for organizations
+   seeking expert guidance, advice, and implementation. Our team of seasoned consultants is dedicated
+   to helping businesses overcome challenges, optimize operations, and achieve their strategic
+   objectives. We understand the unique needs of each client and tailor our solutions accordingly. We
+   work closely with our clients through a collaborative approach to develop and implement effective
+   strategies that drive success. Whether you are a small startup or a large corporation, our
+   consultancy services are designed to empower you with the knowledge and tools necessary to thrive in
+   today's competitive landscape. Trust us to deliver results that exceed your expectations and propel
+   your business towards sustainable growth. Let us be your trusted advisors on the journey to success.
+   Contact us today to learn more about how our consultancy services can benefit your organization.`,
+
+   "consultation_paragraph_2": `Arabian Dexterity can provide a wide range of consultation services that
+   are required from all industrial sectors and fulfill country vision. These services include the
+   following sample services:`,
+
+   "consultation_service_1": "Maintenance & Reliability Effectiveness Assessment",
+   "consultation_service_2": "Asset Management (ISO 55001:2014) Assessment and preparation for certification",
+   "consultation_service_3": "Shutdown & Turnaround planning and management (consultancy and implementation)",
+   "consultation_service_4": "Building Maintenance, Reliability and Asset Management Strategy & Framework",
+   "consultation_service_5": "Asset Hierarchy Assessment & Creation",
+   "consultation_service_6": "Criticality Assessment & Ranking (Assessment & Creation)",
+   "consultation_service_7": "Reliability Centered Maintenance & Preventive Maintenance Optimization Projects",
+   "consultation_service_8": "Data Preparation for EAM implementation",
+   "consultation_service_9": "MRO inventory & Spare parts optimization",
+   //manpower
+   "manpower_breadcrumb_title": "Manpower Supply",
+   "manpower_breadcrumb_home": "Home",
+   "manpower_breadcrumb_parent": "Asset Management & Reliability",
+   "manpower_breadcrumb_current": "Manpower Supply",
+
+   "manpower_section_title": "Introduction of Manpower Supply Section",
+
+   "manpower_paragraph_1": `We excel in deploying proficient engineers and skilled manpower, boasting
+   extensive experience in operations related to Oil and Gas, Petrochemical Production, Minerals
+   processing, Renewable Energy, Power Generation facilities, Seawater desalination plants, and
+   prominent engineering companies.`,
+
+   "manpower_paragraph_2": `We have the capability to offer a qualified and experienced workforce, including
+   professionals, engineers, and technicians, encompassing all significant disciplines within the
+   specified sectors and Engineering Procurement and Construction.
+   The company can swiftly deploy sizable teams to overseas project sites, ensuring full compliance
+   with local laws. The company has a link to diverse international workforce, including managers,
+   engineers, supervisors, and workers from various nationalities and cultures.`,
+
+   "manpower_paragraph_3": `Management and supervision at project sites (including site managers, HSE, QA,
+   civil, mechanical, electrical, I&C, commissioning, and operations personnel) and specialized
+   personnel (such as DCS experts, rotating equipment controls, fire fighting, rotating equipment
+   engineers, generator, and boiler engineers).`,
+
+   "manpower_paragraph_4": `We provide permanent skilled and experienced workforce for operational support
+   services to our clients, as well as outsourcing work when needed.`,
+
+   "manpower_paragraph_5": `Tailoring our executive search to match job requirements at all levels, we also
+   enable organizations to conduct preliminary interviews.`,
+
+   "manpower_paragraph_6": `Utilizing a comprehensive grasp of job specifications, organizational culture,
+   educational and skill prerequisites, safety awareness, and other essential attributes for a given
+   role, we recruit and deploy managers, engineers, technicians, and labor.`,
+
+   "manpower_paragraph_7": `To obtain additional details regarding our Manpower Supply or explore how we can
+   support your upcoming projects, please reach out to our global sales team.`,
+   //arbitration services
+   "arbitration_breadcrumbTitle": "ARBITRATION AND CONCILIATION",
+   "arbitration_breadcrumbHome": "Home",
+   "arbitration_breadcrumbAssetManagement": "Asset Management & Reliability",
+   "arbitration_breadcrumbCurrent": "ARBITRATION AND CONCILIATION",
+
+   "arbitration_sectionTitle": "ARBITRATION AND CONCILIATION",
+
+   "arbitration_paragraph_1":"One of the company's major fields of expertise is providing consultation for any company or governmental entity engaged in a technical dispute that can be resolved by arbitration or conciliation. The company strategy in this field is to start with conciliation action to resolve the dispute by creative technical and administrative solutions, utilizing the well-established experience of its engineering staff.",
+
+   "arbitration_paragraph_2":"The company’s specialist engineers also can provide the technical support to law offices and legal consultants who are involved in alternative dispute resolutions (ADR) and could also share with them arbitration activities.",
+
+   "arbitration_paragraph_3":"We provide engineering Arbitration services for the technical disputes in coordination with corporate counsel and legal expertise parties. In addition we can provide conciliation services for industrial projects during the Engineering stage.",
+
+   "arbitration_paragraph_4":"Company may extend also engineering support to the law offices and legal consultants who are involved in alternative dispute resolutions (ADR).",
+   // training services
+    "training_breadcrumbTitle": "Training Services",
+    "training_breadcrumbHome": "Home",
+    "training_breadcrumbCurrent": "Training Services",
+
+    // ======= SECTION HEADER =======
+    "training_sectionTitle": "Training Services",
+
+    // ======= PARAGRAPHS =======
+    "training_paragraph1":"Arabian Dexterity provides unrivalled training services that are unique in terms of their level of quality and practicality.",
+
+    "training_paragraph2":"Our courses are condensed active learning experience consisting of lectures, examples and case studies. They contain several exercises and practice cases with samples designed to fit the training workshops which will be led by the experienced course facilitator and executed by attendees as a practical case for how to implement all learned knowledge from our courses.",
+
+    "training_paragraph3":"We use contemporary learning and training principles of attendee engagement through participation led by a professional practitioners.",
+
+    "training_paragraph4Title":"Our course consist of:",
+
+    "training_course_lectures":"Lectures",
+    "training_course_examples":"Practical examples",
+    "training_course_practice":"Practice cases, do it yourself",
+
+    "training_paragraph5":"We excel in making your training experience a real applicable knowledge and experiences.",
+
+    "training_paragraph6":"Arabian dexterity provides unique comfortable training sessions that fulfill your needs and enable moving towards business success and competitive advantage.",
+
+    "training_paragraph7Title":"A list of our most wanted training courses includes:",
+
+    // ======= COURSE LINKS =======
+    "training_link_cmrp":"Certified Maintenance and Reliability Professional (CMRP) Guidance Course to Body of Knowledge.",
+    "training_link_cama":"Certified Asset Management Accessor, CAMA, Asset Management & ISO 55001",
+    "training_link_shutdown":"Shutdowns & Turnarounds Planning & Management.",
+    "training_link_rcm":"Reliability Centered Maintenance, RCM.",
+    "training_link_maintenancePlanning":"Maintenance Planning & Scheduling.",
+    "training_link_rcfa":"Root Cause Failure Analysis, RCFA.",
+    "training_link_excellence":"Excellence in Maintenance & Reliability Management.",
+    "training_link_assetPolicy":"Creation of Asset Management Policy & Plan According to ISO 55001.",
+    "training_link_pmo":"Preventive Maintenance Optimization, PMO.",
+    "training_link_financialManagement":"Financial Management of maintenance, reliability & asset management.",
+    "training_link_managingMaintenance":"Managing Maintenance resources.",
+    "training_link_mro":"MRO Inventory Management.",
+    "training_paragraph8":"In addition to the above course, we design tailored courses to fit your needs and help to solve your maintenance and reliability problems to achieve business goals.",
+    "training_paragraph9":"All courses can be delivered either in morning or evening as well as physical or online.",
+   //about
+   "about_page_title": "About Us",
+   "about_breadcrumb_home": "Home",
+   "about_breadcrumb_current": "About Us",
+   "about_experience_years_text": "Years Business Experience",
+   "about_section_subtitle": "About Us",
+   "about_company_title": "DEXTERITY INDUSTRIAL Company",
+   "about_company_description": "Arabian Dexterity Company is a newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization. The company has a competitive advantage with its ability to provide decent services, specialized consultancy, and engineering solutions to the industrial, oil, and gas sectors under challenging circumstances. The management is keen on making continuous efforts to meet the challenge of forging strong, long-term, and reliable alliances with valued clients and partners. We are fully committed to our clients to optimize time and resources, in a professional, quality, and cost-effective manner.",
+   "about_mission_subtitle": "DEXTERITY INDUSTRIAL Company",
+   "about_mission_title": "Mission & Vision",
+   "about_mission_description": "To be the most trusted business partner in the field of asset management, risk management & operational excellence. To profitably grow our business by providing innovative, technologically superior-effective industrial services and systems.",
+   "about_experience_subtitle": "Our Experience",
+   "about_experience_title": "WE provide our services with \"DEXTERITY\"",
+   "about_experience_years": "Years of Experts Experience",
+   "about_projects_done": "Projects Done",
+   "about_happy_clients": "Happy Clients",
+   "about_workers": "Workers",
+   // cama
+   "cama_page_title": "CAMA",
+   "cama_breadcrumb_home": "Home",
+   "cama_breadcrumb_training_services": "Training Services",
+   "cama_breadcrumb_current": "CAMA",
+   "cama_section_title": "Certified Asset Management Assessor (CAMA)",
+   "cama_paragraph_1": "Asset management is 'Coordinated Activities of an organization to realize value from assets. It is no more struggling trying to operate or maintain assets with the hard way. Asset Management has a broader focus encompassing many organizational levels and applying to all functions or departments. The terms, concepts, and activities are explained in ISO 55000 series ‘Asset Management – Management Standard’, which shows how the application of broader Asset Management approaches can help organizations extract most value for stakeholders.",
+   "cama_paragraph_2": "For individuals seeking to be competent in asset management related aspects, The 'Certified Asset Management Assessor' (CAMA) certification establishes an individual’s credentials in asset management knowledge and comprehension, globally.",
+   "cama_paragraph_3": "Having certified CAMA personnel, Organizations will be able to determine the competence and experience of personnel, whether they are part of an audit team, or helping to implement asset management systems.",
+   "cama_paragraph_4": "Individuals to be certified in this certificate, they should have minimum 5 years of experience in maintenance, reliability and asset management as well as proven knowledge and skills to fulfill CAMA body of knowledge including ISO 55000 series knowledge and skills.",
+   "cama_paragraph_5": "This course will guide attendees through CAMA Body of Knowledge and will work as illustrating roadmap to help you 'Sharpen the Saw' before the examination and enhance needed knowledge and skills regarding Asset Management. Practice questions are included in this course to enable attendees to know exam testing scheme and methodologies and giving attendees helping role in passing exam.",
+   "cama_paragraph_6": "This course provides excellent framework of asset management implementation as per standardized requirements for maintenance, reliability and asset management professionals seeking credentialling themselves in asset management in light of ISO 55000 and The Global Forum of Maintenance & Asset Management Body of Knowledge.",
+   "cama_who_should_attend_title": "Who should attend?",
+   "cama_paragraph_7": "Maintenance, Reliability & Asset Management professionals from all levels.",
+   "cama_paragraph_8": "For those seeking to be certified asset management assessor (CAMA), they should have minimum 5 of experience in maintenance, reliability and asset management.",
+   //cmrp
+   "cmrp_page_title": "CMRP",
+   "cmrp_breadcrumb_home": "Home",
+   "cmrp_breadcrumb_training_services": "Training Services",
+   "cmrp_breadcrumb_current": "CMRP",
+   "cmrp_main_heading": "Certified Maintenance and Reliability Professional (CMRP)",
+   "cmrp_intro_paragraph_1": "This course is a guidance course to Certified Maintenance and Reliability Professional (CMRP) body of knowledge (BoK)...",
+   "cmrp_intro_paragraph_2": "This guidance and review course will guide attendees through CMRP BoK and will work as illustrating roadmap...",
+   "cmrp_intro_paragraph_3": "This course is one of the proven “must have” courses for maintenance and reliability professionals...",
+   "cmrp_intro_paragraph_4": "This course was designed for maintenance and reliability professionals at all levels...",
+   "cmrp_bok_intro": "Certified Maintenance & Reliability Body of Knowledge, CMRP has five pillars:",
+   "cmrp_pillar_1": "Pillar 1 - Business and Management.",
+   "cmrp_pillar_2": "Pillar 2 – Manufacturing Process Reliability.",
+   "cmrp_pillar_3": "Pillar 3 – Equipment Reliability.",
+   "cmrp_pillar_4": "Pillar 4 – Leadership and Organization.",
+   "cmrp_pillar_5": "Pillar 5 – Work Management.",
+   "cmrp_who_should_attend_title": "Who should attend",
+   "cmrp_who_should_attend_intro": "Maintenance and reliability professionals at all levels including Directors...",
+   "cmrp_industry_1": "Steel, Cement, Mining & Heavy industries.",
+   "cmrp_industry_2": "Oil, Gas, Chemicals Process Industries and Petrochemicals.",
+   "cmrp_industry_3": "Power and Utilities.",
+   "cmrp_industry_4": "Engineering firms.",
+   "cmrp_industry_5": "Automotive and Transportation.",
+   "cmrp_industry_6": "Facility Management.",
+   "cmrp_industry_7": "All other industries and M&R fields.",
+   //shutdown
+   "shutdown_page_main_title": "Shutdowns & Turnarounds Planning & Management",
+    "shutdown_page_home": "Home",
+    "shutdown_page_training_services": "Training Services",
+    "shutdown_page_breadcrumb_last": "Shutdowns & Turnarounds Planning & Management",
+    "shutdown_page_section_title": "Shutdowns & Turnarounds Planning & Management",
+    "shutdown_page_paragraph_1": "This course provides a complete framework and context including tools and knowledge to the ultimate optimization of shutdowns and turnarounds performance.",
+    "shutdown_page_paragraph_2": "It is a detailed roadmap for turnaround management personnel to achieve organization goals of improved reliability and profitability through effective plant shutdowns and turnarounds management. It provides an emphasis on strategy, planning, preparation activities, execution and control to obtain the lowest cost, achieve the required quality, safety standards and achieve business goals.",
+    "shutdown_page_paragraph_3": "This five-days course provides a solid foundation in key and advanced aspects of shutdowns and turnarounds management journey. Attendees will be taken through a structured program that includes a balance of theory and practice using a combination of collaborative learning and practical activities.",
+    "shutdown_page_paragraph_4": "It provides detailed guidance and practical experience in management, preparation and control of shutdowns and turnarounds.",
+    "shutdown_page_who_should_attend": "Who should attend?",
+    "shutdown_page_paragraph_5": "Maintenance, reliability & asset management professionals dealing with shutdown and turnaround from all levels.",
+  // rcm
+  "rcm_page_main_title": "RCM",
+  "rcm_page_home": "Home",
+  "rcm_page_training_services": "Training Services",
+  "rcm_page_breadcrumb_last": "RCM",
+  "rcm_page_section_title": "Reliability Centered Maintenance, (RCM)",
+  "rcm_page_paragraph_1": "Reliability Centered Maintenance, RCM, is a well-proven technique to enhance reliability and safety, and to optimize the overall maintenance activities performed on site in a cost effective and applicable timeframe.",
+  "rcm_page_paragraph_2": "This course provides a detailed framework for Reliability Centered Maintenance concepts, knowledge and application. It builds this framework over a solid base knowledge introduction on maintenance and asset management basis, strategies and requirements.",
+  "rcm_page_paragraph_3": "In this course, attendees will learn how to become intimately familiar with all details of the Reliability Centered Maintenance procedures in order to implement them effectively and to ensure that the plant maintenance management program is kept evergreen.",
+  "rcm_page_paragraph_4": "This training is a comprehensive program that can help to support the implementation and management of Reliability Centered Maintenance projects to influence organizations outcomes and deliver competitive advantage. It helps in providing the right answers in questions such as which maintenance strategy is suitable in your case, how you can effectively implement it, what obstacles and problems encounter practical application, how you will be able to measure and analyze the implementation results etc. Delegates will also have opportunity to discuss issues relevant to their workplace.",
+  "rcm_page_paragraph_5": "It is a comprehensive active learning consists of lectures, examples, case studies and practice cases.",
+  "rcm_page_who_should_attend": "Who should attend?",
+  "rcm_page_paragraph_6": "Maintenance, reliability and asset management professionals who are responsible for plant maintenance performance improvement including plant engineering, planning & scheduling, maintenance management and reliability.",
+  //maintenance planning  
+  "maintenance_planning_main_title": "Maintenance Planning & Scheduling",
+  "maintenance_planning_home": "Home",
+  "maintenance_planning_training_services": "Training Services",
+  "maintenance_planning_breadcrumb_last": "Maintenance Planning & Scheduling",
+  "maintenance_planning_section_title": "Maintenance Planning & Scheduling",
+  "maintenance_planning_paragraph_1": "This training is a comprehensive program which can help to support the implementation and management of enhanced planning & scheduling functions to support fulfilling both short and long term maintenance objectives. It seeks to effectively enable personnel and organizations to influence outcomes and deliver competitive advantage.",
+  "maintenance_planning_paragraph_2": "In this course, a complete outline and details of worldwide best practices and methodologies of planning & scheduling are provided in a complete practical context and with full practice cases to be executed by trainees and led by professional trainers.",
+  "maintenance_planning_paragraph_3": "After this course attendees will be able to participate, use and apply by themselves various techniques, tools and methodologies of maintenance planning and scheduling to help achieve organization goals of improved reliability and profitability as well as to carry out better planning and scheduling ( work management ) activities including:",
+  "maintenance_planning_paragraph_4": "It enables attendees to be fully capable carrying out planning & scheduling activities and enabling delivering jobs with safety and quality requirements to fulfill business objectives.",
+  "maintenance_planning_list_item_1": "Identification & Prioritization of work.",
+  "maintenance_planning_list_item_2": "Creating and validating of Maintenance work requests.",
+  "maintenance_planning_list_item_3": "Preparation of detailed job packages and material reservation.",
+  "maintenance_planning_list_item_4": "Planning and development of weekly schedules and coordinating Daily/Weekly scheduling meetings including Interdepartmental coordination.",
+  "maintenance_planning_list_item_5": "Scheduling and managing needed logistics for work needs and effective utilization of resources.",
+  "maintenance_planning_who_should_attend_title": "Who should attend?",
+  "maintenance_planning_paragraph_5": "Maintenance, reliability and asset management professionals who are either will carry out planning and scheduling activities or participate in activities related to work management cycle which deals with planning and scheduling.",  
+  // rcfa
+  "rcfa_breadcrumb_title": "RCFA",
+  "rcfa_breadcrumb_home": "Home",
+  "rcfa_breadcrumb_training_services": "Training Services",
+  "rcfa_breadcrumb_current": "RCFA",
+
+  "rcfa_main_heading": "Root Cause Failure Analysis (RCFA)",
+
+  "rcfa_paragraph_1": "This course provides understanding and application of root cause analysis as a procedure for discovering and analyzing the causes of problems at their roots not only looking to their symptoms in an effort to determine what can be done to solve or prevent them.",
+
+  "rcfa_paragraph_2": "Problems will not go with just correcting or treating their symptoms but with addressing and correcting their roots. This course illustrates in depth the concepts, techniques, examples, application case studies and full practice cases of how to apply worldwide level root cause analysis with best practices and using different techniques.",
+
+  "rcfa_paragraph_3": "Upon completion of this course the attendee should fully understand the concept and techniques of RCFA and able to be able to participate, conduct and apply by himself various techniques of root cause analysis and using different methodologies for this purpose as well.",
+
+  "rcfa_paragraph_4": "It is a comprehensive active learning consisting of lectures, examples, case studies and full practice cases will be participated by attendees.",
+
+  "rcfa_who_should_attend_title": "Who should attend?",
+
+  "rcfa_who_should_attend_desc": "Anyone involved in complex problem solving, incident analysis or responsible for solving maintenance and reliability problems and preventing future occurrences of either equipment or general system failures.",
+  //footer
+    "footer_about_text": "Arabian Dexterity Company is newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization.",
     },
     
     ar: {
@@ -827,6 +1097,265 @@ const translations = {
    "maintenance_reliability_point_16": "إدارة الأعمال الرأسمالية وإنشاء الموثوقية.",
    "maintenance_reliability_point_17": "الخدمات الداعمة وورش العمل.",
    "maintenance_reliability_point_18": "التدريب والتطوير.",
+   //building maintenance
+   "building_maintenance_breadcrumb_title": "صيانة المباني",
+   "building_maintenance_breadcrumb_home": "الرئيسية",
+   "building_maintenance_section_title": "صيانة المباني",
+   "building_maintenance_paragraph_1": "يتركز التركيز في إدارة الأصول على مساعدة المؤسسات في تحقيق أهدافها المحددة وتحديد المزيج الأمثل من الأنشطة بناءً على هذه الأهداف.",
+   "building_maintenance_paragraph_2": "جزء مهم من هذا النظام هو التخطيط لإدارة الأصول، بما في ذلك تحديد السياسات ذات الصلة، خطة إدارة الأصول الإستراتيجية، أهداف إدارة الأصول، وخطط إدارة الأصول قصيرة المدى. بالإضافة إلى هذه الجوانب، يُعد اتخاذ القرارات المتعلقة بإدارة الأصول وإدارة المخاطر وظيفتين أساسيتين لإدارة وظائف الأصول المادية بنجاح.",
+   "building_maintenance_paragraph_3": "تشكل المجالات المذكورة أعلاه إطارًا للصيانة والموثوقية وإدارة الأصول.",
+   "building_maintenance_paragraph_4": "تقدم ديكستيري خدماتها الاستشارية لبناء مثل هذه الأنظمة والإطار. تم تصميم هذا الإطار لمساعدة المسؤولين عن إدارة أصول المؤسسة على تبني أفضل الممارسات لإدارة الأصول. قد تختلف هذه العمليات لتناسب الظروف الفردية، لكن في كل حالة يكون الهدف هو تحقيق أفضل استخدام لأصول المؤسسة.",
+   //data preparation
+   "data_preparation_breadcrumb_title": "تحضير البيانات",
+   "data_preparation_breadcrumb_home": "الرئيسية",
+   "data_preparation_breadcrumb_consultation": "خدمات الاستشارات",
+
+   "data_preparation_section_title": "تحضير البيانات لتنفيذ نظام إدارة الأصول (SAP/Maximo)",
+
+   "data_preparation_paragraph_1": "يسمح نظام إدارة الأصول المؤسسية (EAM) للمؤسسات بالتعامل مع الإدارة الكاملة لدورة حياة أصولها: بدءًا من التخطيط الرأسمالي إلى الشراء، التركيب، العمليات، تقارير الامتثال، الصيانة، الإصلاح، وأخيرًا إخراج الأصول من الخدمة. ولكن مثل أي عملية تحول تكنولوجي واسعة النطاق، يجب أن يتم التخطيط لنظام EAM وتنفيذه وإدارته وقياسه بعناية لكي تتمكن المؤسسات من تحقيق النتائج المرجوة بالكامل.",
+   "data_preparation_paragraph_2": "كخطوة مهمة جدًا مطلوبة لأنظمة إدارة الأصول المؤسسية (EAMs) وأنظمة إدارة الصيانة المحوسبة (CMMS)، يعد تحضير البيانات وتنفيذها أمرًا بالغ الأهمية لنجاح هذه الأنظمة.",
+   "data_preparation_paragraph_3": "يتطلب امتلاك بيانات كاملة، صحيحة، ذات صلة، عالية الجودة، ومنظمة بشكل جيد جهدًا كبيرًا وكوادر ذات خبرة.",
+   "data_preparation_paragraph_4": "في ديكستيري، نساعد عملاءنا في أنشطة جمع البيانات وترحيلها خلال رحلتهم في تنفيذ أنظمة إدارة الأصول. وبفضل خبرتنا العملية الوظيفية وخلفيتنا التكنولوجية العالمية، تعلمنا أفضل الطرق لتحويل المؤسسات في صناعات ودول مختلفة.",
+   "data_preparation_paragraph_5": "تشمل هذه الخدمات:",
+
+   "data_preparation_point_1": "خطة تحويل البيانات",
+   "data_preparation_point_2": "جمع البيانات وتحضيرها",
+   "data_preparation_point_3": "التحقق من صحة البيانات وتحليلها",
+   "data_preparation_point_4": "ترحيل البيانات وتحميلها إلى الأنظمة",
+   "data_preparation_paragraph_6": "يعد تنفيذ نظام إدارة الأصول رحلة تمتد لسنوات، وكغيره من المبادرات التي تتطلب وقتًا طويلًا، فهو معرض لمخاطر الفشل بشكل أكبر. ولكن من خلال فهم خطوات التحول والتوقعات والتنفيذ عالي الجودة، يمكن للمؤسسات أن تكون مستعدة بشكل أفضل للتعامل مع التحديات على طول الطريق وتحقيق النتائج المرجوة.",
+   //consultation services
+   "consultation_breadcrumb_title": "خدمات الاستشارات",
+    "consultation_breadcrumb_home": "الرئيسية",
+    "consultation_breadcrumb_current": "خدمات الاستشارات",
+
+    "consultation_section_title": "خدمات الاستشارات",
+    "consultation_paragraph_1": `توفر شركة أريبان ديكستريتي خدمات استشارية مميزة لعملائنا. من خلال سنوات عديدة من الخبرة في الصناعة،
+    أثبتنا أنفسنا كشريك موثوق للمنظمات التي تسعى للحصول على التوجيه والخبرة والتنفيذ. فريقنا من المستشارين المحترفين
+    مكرس لمساعدة الشركات على التغلب على التحديات وتحسين العمليات وتحقيق الأهداف الاستراتيجية.
+    نحن نفهم احتياجات كل عميل ونخصص حلولنا وفقًا لذلك. نعمل عن كثب مع عملائنا من خلال نهج تعاوني لتطوير وتنفيذ
+    استراتيجيات فعالة تحقق النجاح. سواء كنت شركة ناشئة صغيرة أو مؤسسة كبيرة، تم تصميم خدماتنا الاستشارية
+    لتمكينك من الأدوات والمعرفة اللازمة للنجاح في بيئة تنافسية. ثق بنا لتقديم نتائج تتجاوز توقعاتك
+    وتدفع عملك نحو النمو المستدام.`,
+
+    "consultation_paragraph_2": `يمكن لشركة أريبان ديكستريتي تقديم مجموعة واسعة من الخدمات الاستشارية المطلوبة من جميع القطاعات الصناعية
+    لتحقيق رؤية الدولة. وتشمل هذه الخدمات ما يلي:`,
+
+    "consultation_service_1": "تقييم فعالية الصيانة والموثوقية",
+    "consultation_service_2": "تقييم إدارة الأصول (ISO 55001:2014) والتحضير للحصول على الشهادة",
+    "consultation_service_3": "التخطيط والإدارة لعمليات الإيقاف والصيانة (استشارات وتنفيذ)",
+    "consultation_service_4": "استراتيجية وإطار إدارة الأصول وصيانة المباني",
+    "consultation_service_5": "تقييم وإنشاء هيكل الأصول",
+    "consultation_service_6": "تقييم وترتيب الأهمية النسبية (تقييم وإنشاء)",
+    "consultation_service_7": "مشاريع الصيانة الوقائية وتحسينها القائمة على الموثوقية",
+    "consultation_service_8": "إعداد البيانات لتنفيذ أنظمة إدارة الأصول (EAM)",
+    "consultation_service_9": "تحسين المخزون وقطع الغيار",
+   //manpower
+   "manpower_breadcrumb_title": "توفير القوى العاملة",
+    "manpower_breadcrumb_home": "الرئيسية",
+    "manpower_breadcrumb_parent": "إدارة الأصول والموثوقية",
+    "manpower_breadcrumb_current": "توفير القوى العاملة",
+
+    "manpower_section_title": "مقدمة عن قسم توفير القوى العاملة",
+
+    "manpower_paragraph_1": `نتميز بتوفير مهندسين ماهرين وقوى عاملة مدربة، مع خبرة واسعة في العمليات المتعلقة بالنفط والغاز،
+    إنتاج البتروكيماويات، معالجة المعادن، الطاقة المتجددة، مرافق توليد الطاقة، محطات تحلية مياه البحر،
+    والشركات الهندسية الكبرى.`,
+
+    "manpower_paragraph_2": `لدينا القدرة على تقديم قوى عاملة مؤهلة وذات خبرة، بما في ذلك المحترفين والمهندسين والفنيين،
+    تشمل جميع التخصصات الرئيسية في القطاعات المحددة ومجال الهندسة والمشتريات والإنشاءات.
+    يمكن للشركة نشر فرق كبيرة بسرعة إلى مواقع المشاريع الخارجية، مع ضمان الامتثال الكامل للقوانين المحلية.
+    كما أن الشركة لديها روابط بقوى عاملة دولية متنوعة تشمل المدراء والمهندسين والمشرفين والعمال من جنسيات وثقافات مختلفة.`,
+
+    "manpower_paragraph_3": `تشمل الإدارة والإشراف في مواقع المشاريع (بما في ذلك مديري المواقع، الصحة والسلامة، ضمان الجودة،
+    المدني، الميكانيكي، الكهربائي، أجهزة القياس والتحكم، التشغيل والتكليف) بالإضافة إلى الموظفين المتخصصين
+    (مثل خبراء أنظمة التحكم DCS، التحكم في المعدات الدوارة، مكافحة الحرائق، مهندسي المعدات الدوارة، المولدات، والغلايات).`,
+
+    "manpower_paragraph_4": `نقوم بتوفير قوى عاملة ماهرة وذات خبرة لدعم العمليات التشغيلية لعملائنا،
+    بالإضافة إلى تقديم خدمات التوظيف الخارجي عند الحاجة.`,
+
+    "manpower_paragraph_5": `نقوم بتخصيص عملية البحث التنفيذي لتناسب متطلبات الوظائف على جميع المستويات،
+    كما نمكّن المؤسسات من إجراء المقابلات الأولية.`,
+
+    "manpower_paragraph_6": `باستخدام فهم شامل لمواصفات الوظائف، وثقافة المؤسسة، والمتطلبات التعليمية والمهارية،
+    والوعي بالسلامة، وغيرها من الصفات الأساسية المطلوبة لأي دور، نقوم بتوظيف ونشر المدراء والمهندسين والفنيين والعمال.`,
+
+    "manpower_paragraph_7": `للحصول على مزيد من التفاصيل حول خدمات توفير القوى العاملة أو لمعرفة كيف يمكننا دعم مشاريعك القادمة،
+    يرجى التواصل مع فريق المبيعات العالمي لدينا.`,
+   // arbitration services
+   "arbitration_breadcrumbTitle": "التحكيم والوساطة",
+    "arbitration_breadcrumbHome": "الرئيسية",
+    "arbitration_breadcrumbAssetManagement": "إدارة الأصول والموثوقية",
+    "arbitration_breadcrumbCurrent": "التحكيم والوساطة",
+
+    "arbitration_sectionTitle": "التحكيم والوساطة",
+
+    "arbitration_paragraph1": "يُعد أحد المجالات الرئيسية لخبرة الشركة هو تقديم الاستشارات لأي شركة أو جهة حكومية تشارك في نزاع تقني يمكن حله من خلال التحكيم أو الوساطة. تعتمد إستراتيجية الشركة في هذا المجال على البدء بخطوة الوساطة لحل النزاع من خلال حلول إبداعية فنية وإدارية، مع الاستفادة من الخبرة الكبيرة لموظفيها الهندسيين.",
+
+    "arbitration_paragraph2":"كما يمكن لمهندسي الشركة المتخصصين تقديم الدعم الفني لمكاتب المحاماة والمستشارين القانونيين المشاركين في حلول النزاعات البديلة (ADR)، والمشاركة معهم في أنشطة التحكيم.",
+
+    "arbitration_paragraph3":"نحن نقدم خدمات التحكيم الهندسي للنزاعات الفنية بالتنسيق مع المستشارين القانونيين وخبراء القانون، بالإضافة إلى تقديم خدمات الوساطة للمشاريع الصناعية خلال مرحلة التصميم الهندسي.",
+
+    "arbitration_paragraph4":"يمكن للشركة أيضًا تقديم الدعم الهندسي لمكاتب المحاماة والمستشارين القانونيين المشاركين في حلول النزاعات البديلة (ADR).",
+    //training services
+    "training_breadcrumbTitle": "خدمات التدريب",
+    "training_breadcrumbHome": "الرئيسية",
+    "training_breadcrumbCurrent": "خدمات التدريب",
+
+    "training_sectionTitle": "خدمات التدريب",
+
+    "training_paragraph1":"تقدم شركة أريبيا ديكستيريتي خدمات تدريبية لا مثيل لها، تتميز بمستوى فريد من الجودة والعملية.",
+
+    "training_paragraph2":"دوراتنا هي تجربة تعليمية نشطة ومكثفة تتكون من محاضرات وأمثلة ودراسات حالة. تحتوي على العديد من التمارين والحالات العملية المصممة لتناسب ورش التدريب، والتي يقودها مدربون ذوو خبرة وينفذها المتدربون كحالات عملية لتطبيق جميع المعارف المكتسبة من دوراتنا.",
+
+    "training_paragraph3":"نستخدم أساليب تعلم وتدريب حديثة تعتمد على مشاركة المتدربين من خلال التفاعل بقيادة ممارسين محترفين.",
+
+    "training_paragraph4Title":"تتكون دوراتنا من:",
+
+    "training_course_lectures":"محاضرات",
+    "training_course_examples":"أمثلة عملية",
+    "training_course_practice":"حالات عملية - قم بها بنفسك",
+
+    "training_paragraph5":"نتميز في جعل تجربة التدريب الخاصة بك معرفة قابلة للتطبيق بشكل حقيقي وخبرات عملية.",
+
+    "training_paragraph6":"توفر شركة أريبيا ديكستيريتي جلسات تدريبية مريحة وفريدة تلبي احتياجاتك وتمكنك من التقدم نحو نجاح الأعمال والميزة التنافسية.",
+
+    "training_paragraph7Title":"قائمة بأكثر الدورات التدريبية طلباً لدينا تشمل:",
+
+    "training_link_cmrp":"دورة إرشادية للمعرفة الأساسية لشهادة محترف الصيانة والموثوقية (CMRP).",
+    "training_link_cama":"شهادة مقيّم إدارة الأصول CAMA، إدارة الأصول ومعيار ISO 55001",
+    "training_link_shutdown":"تخطيط وإدارة التوقفات والصيانة الدورية.",
+    "training_link_rcm":"الصيانة المعتمدة على الموثوقية (RCM).",
+    "training_link_maintenancePlanning":"تخطيط وجدولة أعمال الصيانة.",
+    "training_link_rcfa":"تحليل أسباب الفشل الجذري (RCFA).",
+    "training_link_excellence":"التميز في إدارة الصيانة والموثوقية.",
+    "training_link_assetPolicy":"إنشاء سياسة وخطة لإدارة الأصول وفقًا لمعيار ISO 55001.",
+    "training_link_pmo":"تحسين الصيانة الوقائية (PMO).",
+    "training_link_financialManagement":"الإدارة المالية للصيانة والموثوقية وإدارة الأصول.",
+    "training_link_managingMaintenance":"إدارة موارد الصيانة.",
+    "training_link_mro":"إدارة مخزون المواد وقطع الغيار (MRO).",
+
+    "training_paragraph8":"بالإضافة إلى الدورات المذكورة أعلاه، نقوم بتصميم دورات مخصصة لتلبية احتياجاتك والمساعدة في حل مشكلات الصيانة والموثوقية لتحقيق أهداف العمل.",
+
+    "training_paragraph9":"يمكن تقديم جميع الدورات في الصباح أو المساء، سواء بشكل حضوري أو عبر الإنترنت.",
+    //about
+    "about_page_title": "من نحن",
+    "about_breadcrumb_home": "الرئيسية",
+    "about_breadcrumb_current": "من نحن",
+    "about_experience_years_text": "سنوات من الخبرة في مجال الأعمال",
+    "about_section_subtitle": "من نحن",
+    "about_company_title": "شركة ديكستيريتي الصناعية",
+    "about_company_description": "شركة ديكستيريتي العربية هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع. تتمتع الشركة بميزة تنافسية من خلال قدرتها على تقديم خدمات متميزة واستشارات متخصصة وحلول هندسية للقطاعات الصناعية وقطاعات النفط والغاز في ظل ظروف صعبة. تحرص الإدارة على بذل جهود مستمرة لمواجهة التحدي المتمثل في بناء تحالفات قوية وطويلة الأمد وموثوقة مع العملاء والشركاء. نحن ملتزمون تمامًا تجاه عملائنا لتحقيق الاستفادة المثلى من الوقت والموارد بطريقة احترافية وعالية الجودة وفعّالة من حيث التكلفة.",
+    "about_mission_subtitle": "شركة ديكستيريتي الصناعية",
+    "about_mission_title": "الرؤية والرسالة",
+    "about_mission_description": "أن نكون الشريك التجاري الأكثر موثوقية في مجال إدارة الأصول وإدارة المخاطر والتميز التشغيلي. وأن ننمي أعمالنا بشكل مربح من خلال تقديم خدمات وأنظمة صناعية مبتكرة وفعّالة تقنيًا.",
+    "about_experience_subtitle": "خبرتنا",
+    "about_experience_title": "نحن نقدم لكم خدماتنا ب\"براعة\"",
+    "about_experience_years": "سنوات من الخبرة العملية",
+    "about_projects_done": "المشاريع المنجزة",
+    "about_happy_clients": "عملاء سعداء",
+    "about_workers": "موظفون",
+   // cama
+   "cama_page_title": "شهادة CAMA",
+   "cama_breadcrumb_home": "الرئيسية",
+   "cama_breadcrumb_training_services": "خدمات التدريب",
+   "cama_breadcrumb_current": "شهادة CAMA",
+   "cama_section_title": "مقيم إدارة الأصول المعتمد (CAMA)",
+   "cama_paragraph_1": "إدارة الأصول هي 'الأنشطة المنسقة للمنظمة لتحقيق قيمة من الأصول'. لم يعد الأمر مقتصرًا على محاولة تشغيل أو صيانة الأصول بالطريقة الصعبة. إدارة الأصول لها منظور أوسع يشمل العديد من المستويات التنظيمية وينطبق على جميع الوظائف أو الأقسام. يتم شرح المصطلحات والمفاهيم والأنشطة في سلسلة ISO 55000 'إدارة الأصول – المعيار الإداري'، والتي توضح كيف يمكن أن تساعد الأساليب الأوسع لإدارة الأصول المؤسسات على تحقيق أكبر قيمة لأصحاب المصلحة.",
+   "cama_paragraph_2": "للأفراد الذين يسعون إلى أن يكونوا مؤهلين في مجالات إدارة الأصول، فإن شهادة 'مقيم إدارة الأصول المعتمد' (CAMA) تثبت اعتماد الفرد من حيث المعرفة والفهم لإدارة الأصول على مستوى عالمي.",
+   "cama_paragraph_3": "مع وجود موظفين معتمدين بشهادة CAMA، ستكون المؤسسات قادرة على تحديد كفاءة وخبرة الموظفين، سواء كانوا جزءًا من فريق تدقيق أو يساعدون في تنفيذ أنظمة إدارة الأصول.",
+   "cama_paragraph_4": "يجب أن يكون لدى الأفراد الراغبين في الحصول على هذه الشهادة خبرة لا تقل عن 5 سنوات في مجالات الصيانة والموثوقية وإدارة الأصول، بالإضافة إلى المعرفة والمهارات اللازمة لتغطية مجال معرفة CAMA بما في ذلك معرفة ومعايير ISO 55000.",
+   "cama_paragraph_5": "سيرشدك هذا البرنامج التدريبي خلال مجال معرفة CAMA ويعمل كخارطة طريق توضيحية لمساعدتك على 'شحذ المنشار' قبل الاختبار وتعزيز المعرفة والمهارات اللازمة المتعلقة بإدارة الأصول. يتضمن هذا البرنامج أسئلة تدريبية لتمكين المشاركين من فهم نظام وأساليب الاختبار ومساعدتهم في اجتياز الامتحان.",
+   "cama_paragraph_6": "يوفر هذا البرنامج إطارًا ممتازًا لتنفيذ إدارة الأصول وفقًا للمتطلبات القياسية لمتخصصي الصيانة والموثوقية وإدارة الأصول الذين يسعون لاعتماد أنفسهم في مجال إدارة الأصول وفقًا لمعايير ISO 55000 والمنتدى العالمي للصيانة وإدارة الأصول.",
+   "cama_who_should_attend_title": "من يجب أن يحضر؟",
+   "cama_paragraph_7": "المتخصصون في الصيانة والموثوقية وإدارة الأصول من جميع المستويات.",
+   "cama_paragraph_8": "الأفراد الذين يسعون للحصول على شهادة مقيم إدارة الأصول (CAMA) يجب أن تكون لديهم خبرة لا تقل عن 5 سنوات في مجالات الصيانة والموثوقية وإدارة الأصول.",
+  // cmrp
+  "cmrp_page_title": "شهادة CMRP",
+  "cmrp_breadcrumb_home": "الرئيسية",
+  "cmrp_breadcrumb_training_services": "خدمات التدريب",
+  "cmrp_breadcrumb_current": "شهادة CMRP",
+  "cmrp_main_heading": "المحترف المعتمد للصيانة والموثوقية (CMRP)",
+  "cmrp_intro_paragraph_1": "هذه الدورة هي دورة إرشادية لهيئة المعرفة...",
+  "cmrp_intro_paragraph_2": "ستساعد هذه الدورة الحضور على فهم هيئة المعرفة...",
+  "cmrp_intro_paragraph_3": "تُعد هذه الدورة واحدة من الدورات المهمة...",
+  "cmrp_intro_paragraph_4": "تم تصميم هذه الدورة للمحترفين في مجال الصيانة...",
+  "cmrp_bok_intro": "تتكون هيئة المعرفة للصيانة والموثوقية من خمسة أعمدة:",
+  "cmrp_pillar_1": "الركيزة الأولى - الأعمال والإدارة.",
+  "cmrp_pillar_2": "الركيزة الثانية - موثوقية عمليات التصنيع.",
+  "cmrp_pillar_3": "الركيزة الثالثة - موثوقية المعدات.",
+  "cmrp_pillar_4": "الركيزة الرابعة - القيادة والتنظيم.",
+  "cmrp_pillar_5": "الركيزة الخامسة - إدارة العمل.",
+  "cmrp_who_should_attend_title": "من يجب أن يحضر",
+  "cmrp_who_should_attend_intro": "المحترفون في مجال الصيانة والموثوقية على جميع المستويات...",
+  "cmrp_industry_1": "صناعات الحديد، الأسمنت، التعدين والصناعات الثقيلة.",
+  "cmrp_industry_2": "النفط، الغاز، الصناعات الكيميائية والبتروكيماويات.",
+  "cmrp_industry_3": "الطاقة والمرافق.",
+  "cmrp_industry_4": "شركات الهندسة.",
+  "cmrp_industry_5": "السيارات والنقل.",
+  "cmrp_industry_6": "إدارة المرافق.",
+  "cmrp_industry_7": "جميع الصناعات الأخرى ومجالات الصيانة والموثوقية.",
+  //shutdown
+  "shutdown_page_main_title": "تخطيط وإدارة الإيقاف والصيانة الدورية",
+  "shutdown_page_home": "الرئيسية",
+  "shutdown_page_training_services": "خدمات التدريب",
+  "shutdown_page_breadcrumb_last": "تخطيط وإدارة الإيقاف والصيانة الدورية",
+  "shutdown_page_section_title": "تخطيط وإدارة الإيقاف والصيانة الدورية",
+  "shutdown_page_paragraph_1": "يوفر هذا البرنامج إطارًا كاملاً وسياقًا شاملاً يتضمن الأدوات والمعرفة لتحقيق أفضل أداء في عمليات الإيقاف والصيانة الدورية.",
+  "shutdown_page_paragraph_2": "يُعد هذا البرنامج خارطة طريق مفصلة لفرق إدارة الصيانة الدورية لتحقيق أهداف المؤسسة المتعلقة بتحسين الموثوقية والربحية من خلال إدارة فعالة لعمليات الإيقاف والصيانة. ويؤكد على أهمية الاستراتيجية، التخطيط، أنشطة التحضير، التنفيذ، والتحكم للوصول إلى أقل تكلفة، وضمان الجودة المطلوبة، ومعايير السلامة، وتحقيق أهداف العمل.",
+  "shutdown_page_paragraph_3": "يقدم هذا البرنامج التدريبي الذي يمتد لخمسة أيام أساسًا قويًا للجوانب الرئيسية والمتقدمة لإدارة الإيقاف والصيانة الدورية. وسيتم إرشاد المشاركين من خلال برنامج منظم يجمع بين النظرية والتطبيق العملي باستخدام أساليب التعلم التعاوني والأنشطة العملية.",
+  "shutdown_page_paragraph_4": "يوفر البرنامج إرشادات تفصيلية وتجربة عملية في الإدارة، التحضير، والتحكم في عمليات الإيقاف والصيانة.",
+  "shutdown_page_who_should_attend": "من يجب أن يحضر؟",
+  "shutdown_page_paragraph_5": "المهندسون والمتخصصون في الصيانة، الموثوقية، وإدارة الأصول الذين يتعاملون مع عمليات الإيقاف والصيانة الدورية على جميع المستويات.", 
+ //rcm
+ "rcm_page_main_title": "الصيانة المعتمدة على الموثوقية (RCM)",
+ "rcm_page_home": "الرئيسية",
+ "rcm_page_training_services": "خدمات التدريب",
+ "rcm_page_breadcrumb_last": "الصيانة المعتمدة على الموثوقية (RCM)",
+ "rcm_page_section_title": "الصيانة المعتمدة على الموثوقية (RCM)",
+ "rcm_page_paragraph_1": "الصيانة المعتمدة على الموثوقية (RCM) هي تقنية مثبتة لتعزيز الموثوقية والسلامة، وتحسين أنشطة الصيانة الشاملة التي يتم تنفيذها في الموقع بطريقة فعالة من حيث التكلفة وفي إطار زمني مناسب.",
+ "rcm_page_paragraph_2": "يوفر هذا البرنامج التدريبي إطارًا تفصيليًا لمفاهيم ومعرفة وتطبيق الصيانة المعتمدة على الموثوقية. ويُبنى هذا الإطار على أساس متين من المعرفة المتعلقة بأساسيات الصيانة وإدارة الأصول، والاستراتيجيات والمتطلبات.",
+ "rcm_page_paragraph_3": "في هذا البرنامج التدريبي، سيتعلم المشاركون كيفية التعرف على جميع تفاصيل إجراءات الصيانة المعتمدة على الموثوقية من أجل تنفيذها بفعالية وضمان بقاء برنامج إدارة صيانة المصنع دائم التطوير.",
+ "rcm_page_paragraph_4": "يُعد هذا التدريب برنامجًا شاملاً يمكن أن يساعد في دعم تنفيذ وإدارة مشاريع الصيانة المعتمدة على الموثوقية لتعزيز نتائج المؤسسات وتقديم ميزة تنافسية. ويساعد على تقديم الإجابات الصحيحة على أسئلة مثل: ما هي استراتيجية الصيانة المناسبة لحالتك، كيف يمكنك تنفيذها بفعالية، ما العقبات والمشكلات التي تواجه التطبيق العملي، وكيف ستتمكن من قياس وتحليل نتائج التنفيذ، إلخ. كما سيحصل المشاركون على فرصة لمناقشة القضايا ذات الصلة ببيئة عملهم.",
+ "rcm_page_paragraph_5": "يشمل التدريب تعلمًا نشطًا شاملاً يتضمن المحاضرات، الأمثلة، دراسات الحالة، وحالات تدريب عملية.",
+ "rcm_page_who_should_attend": "من يجب أن يحضر؟",
+ "rcm_page_paragraph_6": "المهنيون المتخصصون في الصيانة، الموثوقية، وإدارة الأصول المسؤولون عن تحسين أداء صيانة المصنع، بما في ذلك الهندسة، التخطيط والجدولة، إدارة الصيانة، والموثوقية.",
+ // maintenance planning
+ "maintenance_planning_main_title": "تخطيط وجدولة الصيانة",
+    "maintenance_planning_home": "الرئيسية",
+    "maintenance_planning_training_services": "خدمات التدريب",
+    "maintenance_planning_breadcrumb_last": "تخطيط وجدولة الصيانة",
+    "maintenance_planning_section_title": "تخطيط وجدولة الصيانة",
+    "maintenance_planning_paragraph_1": "يُعد هذا التدريب برنامجًا شاملاً يمكن أن يساعد في دعم تنفيذ وإدارة وظائف التخطيط والجدولة المتقدمة لتحقيق الأهداف قصيرة وطويلة الأجل للصيانة. يهدف إلى تمكين الأفراد والمنظمات من التأثير على النتائج وتقديم ميزة تنافسية.",
+    "maintenance_planning_paragraph_2": "في هذه الدورة، سيتم تقديم مخطط كامل وتفاصيل لأفضل الممارسات العالمية ومنهجيات التخطيط والجدولة في سياق عملي متكامل، مع حالات تدريب عملية ينفذها المتدربون بقيادة مدربين محترفين.",
+    "maintenance_planning_paragraph_3": "بعد هذه الدورة، سيتمكن المشاركون من استخدام وتطبيق تقنيات وأدوات ومنهجيات تخطيط وجدولة الصيانة بأنفسهم، للمساعدة في تحقيق أهداف المنظمة في تحسين الموثوقية والربحية، بالإضافة إلى تحسين أنشطة التخطيط والجدولة (إدارة العمل) بما في ذلك:",
+    "maintenance_planning_paragraph_4": "تمكّن هذه الدورة المشاركين من تنفيذ أنشطة التخطيط والجدولة بكفاءة، وتسليم الأعمال بما يتوافق مع متطلبات السلامة والجودة لتحقيق أهداف العمل.",
+    "maintenance_planning_list_item_1": "تحديد أولويات العمل.",
+    "maintenance_planning_list_item_2": "إنشاء والتحقق من طلبات عمل الصيانة.",
+    "maintenance_planning_list_item_3": "إعداد حزم العمل التفصيلية وحجز المواد اللازمة.",
+    "maintenance_planning_list_item_4": "تخطيط وتطوير الجداول الأسبوعية وتنسيق اجتماعات الجدولة اليومية/الأسبوعية بما في ذلك التنسيق بين الأقسام.",
+    "maintenance_planning_list_item_5": "جدولة وإدارة اللوجستيات اللازمة لاحتياجات العمل والاستخدام الفعّال للموارد.",
+    "maintenance_planning_who_should_attend_title": "من يجب أن يحضر؟",
+    "maintenance_planning_paragraph_5": "المتخصصون في الصيانة والموثوقية وإدارة الأصول الذين سيقومون بتنفيذ أنشطة التخطيط والجدولة أو المشاركة في الأنشطة المتعلقة بدورة إدارة العمل المرتبطة بالتخطيط والجدولة.",
+ // rcfa
+ "rcfa_breadcrumb_title": "تحليل أسباب الفشل الجذري",
+  "rcfa_breadcrumb_home": "الرئيسية",
+  "rcfa_breadcrumb_training_services": "خدمات التدريب",
+  "rcfa_breadcrumb_current": "تحليل أسباب الفشل الجذري",
+
+  "rcfa_main_heading": "تحليل أسباب الفشل الجذري (RCFA)",
+
+  "rcfa_paragraph_1": "يوفر هذا البرنامج فهماً وتطبيقاً لتحليل الأسباب الجذرية كإجراء لاكتشاف وتحليل أسباب المشكلات من جذورها، وليس فقط النظر إلى أعراضها، بهدف تحديد ما يمكن فعله لحلها أو منع حدوثها.",
+
+  "rcfa_paragraph_2": "لن تختفي المشكلات بمجرد تصحيح أو معالجة أعراضها، ولكن من خلال معالجة جذورها. يوضح هذا البرنامج بعمق المفاهيم والتقنيات والأمثلة ودراسات الحالة العملية حول كيفية تطبيق تحليل الأسباب الجذرية بمستوى عالمي باستخدام أفضل الممارسات والتقنيات المختلفة.",
+
+  "rcfa_paragraph_3": "بعد إتمام هذا البرنامج، سيكون المشارك على دراية كاملة بمفهوم وتقنيات تحليل الأسباب الجذرية، وقادرًا على المشاركة وتنفيذ وتطبيق مختلف التقنيات والمنهجيات بنفسه.",
+
+  "rcfa_paragraph_4": "يتضمن هذا البرنامج تعلماً نشطاً شاملاً من خلال المحاضرات والأمثلة ودراسات الحالة والتطبيقات العملية الكاملة بمشاركة المتدربين.",
+
+  "rcfa_who_should_attend_title": "من يجب أن يحضر؟",
+
+  "rcfa_who_should_attend_desc": "أي شخص يشارك في حل المشكلات المعقدة، أو تحليل الحوادث، أو المسؤول عن حل مشكلات الصيانة والموثوقية ومنع تكرار الأعطال في المعدات أو الأنظمة العامة.",
+    //footer
     "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع.",
     }
 };
