@@ -254,7 +254,121 @@ const translations = {
           "asset_hierarchy_list_item_4" : "Operations.",
           "asset_hierarchy_list_item_5" : "And Finance.",
           "asset_hierarchy_detailed_paragraph" : "A clear and adequate hierarchy structure of assets (Taxonomy), according to international standards, is the fundamental principle of a system for the asset information management. An adequate hierarchy facilitates the implementation of reliability tools & contributes to improve the control of data and information of the equipment. Also, The correct allocation of costs associated with the life cycle of assets is fundamental to establish strategies for asset replacement. It is necessary to establish an adequate hierarchy of assets from the early stages as part of reliability tools that allow managing the information of the assets to increase their useful life. Dexterity provides asset hierarchy related services starting from assessment of existing hierarchy to complete update and creation of needed hierarchy that facilitate correct management of assets and their intended values and brings the above benefits. Asset hierarchy creation could be either according to ISO 14224 latest edition, KKS , RDS-PP or RDS-RS coding methodologies.",
-        // Footer extra
+       
+       //assets policy
+       "asset_policy_breadcrumb_title": "Asset Management Policy & Plan",
+       "asset_policy_breadcrumb_home": "Home",
+       "asset_policy_breadcrumb_training_services": "Training Services",
+       "asset_policy_breadcrumb_current": "Asset Management Policy & Plan",
+   
+       "asset_policy_course_title": "Creation of Asset Management Policy & Plan According to ISO 55001",
+   
+       "asset_policy_paragraph_1": "This course provides a detailed look at an important part of asset management: Asset Management Planning. It starts by having a quick review of the fundamentals, bases, systems, and frameworks needed to be understood to go further towards setting the required asset management policy and plans. It continues to illustrate the important components of Asset Management and how to create Asset Management Policy and Strategic Asset Management Plan (SAMP). Finally, it ends with a complete practice case using a model plant to create the needed Asset Management Policy and SAMP.",
+   
+       "asset_policy_paragraph_2": "It is a condensed program designed to support the implementation of Asset Management. The course objective is to train attendees to formulate a complete maintenance and asset management strategy and policy aligned with the organization's business needs and cascaded from the organization's main strategy and policy, as required by ISO 55001:2014.",
+   
+       "asset_policy_paragraph_3": "Upon completion of this training, the participants should be able to:",
+   
+       "asset_policy_list_item_1": "Fully understand Asset Management scope, structure, and key elements.",
+       "asset_policy_list_item_2": "Effectively develop an Asset Management policy and use it to govern asset management activities.",
+       "asset_policy_list_item_3": "Create an effective Strategic Asset Management Plan (SAMP) and use it to lead optimization efforts and enable the organization to gain Asset Management benefits.",
+       "asset_policy_list_item_4": "Integrate a range of perspectives into a list of suggested activities that would advance the implementation and effectiveness of Asset Management practices.",
+       "asset_policy_who_should_attend_title": "Who should attend?",
+       "asset_policy_who_should_attend_desc": "Maintenance, reliability, and asset management professionals, team leaders, key players, or managers who will be responsible for creating and implementing the maintenance, reliability, and asset management system.",
+       // criticality assessment ranking
+       "criticality_breadcrumb_title": "Criticality Assessment & Ranking",
+       "criticality_breadcrumb_home": "Home",
+       "criticality_breadcrumb_consultation_services": "Consultation Services",
+       "criticality_breadcrumb_current": "Criticality Assessment & Ranking",
+   
+       "criticality_heading": "Criticality Assessment & Ranking",
+   
+       "criticality_paragraph_1": "The purpose of Criticality Analysis is to identify systems and equipment items whose failure is likely to have the greatest impact on plant integrity, operational performance, and maintenance costs. The objectives of this analysis include quantifying the likely losses to which plants and facilities may be exposed through equipment failure and identifying and prioritizing improvement areas where organizations may subsequently secure business benefits. Prioritization of system and equipment criticality is based on the business consequences of failure including safety, environmental, repair cost, quality, and production losses.<br><br>Criticality Analysis is a base for Maintenance & Reliability Management. It facilitates and adds value to many Asset Management areas and decisions. Some examples of these areas are:",
+   
+       "criticality_list_item_1": "Budgeting Decisions and costing priorities",
+       "criticality_list_item_2": "Deciding maintenance plans & performing RCM",
+       "criticality_list_item_3": "Prioritizing Proactive Maintenance Activities & RCFA needs",
+       "criticality_list_item_4": "Spare parts & MRO keeping philosophies",
+       "criticality_list_item_5": "Level of details for planning",
+       "criticality_list_item_6": "Maintenance Work orders Prioritization",
+       "criticality_list_item_7": "Dedicated focused monitoring and reporting",
+       "criticality_list_item_8": "Focused Improvement initiatives",
+   
+       "criticality_paragraph_2": "The implementation of this criticality analysis improves the decision-making process related to asset management activities by providing a consistent evaluation for asset criticality and achieving world-class proactive and focused asset management approach. Dexterity implements the process of criticality analysis to meet organization’s needs, engages staff, and delivers a service that will meet world-class performance and best practices results.",
+       // shutdown & turnaround
+       "shutdown_turnaround_breadcrumb_title": "Shutdown & Turnaround",
+       "shutdown_turnaround_breadcrumb_home": "Home",
+       "shutdown_turnaround_breadcrumb_consultation": "Consultation Services",
+       "shutdown_turnaround_section_title": "Shutdown & Turnaround",
+       "shutdown_turnaround_intro_text": "Shutdowns and Turnarounds are complex projects that can tremendously affect business outcomes.<br><br>They are events with:",
+       "shutdown_turnaround_event_high_impact": "High impact",
+       "shutdown_turnaround_event_high_cost": "High cost",
+       "shutdown_turnaround_event_many_problems": "And … with many problems.",
+       "shutdown_turnaround_paragraph_2": "They are no more spending resources struggling to execute activities even with excellent traditional planning and scheduling. Turnaround management needs a new paradigm that enables to plan actions with quality consideration, to attain high performance level and eliminate waste.",
+       "shutdown_turnaround_paragraph_3": "Most organizations fail to manage big turnarounds and statistics showed the following results:",
+       "shutdown_turnaround_stat_90_percent_fail": "Over 90% of Turnarounds Failed to Meet Company’s Business & Turnaround Goals.",
+       "shutdown_turnaround_stat_80_percent_cost_overruns": "80% of Turnarounds Experienced Cost Overruns of 10-40%.",
+       "shutdown_turnaround_stat_half_schedule_slippage": "Half of the Turnarounds Suffered From Schedule Slippages.",
+       "shutdown_turnaround_stat_90_percent_scope_growth": "Almost 90% of Turnarounds Reported Work scope Growth of 10-50%.",
+       "shutdown_turnaround_stat_staff_shortage": "Most Turnarounds Were Impacted by Shortages of Qualified Staff and Crafts.",
+       "shutdown_turnaround_stat_schedule_abandoned": "3 out of 4 Times the Schedules Were abandoned in the First Week of Turnaround.",
+       "shutdown_turnaround_stat_recommendations_never_implemented": "90% of Post-Turnaround Reports Recommendations are Never Implemented",
+       "shutdown_turnaround_final_paragraph": "Dexterity provides both planning and management services for shutdowns and turnarounds to help organizations overcome the above failures and obstacles. Our team of experienced consultants and practitioners can provide all levels of services related to shutdowns and turnarounds planning, management monitoring and execution. Our services start with helping organizations build their strategy and philosophy for shutdowns and turnarounds and continue to offer related services for next phases of work and scope identification, planning, scheduling, pre-turnaround, execution and evaluation. These services include preparedness assessment and risk evaluation and management as well.",
+       // Breadcrumb
+    "rcm_pmo_breadcrumb_title": "Reliability Centered Maintenance & PMO Projects",
+    "rcm_pmo_breadcrumb_home": "Home",
+    "rcm_pmo_breadcrumb_consultation_services": "Consultation Services",
+    "rcm_pmo_breadcrumb_current": "Reliability Centered Maintenance & PMO Projects",
+
+    "rcm_pmo_section_title": "Reliability Centered Maintenance & PMO Projects",
+
+    "rcm_pmo_paragraph_1": "Reliability-centered maintenance is “A process used to determine the maintenance requirements of any physical asset in its operating context” (John Moubray, Reliability-Centered Maintenance, second edition). The phrase was coined more than forty years ago to describe a cost-effective way of maintaining complex systems. It uses the answers to seven very basic questions to help determine the best maintenance tasks to implement in an Equipment Maintenance Plan (EMP). RCM is a well-proven technique to enhance reliability and safety, and to optimize the overall maintenance activities performed on site in a cost-effective and applicable timeframe.",
+
+    "rcm_pmo_paragraph_2": "Preventive Maintenance Optimization (PMO) is a structured process aimed at preserving and restoring the equipment condition. With PMO, we focus on the identification of failures (failure modes) and develop PM tasks to manage them. It is a process to improve the effectiveness and efficiency of the PM process. Effective PMs address and reduce the consequence of specific, probable failure modes. Efficient PMs are value-added tasks conducted using the least labor, downtime, and materials required to complete the task.",
+
+    "rcm_pmo_paragraph_3": "The general philosophy of these methodologies lies in the allocation of the correct amount of work that provides value to organizations while balancing between cost and risk.",
+
+    "rcm_pmo_paragraph_4": "Dexterity, as a well-qualified and experienced consultant, is pleased to provide these services to assist with the continuous development of a world-class asset management environment for organizations through comprehensive Reliability-Centered Maintenance (RCM) and Preventive Maintenance Optimization (PMO) programs. Dexterity will serve as a guide and expert while also encouraging organizations’ staff to engage fully with RCM and embed its principles into their operations and maintenance routines. Likewise, Dexterity will be able to articulate not just the “what” and the “why” of RCM, but also the “how.”",
+
+    "rcm_pmo_paragraph_5": "This effort will help the organization’s assets to be highly available, reliable, maintainable, and safe in order to achieve production requirements and continue delivering the required production rates at the required quality for the remainder of the projected service life of its assets.",
+
+    "rcm_pmo_paragraph_6": "Dexterity services for RCM and PMO studies have been designed to fulfill these requirements and to proactively set effective asset management strategies for industrial plants and facilities.",
+
+    "rcm_pmo_paragraph_7": "We would like to serve as a full partner with you toward real business success. We have the resources and expertise to help turn your vision into reality.",
+   "rcm_pmo_paragraph_8": "We would like to serve as full partner with you toward real business success. We have the resources and expertise to help your vision become a reality",
+   // Maintenance Reliability
+   "maintenance_reliability_breadcrumb_title": "Maintenance & Reliability",
+   "maintenance_reliability_breadcrumb_home": "Home",
+   "maintenance_reliability_breadcrumb_consultation": "Consultation Services",
+
+   "maintenance_reliability_section_title": "Maintenance & Reliability",
+
+   "maintenance_reliability_paragraph_1": "Achievements start with realization.",
+   "maintenance_reliability_paragraph_2": "Do you realize how well is your maintenance & reliability system?",
+   "maintenance_reliability_paragraph_3": "Nowadays, it is no longer acceptable not to have the best maintenance and reliability strategy and implementation to support achieving your business goals. Worldwide best practices exist to help achieve these goals and reach an effective and efficient maintenance and reliability system.",
+   "maintenance_reliability_paragraph_4": "Dexterity provides you with the needed assessment service for your maintenance and reliability system compared to global best practices to identify potential gaps and recommend improvement initiatives.",
+   "maintenance_reliability_paragraph_5": "While doing so, we not only compare your implementation to best practices, but also examine the current situation to determine what best suits your specific case and leads to achieving business goals.",
+   "maintenance_reliability_paragraph_6": "Maintenance & Reliability Effectiveness Assessment includes the following areas as examples:",
+
+   "maintenance_reliability_point_1": "Maintenance & reliability strategy and high-level aspects.",
+   "maintenance_reliability_point_2": "Maintenance & reliability organization.",
+   "maintenance_reliability_point_3": "Maintenance & reliability goals and their sufficiency, completeness and relevance.",
+   "maintenance_reliability_point_4": "Performance monitoring and management.",
+   "maintenance_reliability_point_5": "Financial management and budgeting.",
+   "maintenance_reliability_point_6": "Work management system and work cycle.",
+   "maintenance_reliability_point_7": "EAM.CMMS implementation.",
+   "maintenance_reliability_point_8": "Reliability leadership and culture.",
+   "maintenance_reliability_point_9": "MRO inventory and spare parts management.",
+   "maintenance_reliability_point_10": "Planning and scheduling implementation.",
+   "maintenance_reliability_point_11": "Reliability and maintenance engineering.",
+   "maintenance_reliability_point_12": "Failure management and analysis.",
+   "maintenance_reliability_point_13": "Maintenance philosophies selection and implementations.",
+   "maintenance_reliability_point_14": "Preventive maintenance implementation.",
+   "maintenance_reliability_point_15": "Condition based maintenance implementation.",
+   "maintenance_reliability_point_16": "Capital work management and reliability creation.",
+   "maintenance_reliability_point_17": "Support services and workshops.",
+   "maintenance_reliability_point_18": "Training and development.",   
+   // Footer extra
         "footer_about_text": "Arabian Dexterity Company is newly established company, gaining its strength from its Senior Experts in the fields of Asset Management and Plant maintenance optimization."
     },
     
@@ -587,24 +701,133 @@ const translations = {
      "mro_inventory_breadcrumb_home" : "الرئيسية",
      "mro_inventory_breadcrumb_consultation_services" : "خدمات الاستشارات",
      "mro_inventory_breadcrumb_current" : "تحسين إدارة المخزون وقطع الغيار (MRO)",
- 
      "mro_inventory_section_title" : "تحسين إدارة المخزون وقطع الغيار (MRO)",
- 
      "mro_inventory_intro_paragraph_1" : "تُعد المخزونات وقطع الغيار الخاصة بالصيانة والإصلاح والتشغيل (MRO) جزءًا أساسيًا من متطلبات صحة الأصول، ويُعتبر إدارتها من العمليات الجوهرية في إدارة الأصول.",
      "mro_inventory_intro_paragraph_2" : "تشير الإحصائيات إلى أن تكلفة المواد وقطع الغيار تشكل أكثر من 60% من إجمالي تكلفة الصيانة، إضافةً إلى تأثيرها الكبير على جاهزية الوحدات الإنتاجية واستمرارية التشغيل وجودة المنتجات المطلوبة لتحقيق النجاح التجاري.",
      "mro_inventory_intro_paragraph_3" : "توفر شركة Dexterity خدماتها لتحسين إدارة المخزون وقطع الغيار بشكل استباقي وحديث، بما يضمن التحكم في توافر الأصول وتقليل التكاليف. ويشمل ذلك تطبيق التفكير القائم على المخاطر وممارسات إدارة سلسلة التوريد بكفاءة وفعالية.",
      "mro_inventory_intro_paragraph_4" : "تشمل هذه الخدمات ما يلي:",
- 
      "mro_inventory_list_item_1" : "إنشاء سياسة وفلسفة لإدارة مخزون MRO.",
      "mro_inventory_list_item_2" : "تحليل وتقييم المخزون.",
      "mro_inventory_list_item_3" : "تصنيف المخزون وتحليل الأهمية الحرجة.",
      "mro_inventory_list_item_4" : "تطوير وتنفيذ نماذج توقع الطلب.",
      "mro_inventory_list_item_5" : "تحديد نقاط وكمية الطلب بناءً على الأهمية والاستهلاك والتكلفة ووقت توريد المورد.",
      "mro_inventory_list_item_6" : "إنشاء وتنفيذ قاعدة بيانات للمخزون.",
- 
      "mro_inventory_final_paragraph" : "عادةً ما يتم إنفاق ملايين الأموال على مخزونات MRO التي تُعد حيوية لعمليات الشركة. تساعد Dexterity المؤسسات على تحسين هذه النفقات مع ضمان توافر الأصول واستمرارية التشغيل.",
-     // Footer extra
-        "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع.",
+    //assets policy 
+    "asset_policy_breadcrumb_title": "سياسة وخطة إدارة الأصول",
+    "asset_policy_breadcrumb_home": "الرئيسية",
+    "asset_policy_breadcrumb_training_services": "خدمات التدريب",
+    "asset_policy_breadcrumb_current": "سياسة وخطة إدارة الأصول",
+
+    "asset_policy_course_title": "إنشاء سياسة وخطة إدارة الأصول وفقًا لمعيار ISO 55001",
+
+    "asset_policy_paragraph_1": "توفر هذه الدورة نظرة تفصيلية على جزء مهم من إدارة الأصول: تخطيط إدارة الأصول. تبدأ بمراجعة سريعة للأساسيات والأنظمة والأطر التي يجب فهمها للانتقال إلى وضع سياسة وخطط إدارة الأصول المطلوبة. ثم تشرح المكونات المهمة لإدارة الأصول وكيفية إنشاء سياسة إدارة الأصول وخطة إدارة الأصول الاستراتيجية (SAMP). وأخيرًا، تنتهي بحالة عملية كاملة مع مصنع نموذجي لإنشاء سياسة وخطة إدارة الأصول المطلوبة.",
+
+    "asset_policy_paragraph_2": "البرنامج مكثف ويمكن أن يساعد في دعم تنفيذ إدارة الأصول. الهدف من الدورة هو تدريب المشاركين ليكونوا قادرين على صياغة استراتيجية وسياسة كاملة للصيانة وإدارة الأصول وفقًا لاحتياجات العمل، وبما يتماشى مع الاستراتيجية والسياسة الرئيسية للمنظمة، وذلك بما يتوافق مع متطلبات معيار ISO 55001:2014.",
+
+    "asset_policy_paragraph_3": "عند الانتهاء من هذه الدورة التدريبية، يجب أن يكون المشاركون قادرين على:",
+
+    "asset_policy_list_item_1": "فهم شامل لنطاق وهيكل وعناصر إدارة الأصول الأساسية.",
+    "asset_policy_list_item_2": "القدرة على تطوير سياسة إدارة الأصول بشكل فعال واستخدامها لإدارة أنشطة إدارة الأصول.",
+    "asset_policy_list_item_3": "القدرة على إنشاء خطة استراتيجية فعالة لإدارة الأصول (SAMP) واستخدامها لقيادة جهود التحسين وتمكين المؤسسة من تحقيق فوائد إدارة الأصول.",
+    "asset_policy_list_item_4": "مساعدة المشاركين على دمج مجموعة من وجهات النظر في قائمة من الأنشطة المقترحة التي تعزز تنفيذ وفعالية ممارسات إدارة الأصول.",
+
+    "asset_policy_who_should_attend_title": "من يجب أن يحضر؟",
+    "asset_policy_who_should_attend_desc": "المهنيون والمتخصصون في الصيانة والموثوقية وإدارة الأصول، وقادة الفرق، والأعضاء الرئيسيون أو المديرون الذين سيكونون مسؤولين عن إنشاء وتنفيذ نظام إدارة الأصول والصيانة.",
+    // criticality assessment ranking
+    "criticality_breadcrumb_title": "تقييم وترتيب الأهمية",
+    "criticality_breadcrumb_home": "الرئيسية",
+    "criticality_breadcrumb_consultation_services": "خدمات الاستشارات",
+    "criticality_breadcrumb_current": "تقييم وترتيب الأهمية",
+
+    "criticality_heading": "تقييم وترتيب الأهمية",
+
+    "criticality_paragraph_1": "الغرض من تحليل الأهمية هو تحديد الأنظمة والمعدات التي قد يؤدي فشلها إلى أكبر تأثير على سلامة المصنع وأدائه التشغيلي وتكاليف الصيانة. تشمل أهداف هذا التحليل تحديد الخسائر المحتملة التي قد تتعرض لها المصانع والمنشآت نتيجة فشل المعدات، وتحديد مجالات التحسين ذات الأولوية التي يمكن أن تحقق فوائد تجارية للمنظمة. يتم تحديد أولوية الأنظمة والمعدات بناءً على عواقب الفشل مثل السلامة، البيئة، تكاليف الإصلاح، الجودة، وخسائر الإنتاج.<br><br>يُعتبر تحليل الأهمية أساسًا لإدارة الصيانة والموثوقية، حيث يسهل ويضيف قيمة للعديد من مجالات وقرارات إدارة الأصول. بعض الأمثلة على هذه المجالات هي:",
+
+    "criticality_list_item_1": "قرارات الميزانية وتحديد أولويات التكاليف",
+    "criticality_list_item_2": "تحديد خطط الصيانة وتنفيذ منهجية RCM",
+    "criticality_list_item_3": "تحديد أولويات أنشطة الصيانة الاستباقية واحتياجات RCFA",
+    "criticality_list_item_4": "فلسفات الاحتفاظ بقطع الغيار ومواد MRO",
+    "criticality_list_item_5": "مستوى التفاصيل المطلوبة للتخطيط",
+    "criticality_list_item_6": "تحديد أولويات أوامر العمل للصيانة",
+    "criticality_list_item_7": "مراقبة وتقارير مركزة ومخصصة",
+    "criticality_list_item_8": "مبادرات التحسين المركزة",
+
+    "criticality_paragraph_2": "يُحسن تنفيذ هذا التحليل عملية اتخاذ القرار المتعلقة بأنشطة إدارة الأصول من خلال توفير تقييم متسق للأهمية وتحقيق نهج عالمي المستوى لإدارة الأصول بشكل استباقي ومركز. تقوم شركة Dexterity بتنفيذ عملية تحليل الأهمية لتلبية احتياجات المنظمة، وإشراك الموظفين، وتقديم خدمة تحقق أداءً ونتائج وفقًا لأفضل الممارسات العالمية.",
+     //shutdown & turnaround
+     "shutdown_turnaround_breadcrumb_title": "الإيقاف والصيانة الدورية",
+    "shutdown_turnaround_breadcrumb_home": "الرئيسية",
+    "shutdown_turnaround_breadcrumb_consultation": "خدمات الاستشارات",
+    "shutdown_turnaround_section_title": "الإيقاف والصيانة الدورية",
+    "shutdown_turnaround_intro_text": "تُعتبر عمليات الإيقاف والصيانة الدورية مشاريع معقدة يمكن أن تؤثر بشكل كبير على نتائج الأعمال.<br><br>وهي أحداث تتميز بـ:",
+    "shutdown_turnaround_event_high_impact": "تأثير كبير",
+    "shutdown_turnaround_event_high_cost": "تكلفة عالية",
+    "shutdown_turnaround_event_many_problems": "ومشكلات عديدة...",
+    "shutdown_turnaround_paragraph_2": "لم تعد الموارد تُهدر في محاولة تنفيذ الأنشطة حتى مع وجود تخطيط وجدولة تقليدية ممتازة. إدارة الصيانة الدورية تحتاج إلى نهج جديد يركز على التخطيط بجودة عالية لتحقيق مستويات أداء مرتفعة والقضاء على الهدر.",
+    "shutdown_turnaround_paragraph_3": "تفشل معظم المؤسسات في إدارة عمليات الإيقاف الكبيرة، وأظهرت الإحصاءات النتائج التالية:",
+    "shutdown_turnaround_stat_90_percent_fail": "أكثر من 90% من عمليات الصيانة الدورية فشلت في تحقيق أهداف الشركة.",
+    "shutdown_turnaround_stat_80_percent_cost_overruns": "80% من عمليات الصيانة واجهت تجاوزات في التكاليف بنسبة 10-40%.",
+    "shutdown_turnaround_stat_half_schedule_slippage": "نصف العمليات عانت من تأخير في الجدول الزمني.",
+    "shutdown_turnaround_stat_90_percent_scope_growth": "ما يقرب من 90% شهدت توسعًا في نطاق العمل بنسبة 10-50%.",
+    "shutdown_turnaround_stat_staff_shortage": "تأثرت معظم العمليات بنقص في الكوادر المؤهلة والمهنيين.",
+    "shutdown_turnaround_stat_schedule_abandoned": "في 3 من كل 4 مرات، يتم التخلي عن الجداول الزمنية في الأسبوع الأول من العملية.",
+    "shutdown_turnaround_stat_recommendations_never_implemented": "90% من التوصيات بعد العملية لم يتم تنفيذها مطلقًا.",
+    "shutdown_turnaround_final_paragraph": "توفر شركة Dexterity خدمات التخطيط والإدارة لكل من عمليات الإيقاف والصيانة الدورية لمساعدة المؤسسات على التغلب على الإخفاقات والعقبات السابقة. فريقنا من الاستشاريين ذوي الخبرة يقدم جميع مستويات الخدمات بدءًا من وضع الاستراتيجية وتحديد الفلسفة الخاصة بالإيقاف والصيانة، مرورًا بتحديد نطاق العمل، التخطيط، الجدولة، التحضير المسبق، التنفيذ والتقييم، وتشمل هذه الخدمات أيضًا تقييم الاستعداد وإدارة المخاطر.",
+    //RCM
+    "rcm_pmo_breadcrumb_title": "الصيانة المعتمدة على الموثوقية ومشاريع مكتب إدارة المشاريع",
+    "rcm_pmo_breadcrumb_home": "الرئيسية",
+    "rcm_pmo_breadcrumb_consultation_services": "خدمات الاستشارات",
+    "rcm_pmo_breadcrumb_current": "الصيانة المعتمدة على الموثوقية ومشاريع مكتب إدارة المشاريع",
+  
+    "rcm_pmo_section_title": "الصيانة المعتمدة على الموثوقية ومشاريع مكتب إدارة المشاريع",
+  
+    "rcm_pmo_paragraph_1": "الصيانة المعتمدة على الموثوقية هي \"عملية تُستخدم لتحديد متطلبات الصيانة لأي أصل مادي في سياق تشغيله\" (جون موبراي، الصيانة المعتمدة على الموثوقية، الطبعة الثانية). تم ابتكار هذا المصطلح منذ أكثر من أربعين عامًا لوصف طريقة فعّالة من حيث التكلفة لصيانة الأنظمة المعقدة. تستخدم هذه المنهجية الإجابة عن سبعة أسئلة أساسية جدًا لتحديد أفضل مهام الصيانة التي يجب تنفيذها ضمن خطة صيانة المعدات (EMP). تعتبر RCM تقنية مثبتة لتعزيز الموثوقية والسلامة وتحسين أنشطة الصيانة الشاملة في الموقع بطريقة فعّالة من حيث التكلفة وفي إطار زمني مناسب.",
+  
+    "rcm_pmo_paragraph_2": "تحسين الصيانة الوقائية (PMO) هو عملية منظمة تهدف إلى الحفاظ على حالة المعدات واستعادتها. من خلال PMO، نركز على تحديد حالات الفشل (أنماط الفشل) وتطوير مهام صيانة لإدارتها. إنها عملية تهدف إلى تحسين فعالية وكفاءة عملية الصيانة الوقائية. تعمل مهام الصيانة الوقائية الفعّالة على معالجة وتقليل تبعات أنماط الفشل المحددة والمحتملة. بينما تضمن المهام الفعّالة كفاءة استخدام الموارد مثل الجهد والوقت والمواد لإنجاز المهام بأقل تكلفة ممكنة.",
+  
+    "rcm_pmo_paragraph_3": "تعتمد الفلسفة العامة لهذه المنهجيات على تخصيص مقدار العمل المناسب الذي يضيف قيمة للمؤسسات ويحقق التوازن بين التكلفة والمخاطر.",
+  
+    "rcm_pmo_paragraph_4": "تفخر شركة Dexterity، بصفتها استشاريًا مؤهلًا وذو خبرة، بتقديم هذه الخدمات لدعم التطوير المستمر لبيئة إدارة أصول عالمية المستوى للمؤسسات، من خلال برامج شاملة للصيانة المعتمدة على الموثوقية (RCM) وتحسين الصيانة الوقائية (PMO). ستعمل Dexterity كمرشد وخبير، مع تشجيع فرق العمل بالمؤسسة على التفاعل الكامل مع RCM ودمج مبادئها في عمليات التشغيل والصيانة. كما ستعمل Dexterity على توضيح ليس فقط الـ \"ماذا\" و\"لماذا\" المتعلقة بـ RCM، بل أيضًا الـ \"كيف\".",
+  
+    "rcm_pmo_paragraph_5": "سيساعد هذا الجهد أصول المؤسسة على أن تكون متاحة بشكل كبير، وموثوقة، وسهلة الصيانة، وآمنة، لتحقيق متطلبات الإنتاج وضمان الاستمرار في تقديم معدلات الإنتاج المطلوبة بالجودة المطلوبة طوال العمر الافتراضي المتوقع لأصولها.",
+  
+    "rcm_pmo_paragraph_6": "تم تصميم خدمات Dexterity لدراسات RCM وPMO لتلبية هذه المتطلبات ولتحديد استراتيجيات فعّالة لإدارة الأصول للمصانع والمنشآت الصناعية بشكل استباقي.",
+  
+    "rcm_pmo_paragraph_7": "نرغب في أن نكون شريكًا كاملًا لكم لتحقيق النجاح التجاري الحقيقي. لدينا الموارد والخبرة اللازمة لمساعدتكم في تحويل رؤيتكم إلى واقع.",
+    "rcm_pmo_paragraph_8": "وأخيرًا، تعزيز ثقة ورضا أصحاب المصلحة عبر تقديم بيانات دقيقة وموثوقة حول حالة الأصول.",
+   // Maintenance Reliability
+   "maintenance_reliability_breadcrumb_title": "الصيانة والموثوقية",
+   "maintenance_reliability_breadcrumb_home": "الرئيسية",
+   "maintenance_reliability_breadcrumb_consultation": "خدمات الاستشارات",
+
+   "maintenance_reliability_section_title": "الصيانة والموثوقية",
+
+   "maintenance_reliability_paragraph_1": "الإنجازات تبدأ بالوعي والإدراك.",
+   "maintenance_reliability_paragraph_2": "هل تدرك مدى كفاءة نظام الصيانة والموثوقية لديك؟",
+   "maintenance_reliability_paragraph_3": "في الوقت الحاضر، لم يعد من المقبول أن لا يكون لديك أفضل استراتيجية وتنفيذ للصيانة والموثوقية لدعم تحقيق أهداف عملك. توجد ممارسات عالمية لمساعدتك في تحقيق هذه الأهداف والوصول إلى نظام صيانة وموثوقية فعال وكفء.",
+   "maintenance_reliability_paragraph_4": "توفر لك شركة ديكستيري خدمة التقييم اللازمة لنظام الصيانة والموثوقية لديك مقارنة بالممارسات العالمية لتحديد الفجوات المحتملة واقتراح مبادرات تحسين.",
+   "maintenance_reliability_paragraph_5": "أثناء ذلك، نحن لا نقارن تنفيذك بالممارسات العالمية فقط، بل نفحص أيضًا الوضع الحالي لتحديد ما يناسب حالتك الخاصة ويقود إلى تحقيق أهداف العمل.",
+   "maintenance_reliability_paragraph_6": "يشمل تقييم فعالية الصيانة والموثوقية المجالات التالية كمثال:",
+
+   "maintenance_reliability_point_1": "استراتيجية الصيانة والموثوقية والجوانب عالية المستوى.",
+   "maintenance_reliability_point_2": "هيكل وتنظيم الصيانة والموثوقية.",
+   "maintenance_reliability_point_3": "أهداف الصيانة والموثوقية ومدى كفايتها وشمولها وملاءمتها.",
+   "maintenance_reliability_point_4": "مراقبة الأداء والإدارة.",
+   "maintenance_reliability_point_5": "الإدارة المالية وإعداد الميزانية.",
+   "maintenance_reliability_point_6": "نظام إدارة العمل ودورة العمل.",
+   "maintenance_reliability_point_7": "تنفيذ أنظمة EAM.CMMS.",
+   "maintenance_reliability_point_8": "القيادة وثقافة الموثوقية.",
+   "maintenance_reliability_point_9": "إدارة المخزون وقطع الغيار.",
+   "maintenance_reliability_point_10": "تنفيذ التخطيط والجدولة.",
+   "maintenance_reliability_point_11": "هندسة الصيانة والموثوقية.",
+   "maintenance_reliability_point_12": "إدارة وتحليل الأعطال.",
+   "maintenance_reliability_point_13": "اختيار وتنفيذ فلسفات الصيانة.",
+   "maintenance_reliability_point_14": "تنفيذ الصيانة الوقائية.",
+   "maintenance_reliability_point_15": "تنفيذ الصيانة المعتمدة على الحالة.",
+   "maintenance_reliability_point_16": "إدارة الأعمال الرأسمالية وإنشاء الموثوقية.",
+   "maintenance_reliability_point_17": "الخدمات الداعمة وورش العمل.",
+   "maintenance_reliability_point_18": "التدريب والتطوير.",
+    "footer_about_text": "شركة العربية دكستريتي هي شركة حديثة التأسيس، تستمد قوتها من خبرائها الكبار في مجالات إدارة الأصول وتحسين صيانة المصانع.",
     }
 };
 
